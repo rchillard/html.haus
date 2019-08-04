@@ -1,0 +1,42 @@
+
+#layout {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+#header {
+  background-color: lightblue;
+  height: 5rem;
+  padding-top: .25rem;
+  width: 100%;
+}
+
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+#main {
+  background-color: lightgoldenrodyellow;
+  float: left;
+  height: 20rem;
+  padding-top: .25rem;
+  width: 70%;
+}
+
+#aside {
+  background-color: lightsalmon;
+  float: left;
+  height: 20rem;
+  padding-top: .25rem;
+  width: 30%;
+}
+
+#footer {
+  background-color: lightgreen;
+  height: 5rem;
+  padding-top: .25rem;
+  width: 100%;
+}
