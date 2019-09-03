@@ -3,7 +3,13 @@ Website for teaching HTML to everyone.  I conceived of this website after return
 
 Modern user interface libraries and frameworks like Angular, React, and Vue are increasingly being used to build web applications.  This abstraction on top of the web's view layer supports building applications in components.  [Component driven development](https://blog.hichroma.com/component-driven-development-ce1109d56c8e) has been growing in popularity for years, because it makes reasoning around and maintaining complex user interfaces easier.  This new paradigm represents forward progress for how frontend developers build applications.  
 
-However, this abstraction has also taken developers a step away from the raw interface of the web, HTML and CSS.  With that distance can come a loss of understanding what purpose HTML serves, why semantic HTML matters, and how to combine HTML tags for great justice.  [html.haus](https://html.haus/) helps train everyone on these topics.
+However, this abstraction has also taken developers a step away from the raw interface of the web, HTML and CSS.  With that distance can come a loss of understanding what purpose HTML serves, why semantic HTML matters, and how to combine HTML elements for great justice.  
+
+[html.haus](https://html.haus/) helps train everyone on these topics.
+
+# Resources
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+https://html.spec.whatwg.org/multipage/indices.html
 
 ## Sections
 ### Learn

@@ -1,3 +1,28 @@
+body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+nav .title {
+  float: left;
+}
+
+nav ul li {
+  float: right;
+  list-style-type: none;
+  list-style-position: inside;
+  margin-right: 1rem;
+}
+
+textarea {
+  width: 100%;
+}
 
 #layout {
   border: 1px solid lightgray;
