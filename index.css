@@ -1,7 +1,7 @@
 body {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
 }
 
 nav {
@@ -20,8 +20,18 @@ nav ul li {
   margin-right: 1rem;
 }
 
+img {
+  padding: 1rem;
+}
+
 textarea {
   width: 100%;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
 }
 
 #layout {
