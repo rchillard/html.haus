@@ -11,16 +11,67 @@
       <nav>
         <span class="title"><a href="index.html">HTML.Haus</a></span>
         <ul>
-          <li><a href="templates.html">Templates</a></li>
-          <li><a href="reference.html">Reference</a></li>
-          <li><a href="learn.html">Learn</a></li>
+          <li><a href="templates.html">Use Templates</a></li>
+          <li><a href="reference.html">Reference Tags</a></li>
+          <li><a href="learn.html">Learn HTML</a></li>
         </ul>
       </nav>
     </header>
-    <p>
-      <em>This page is in progress!  Come back later when it's finished.</em>
-    </p>
     <h1>Templates</h1>
+    <p>
+      A set of HTML templates that will help get you started down the road of writing proper HTML.
+    </p>
+    <h2>Basic Page</h2>
+    <p>
+      Here's our first template that covers a basic HTML page, which you can use as a template for your index.html.  It demonstrates important metadata in the head,
+      including how you give your page a title (that appears in your browser tab) and how to link to a CSS stylesheet:
+    </p>
+    <textarea rows="13">
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Title Appears in Browser Tab</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+      </head>
+      <body>
+        <h1>This is your H1</h1>
+        <p>I'm a placeholder text</p>
+      </body>
+    </html>
+    </textarea>
+
+    <h2>Basic Layout</h2>
+    <p>
+      Building on our basic page, this layout template embraces the idea of using semantic HTML to communicate form and meaning through properly tagging primary sections:
+      header, main, and footer.  In general, every one of your pages should probably have all three of these sections.  Here's how it looks:
+    </p>
+    <textarea rows="21">
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Title Appears in Browser Tab</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+      </head>
+      <body>
+        <header>
+          Site title here, maybe also a navbar? Header things
+        </header>
+        <main>
+          <h1>This is your H1</h1>
+          <p>I'm a placeholder text</p>
+        </main>
+        <footer>
+          Copyright info, site map, other footer things
+        </footer>
+      </body>
+    </html>
+    </textarea>
+    
+    <p>
+      <em>This page is in progress!  Come back later to see additional templates.</em>
+    </p>
     <!-- TO DO 
     - Basic page skeleton
     - Navigation/menu bar
