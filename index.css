@@ -1,7 +1,7 @@
 body {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   margin: 0 auto;
-  width: 60%;
+  width: 64%;
 }
 
 a {
@@ -36,6 +36,10 @@ footer {
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
+}
+
+.container {
+  padding-left: 1rem;
 }
 
 #layout {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Haus | Home of Hyper Text Markup Language</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <base href="https://html.haus/">
+    <!-- <base href="https://html.haus/"> -->
   </head>
   <body>
     <header>
@@ -17,36 +17,98 @@
         </ul>
       </nav>
     </header>
-    <p>
-      <em>This page is in progress!  Come back later when it's finished.</em>
-    </p>
     <h1>Learning HTML</h1>
     <p>
-      HTML stands for Hypertext Markup Language.  Technically HTML is not a programming language.  It's called a markup language, because it's a way to <em>mark up</em>regular 
+      HTML stands for Hypertext Markup Language.  Technically HTML is not a programming language.  It's called a markup language, because it's a way to <em>mark up</em> regular 
       text to specify structure.  This is similar to how you would physically mark up an important passage in a book by underlining it.  When you write on the raw
       text in a book, you are adding semantic meaning to those words.  For example, when studying you might highlight or underline a word or phrase to draw attention
       to that passage or show its importance.
-    </p>
-    <!-- Add image of marked up text here in raw book -->
+    </p>  
     <img src="assets/hannah-busing-G-_L3Eqkqmc-unsplash.jpg" alt="Highlighted book by Hannah Busing on Unsplash" width="90%">
     <p>
       The same is true for markup in HTML.  You use HTML on the web to define the structure or 'mark up' the elements of a web page so that they have meaning beyond
-       the text that is displayed.  These meanings follow rules and allow you to define your story in elements.  Elements translate into certain appearance on your site.
+       the text that is displayed.  These meanings follow rules and allow you to define your page in different elements.  Elements are the building blocks of a website.
     </p>
+    <h2>Elements</h2>
+    <p>
+      An element is a stand alone or discrete entity in HTML, which is usually denoted by two tags, a start or beginning tag and an ending tag.  These tags follow a certain
+      syntax and they encase content to form an element.  Here's an element with denoted parts:
+    </p>
+    <img src="assets/element.svg" alt="diagram of basic html element <em> with start tag and end tag" height="160" width="351">
+    <p>
+      In HTML, the &lt;em&gt; tag is short for emphasis, and by convention, browsers usually render it in italics.  The tag above would appear like this on a web page:
+    </p>
+    <p><em>The haus is on fire!</em></p>
+    Here's the raw HTML in an editable and easy to copy and paste format:
+    <textarea><em>The haus is on fire!</em></textarea>
+    <p>
+      Another way to refer to the start of the element is as an opening tag, &lt;em&gt;, and a closing tag, &lt;/em&gt;.  Notice that the closing tag has a slash in it?
+      This is standard HTML syntax, and you'll see that for all elements with a starting or opening (&lt;tagname&gt;) tag, and an ending or closing (&lt;/tagname&gt;) tag,
+      they will follow this pattern.  In our haus metaphor, you can think of this kind of element as being the first brick or building material.
+    </p>
+    <h2>Text Content</h2>
+    <p>
+      The emphasis &lt;em&gt; tag helps us describe text content.  Remember that websites started as pages or documents, so text today is just as much a fundamental part of
+      HTML and websites as it was in the early web.  You can denote text in two ways:
+      <ol>
+        <li>By creating a new paragraph or block of text</li>
+        <li>By adding meaning to text in the same line</li>
+      </ol>
+      Creating a new paragraph means visually forming a new block on the page.  This is no different than hitting enter/return in your favorite text editor and starting to
+      type.  These sorts of elements are referred to as block elements, because they represent structure and they create visual blocks.  The most common textual block element
+      is the paragraph element.  You're reading one right now!
+    </p>
+    <p>
+      I lied before because the &lt;p&gt; tag is really the first brick or building block in your world of new materials.  See how the &lt;p&gt; tag is here creating a new 
+      visual block here, which is separate and apart from the surrounding content?  That's the purpose of this block level type of element.
+    </p>
+    <p>
+      Here's the raw HTML in an editable and easy to copy and paste format:
+    </p>
+    <textarea><p>I lied before because the &lt;p&gt; tag is really the first brick or building block in your world of new materials. See how the &lt;p&gt; tag is here creating a new visual block here, which is separate and apart from the surrounding content?  That's the purpose of this block level type of element.</p></textarea>
+    <p>
+      Adding meaning to text in the same line means adding semantic meaning through tags like <em>emphasis</em> &lt;em&gt; or <strong>importance</strong> &lt;strong&gt;.  
+      These are less like bricks and more like your paint, your lights, the parts of your haus that draw attention to certain elements and add special extra meaning to
+      your basic text.  Of course, to really use your paint and hang your lights, you're going to need more structure.  You're going to need a wooden frame to hang the
+      rest of your content on.
+    </p>
+    <h3>Headings</h3>
+    <p>
+      Headings serve as your framework, your wood, the sturdy dividers that the rest of your HTML haus can be built inside of and around.  Every page in HTML should have at
+      least one heading, called an H1 (&lt;h1&gt;) that provides the title for that page.  After the H1, the rest of the headings flow down in a hierarchy, denoting the relative
+      relationship between subordinate or nested content.  Headings allow you to see the same structure you'd experience in a table of contents.  Browsers will render headings
+      by default as larger text, heavier (bolder) in appearance, and in a range starting from the largest, H1, and reducing down to the smallest, H6.  Here's what all the headings
+      from 1-6 look like on this website:
+    </p>
+    <div class="container">
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+    </div>
+    <p>
+      <em>This page is in progress, anything below this line is dangerous!  Come back later when it's finished.</em>
+    </p>
+
     <!-- TO DO: -->
     <!-- 
-    Basic Metadata
-    Content
-    Text content
+    Block content
     Inline text
     Sectioning
     Semantic HTML
-    Advanced Metadata
+    Basic Metadata
     Image/multimedia
     Tables
+    Advanced Metadata
     Forms
     Interactive
     -->
+    
+    <hr>
+    <h2>Nesting</h2>
+    <h2>Attributes</h2>
     <h2>Semantic HTML</h2>
     <blockquote>
       Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
