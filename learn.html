@@ -65,17 +65,18 @@
     <p>
       Here's the raw HTML in an editable and easy to copy and paste format:
     </p>
-    <textarea><p>I lied before because the &lt;p&gt; tag is really the first brick or building block in your world of new materials. See how the &lt;p&gt; tag is here creating a new visual block here, which is separate and apart from the surrounding content?  That's the purpose of this block level type of element.</p></textarea>
+    <textarea rows="3"><p>I lied before because the &lt;p&gt; tag is really the first brick or building block in your world of new materials. See how the &lt;p&gt; tag is here creating a new visual block here, which is separate and apart from the surrounding content?  That's the purpose of this block level type of element.</p></textarea>
     <p>
       Adding meaning to text in the same line means adding semantic meaning through tags like <em>emphasis</em> &lt;em&gt; or <strong>importance</strong> &lt;strong&gt;.  
-      These are less like bricks and more like your paint, your lights, the parts of your haus that draw attention to certain elements and add special extra meaning to
+      These are less like bricks and more like your paint or lights, the parts of your haus that draw attention to certain elements and add special extra meaning to
       your basic text.  Of course, to really use your paint and hang your lights, you're going to need more structure.  You're going to need a wooden frame to hang the
       rest of your content on.
     </p>
     <h3>Headings</h3>
     <p>
-      Headings serve as your framework, your wood, the sturdy dividers that the rest of your HTML haus can be built inside of and around.  Every page in HTML should have at
-      least one heading, called an H1 (&lt;h1&gt;) that provides the title for that page.  After the H1, the rest of the headings flow down in a hierarchy, denoting the relative
+      Headings serve as your framework, your wood, the sturdy dividers that the rest of your HTML haus can be built inside of and around.  Headings create new blocks of text,
+      visually separate from surrounding elements, making them officially called a block element.  Can you guess what the 1st heading might be for?   Every page in HTML should have at
+      least one heading, called an H1 (&lt;h1&gt;) that provides the title or main subject for that page.  After the H1, the rest of the headings flow down in a hierarchy, denoting the relative
       relationship between subordinate or nested content.  Headings allow you to see the same structure you'd experience in a table of contents.  Browsers will render headings
       by default as larger text, heavier (bolder) in appearance, and in a range starting from the largest, H1, and reducing down to the smallest, H6.  Here's what all the headings
       from 1-6 look like on this website:
@@ -89,13 +90,54 @@
       <h6>h6</h6>
     </div>
     <p>
+      It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a subordinate idea (&lt;h3&gt;) above a heading (&lt;h2&gt;)
+      that is higher in the hiearchy.  Here's an example to demonstrate what I mean: 
+    </p>
+    <div class="container" style="background-color: lightcoral; padding: 1rem">
+      <h1>The Fall of the House of Usher</h1>
+      <h2>Background</h2>
+      <h3>Publication History</h3>
+        <p>
+          The Fall of the House of Usher by Edgar Allan Poe was originally published in <em>Burton's Gentleman's Magazine</em> and <em>American Monthly Review</em> in 1839.
+          Poe later republished the Gothic narrative in a collection of short stories called <em>Tales of the Grotesque and Arabesque</em> in 1840.
+        </p>
+      <h3>Critical Acclaim</h3>
+      <p>
+        The short story is a tale of haunting tone that relies on an unnamed narrator to convey a sense of unsettled fear.  It is largely regarded as an <strong>American Gothic 
+        masterwork</strong>.  In its time, it was criticized for being too formulaic, relying on similar themes and structures as some of Poe's earlier work.  However, it also 
+        influenced later works of literature such as the character Captain Ahab in Herman Melville's <em>Moby-Dick</em> (1851).
+      </p>
+      <h2>Story</h2>
+      <p>
+        DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was --but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit. I say insufferable; for the feeling was unrelieved by any of that half-pleasurable, because poetic, sentiment, with which the mind usually receives even the sternest natural images of the desolate or terrible. I looked upon the scene before me --upon the mere house, and the simple landscape features of the domain --upon the bleak walls --upon the vacant eye-like windows --upon a few rank sedges --and upon a few white trunks of decayed trees --with an utter depression of soul which I can compare to no earthly sensation more properly than to the after-dream of the reveller upon opium --the bitter lapse into everyday life --the hideous dropping off of the veil...
+      </p>
+    </div>
+    <p>The example above is about a famous work of literature, but the way we categorize and compartmentalize information follows a hierarchy.  The title of the story is the
+        &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;s, because they are subordinate to the H1 and they help separate the editor's background information from 
+        the actual story itself.  And then finally, even within the <strong>Background</strong> section, there's &lt;h3&gt; elements to denote sections of the background, Publication 
+        History and Critical Acclaim.  All of these headings help communicate how ideas are related to one another.
+    </p>
+    <h3>Combining Text Elements</h3>
+    <p>
+      You're learning about all the tools you need to build your own beautiful haus out of HTML.  So far you've learned about the bricks, the building blocks
+    </p>
+    <h2>Nesting</h2>
+    <p>
       <em>This page is in progress, anything below this line is dangerous!  Come back later when it's finished.</em>
     </p>
 
+    <hr>
+    <h2>Attributes</h2>
+    <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="491">
+    <h2>Semantic HTML</h2>
+    <blockquote>
+      Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
+      its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to
+      human users.
+    </blockquote>
+
     <!-- TO DO: -->
     <!-- 
-    Block content
-    Inline text
     Sectioning
     Semantic HTML
     Basic Metadata
@@ -105,16 +147,5 @@
     Forms
     Interactive
     -->
-
-    <hr>
-    <h2>Nesting</h2>
-    <h2>Attributes</h2>
-    <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="491">
-    <h2>Semantic HTML</h2>
-    <blockquote>
-      Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
-      its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to
-      human users.
-    </blockquote>
   </body>
 </html>
