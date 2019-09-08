@@ -63,6 +63,7 @@ img {
 }
 
 textarea {
+  border: 1px solid orangered;
   width: 100%;
 }
 

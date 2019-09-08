@@ -17,183 +17,250 @@
         </ul>
       </nav>
     </header>
-    <h1>Learning HTML</h1>
-    <p>
-      HTML stands for Hypertext Markup Language.  Technically HTML is not a programming language.  It's called a markup language, because it's a way to <em>mark up</em> regular 
-      text to specify structure.  This is similar to how you would physically mark up an important passage in a book by underlining it.  When you write on the raw
-      text in a book, you are adding semantic meaning to those words.  For example, when studying you might highlight or underline a word or phrase to draw attention
-      to that passage or show its importance.
-    </p>  
-    <img src="assets/hannah-busing-G-_L3Eqkqmc-unsplash.jpg" alt="Highlighted book by Hannah Busing on Unsplash" width="90%">
-    <p>
-      The same is true for markup in HTML.  You use HTML on the web to define the structure or 'mark up' the elements of a web page so that they have meaning beyond
-       the text that is displayed.  These meanings follow rules and allow you to define your page in different elements.  Elements are the building blocks of a website.
-    </p>
-    <h2>Elements</h2>
-    <p>
-      An element is a stand alone or discrete entity in HTML, which is usually denoted by two tags, a start or beginning tag and an ending tag.  These tags follow a certain
-      syntax and they encase content to form an element.  Here's an element with denoted parts:
-    </p>
-    <img src="assets/element.svg" alt="diagram of basic html element <em> with start tag and end tag" height="160" width="351">
-    <p>
-      In HTML, the &lt;em&gt; tag is short for emphasis, and by convention, browsers usually render it in italics.  The tag above would appear like this on a web page:
-    </p>
-    <p><em>The haus is on fire!</em></p>
-    Here's the raw HTML in an editable and easy to copy and paste format:
-    <textarea><em>The haus is on fire!</em></textarea>
-    <p>
-      Another way to refer to the start of the element is as an opening tag, &lt;em&gt;, and a closing tag, &lt;/em&gt;.  Notice that the closing tag has a slash in it?
-      This is standard HTML syntax, and you'll see that for all elements with a starting or opening (&lt;tagname&gt;) tag, and an ending or closing (&lt;/tagname&gt;) tag,
-      they will follow this pattern.  In our haus metaphor, you can think of this kind of element as being the first brick or building material.
-    </p>
-    <h2>Text Content</h2>
-    <p>
-      The emphasis &lt;em&gt; tag helps us describe text content.  Remember that websites started as pages or documents, so text today is just as much a fundamental part of
-      HTML and websites as it was in the early web.  You can denote text in two ways:
-      <ol>
-        <li>By creating a new paragraph or block of text</li>
-        <li>By adding meaning to text in the same line</li>
-      </ol>
-      Creating a new paragraph means visually forming a new block on the page.  This is no different than hitting enter/return in your favorite text editor and starting to
-      type.  These sorts of elements are referred to as block elements, because they represent structure and they create visual blocks.  The most common textual block element
-      is the paragraph element.  You're reading one right now!
-    </p>
-    <p>
-      I lied before because the &lt;p&gt; tag is really the first brick or building block in your world of new materials.  See how the &lt;p&gt; tag is here creating a new 
-      visual block here, which is separate and apart from the surrounding content?  That's the purpose of this block level type of element.
-    </p>
-    <p>
+    <main>
+      <h1>Learning HTML</h1>
+      <p>
+        HTML stands for Hypertext Markup Language.  Technically HTML is not a programming language.  It's called a markup language, because it's a way to <em>mark up</em>
+        regular text to specify structure and meaning.  This is similar to how you physically mark up an important passage in a book by highlighting it.  When you highlight
+        part of a book, you are marking that part as important to you.
+      </p>  
+      <img src="assets/hannah-busing-G-_L3Eqkqmc-unsplash.jpg" alt="Highlighted book by Hannah Busing on Unsplash" width="90%">
+      <p>
+        HTML gives you the same tools, such as a highlighter or bold pen, to digitally mark up content.  You use HTML on the web to define the structure or 'mark up' the
+        elements of a web page so that they have meaning beyond the text that is displayed.  These meanings follow rules and allow you to define your page in different elements.
+        Elements are the building blocks of a website.
+      </p>
+      <h2>Elements</h2>
+      <p>
+        An element is a stand alone or discrete entity in HTML, which is usually denoted by two tags, a start or beginning tag and an ending tag.  These tags follow a certain
+        syntax and they encase content to form an element.  Here's an element with denoted parts:
+      </p>
+      <img src="assets/element-mark.svg" alt="diagram of basic html element <mark> with start tag and end tag" height="160" width="375">
+      <p>
+        In HTML, the &lt;mark&gt; tag is short for marked and browsers usually render it as highlighted text.  Similar to the real world, marking something means you are
+        referencing it or notating it for relevance or importance.  The tag above would appear like this:
+      </p>
+      <p><mark>The haus is on fire!</mark></p>
       Here's the raw HTML in an editable and easy to copy and paste format:
-    </p>
-    <textarea rows="3"><p>I lied before because the &lt;p&gt; tag is really the first brick or building block in your world of new materials. See how the &lt;p&gt; tag is here creating a new visual block here, which is separate and apart from the surrounding content?  That's the purpose of this block level type of element.</p></textarea>
-    <p>
-      Adding meaning to text in the same line means adding semantic meaning through tags like <em>emphasis</em> &lt;em&gt; or <strong>importance</strong> &lt;strong&gt;.  
-      These are less like bricks and more like your paint or lights, the parts of your haus that draw attention to certain elements and add special extra meaning to
-      your basic text.  Of course, to really use your paint and hang your lights, you're going to need more structure.  You're going to need a wooden frame to hang the
-      rest of your content on.
-    </p>
-    <h3>Headings</h3>
-    <p>
-      Headings serve as your framework, your wood, the sturdy dividers that the rest of your HTML haus can be built inside of and around.  Headings create new blocks of text,
-      visually separate from surrounding elements, making them officially called a block element.  Can you guess what the 1st heading might be for?   Every page in HTML should have at
-      least one heading, called an H1 (&lt;h1&gt;) that provides the title or main subject for that page.  After the H1, the rest of the headings flow down in a hierarchy, denoting the relative
-      relationship between subordinate or nested content.  Headings allow you to see the same structure you'd experience in a table of contents.  Browsers will render headings
-      by default as larger text, heavier (bolder) in appearance, and in a range starting from the largest, H1, and reducing down to the smallest, H6.  Here's what all the headings
-      from 1-6 look like on this website:
-    </p>
-    <div class="container">
-      <h1>h1</h1>
-      <h2>h2</h2>
-      <h3>h3</h3>
-      <h4>h4</h4>
-      <h5>h5</h5>
-      <h6>h6</h6>
-    </div>
-    <p>
-      It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a subordinate idea (&lt;h3&gt;) above a heading (&lt;h2&gt;)
-      that is higher in the hiearchy.  Here's an example to demonstrate what I mean: 
-    </p>
-      <div class="container" style="border: 2px solid #FF4500; padding: 1rem">
-        <h1>The Fall of the House of Usher</h1>
-        <h2>Background</h2>
-        <h3>Publication History</h3>
-          <p>
-            The Fall of the House of Usher by Edgar Allan Poe was originally published in <em>Burton's Gentleman's Magazine</em> and <em>American Monthly Review</em> in 1839.
-            Poe later republished the Gothic narrative in a collection of short stories called <em>Tales of the Grotesque and Arabesque</em> in 1840.
-          </p>
-        <h3>Critical Acclaim</h3>
-        <p>
-          The short story is a tale of haunting tone that relies on an unnamed narrator to convey a sense of unsettled fear.  It is largely regarded as an <strong>American Gothic 
-          masterwork</strong>.  In its time, it was criticized for being too formulaic, relying on similar themes and structures as some of Poe's earlier work.  However, it also 
-          influenced later works of literature such as the character Captain Ahab in Herman Melville's <em>Moby-Dick</em> (1851).
-        </p>
-        <h2>Story</h2>
-        <p>
-          DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was --but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit. I say insufferable; for the feeling was unrelieved by any of that half-pleasurable, because poetic, sentiment, with which the mind usually receives even the sternest natural images of the desolate or terrible. I looked upon the scene before me --upon the mere house, and the simple landscape features of the domain --upon the bleak walls --upon the vacant eye-like windows --upon a few rank sedges --and upon a few white trunks of decayed trees --with an utter depression of soul which I can compare to no earthly sensation more properly than to the after-dream of the reveller upon opium --the bitter lapse into everyday life --the hideous dropping off of the veil...
-        </p>
+      <textarea><mark>The haus is on fire!</mark></textarea>
+      <p>
+        Another way to refer to the start of the element is as an opening tag, &lt;mark&gt;, and a closing tag, &lt;/mark&gt;.  Notice that the closing tag has a slash in it?
+        This is standard HTML syntax, and you'll see that for all elements with a starting or opening &lt;tagname&gt;, and an ending or closing &lt;/tagname&gt;,
+        they will follow this pattern.  In our haus metaphor, you can think of this kind of element as being the first brick or building material.  The slash "/" in the
+        closing tag is the mortar that seals the element, completing it and holding it in place.
+      </p>
+      <h2>Text Content</h2>
+      <p>
+        The &lt;mark&gt; tag above helps us describe text content.  Remember that websites started as pages or documents, and text today is just as much a fundamental part of
+        HTML and websites as it was in the early web.  You can denote text in two ways:
+        <ol>
+          <li>By creating a new paragraph or <strong>block of text</strong></li>
+          <li>By adding meaning to text <strong>in the same line</strong></li>
+        </ol>
+      </p>
+      <h3>Block Elements</h3>
+      <p>
+        Creating a new paragraph means visually forming a new block on the page.  This is no different than hitting enter/return in your favorite text editor and starting to
+        type.  These sorts of elements are referred to as block elements, because they represent structure and they create visual blocks.  Truth be told, I think these should
+        probably be the bricks you start building with.  The most common textual block element or brick is the paragraph element.  You're reading one right now!
+      </p>
+      <img src="assets/gabriele-diwald-aL1Bp6Put2I-unsplash.jpg" alt="Red bricks peaking through white stucco wall by Gabriele Diwald on Unsplash" width="90%">
+      <p>
+        I lied before because the &lt;p&gt; tag should really be the first building block in your world of new materials.  See how the &lt;p&gt; tag is creating a new 
+        visual block right here, in this very paragraph, which is separate and apart from the image above and the next paragraph below?  
+        That's the purpose of this block level type of element.
+      </p>
+      <p>
+        Here's the raw HTML from the paragraph above in an editable and easy to copy and paste format:
+      </p>
+      <textarea rows="3"><p>I lied before because the &lt;p&gt; tag should really be the first building block in your world of new materials.  See how the &lt;p&gt; tag is creating a new visual block right here, in this very paragraph, which is separate and apart from the image above and the next paragraph below?  That's the purpose of this block level type of element.</p></textarea>
+      <p>
+        All right, so you've learned how to start stacking bricks in the form of paragraphs, using the &lt;p&gt; tag, but what do the bricks hold on to?  How do you give
+        your house an underlying structure to hold up those brick walls?  You're going to need a wooden frame.
+      </p>
+      <h3>Headings</h3>
+      <p>
+        Headings serve as your framework, your wood, the sturdy dividers that the rest of your HTML haus can be built inside of and around.  Headings create new blocks of text,
+        visually separate from surrounding elements, also making them block elements.  Can you guess what the 1st heading might be for?   Every page in HTML should have at
+        least one heading, called an &lt;h1&gt; that provides the title or main subject for that page.  After the h1, the rest of the headings flow down in a hierarchy, denoting the relative
+        relationship between subordinate or nested content.  Headings allow you to see the same structure you'd experience in a table of contents.  Browsers will render headings
+        by default as larger text, heavier (bolder) in appearance, and in a range starting from the largest, h1, and reducing down to the smallest, h6.  Here's what all the headings
+        from 1-6 look like on this website:
+      </p>
+      <div class="container">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
       </div>
-    <p>The example above is about a famous work of literature, but the way we categorize and compartmentalize information follows a hierarchy.  The title of the story is the
-        &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;, because they are subordinate to the H1 and they help separate the editor's background information from 
-        the actual story itself.  And then finally, even within the <strong>Background</strong> section, there's &lt;h3&gt; elements to denote sections of the background, Publication 
-        History and Critical Acclaim.  All of these headings help communicate how ideas are related to one another.
-    </p>
+      <p>
+        It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a subordinate idea (&lt;h3&gt;) above a heading (&lt;h2&gt;)
+        that is higher in the hiearchy.  Here's an example to demonstrate what I mean: 
+      </p>
+        <div class="container" style="border: 2px solid #FF4500; padding: 1rem">
+          <h1>The Fall of the House of Usher</h1>
+          <h2>Background</h2>
+          <h3>Publication History</h3>
+            <p>
+              The Fall of the House of Usher by Edgar Allan Poe was originally published in <em>Burton's Gentleman's Magazine</em> and <em>American Monthly Review</em> in 1839.
+              Poe later republished the Gothic narrative in a collection of short stories called <em>Tales of the Grotesque and Arabesque</em> in 1840.
+            </p>
+          <h3>Critical Acclaim</h3>
+          <p>
+            The short story is a tale of haunting tone that relies on an unnamed narrator to convey a sense of unsettled fear.  It is largely regarded as an <strong>American Gothic 
+            masterwork</strong>.  In its time, it was criticized for being too formulaic, relying on similar themes and structures as some of Poe's earlier work.  However, it also 
+            influenced later works of literature such as the character Captain Ahab in Herman Melville's <em>Moby-Dick</em> (1851).
+          </p>
+          <h2>Story</h2>
+          <p>
+            DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was --but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit. I say insufferable; for the feeling was unrelieved by any of that half-pleasurable, because poetic, sentiment, with which the mind usually receives even the sternest natural images of the desolate or terrible. I looked upon the scene before me --upon the mere house, and the simple landscape features of the domain --upon the bleak walls --upon the vacant eye-like windows --upon a few rank sedges --and upon a few white trunks of decayed trees --with an utter depression of soul which I can compare to no earthly sensation more properly than to the after-dream of the reveller upon opium --the bitter lapse into everyday life --the hideous dropping off of the veil...
+          </p>
+        </div>
+      <p>The example above shows the way we categorize and compartmentalize information following a hierarchy.  The title of the story is the
+          &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;, because they are subordinate to the h1 and they help separate the editor's background information from 
+          the actual story itself.  And then finally, even within the Background section, there's &lt;h3&gt; elements to denote subsections of the background, Publication 
+          History and Critical Acclaim.  All of these headings help communicate how ideas are related to one another.  They serve as the wooden frame that defines the structure of your content.
+      </p>
+      <img src="assets/t-h-chia-RQCwU_73uAg-unsplash.jpg" alt="Japanese building with red wooden frame and white roof by T.H. Chia on Unsplash" width="90%">
+      <h3>Inline Elements</h3>
+      <p>
+        In the House of Usher example above, you probably noticed that certain text appear in <i>italics</i> and other text appears in <b>bold</b>.  You were introduced to this idea
+        earlier with the &lt;mark&gt; tag, but we should circle back on why you use these elements now.  Adding meaning to text in the same line means adding additional
+        meaning through tags to emphasize text, mark importance, or notate references.  These are less like bricks and more like your paint or
+        lights, the parts of your haus that draw attention to certain elements and add special extra meaning to your basic text. You probably also noticed that even 
+        though we are using elements in the text above, they're not creating new blocks like a &lt;p&gt; or &lt;h#&gt; tag might.  That's because they're inline elements.
+        Inline elements only effect text in the same line and do not alter the visual flow of the page or document.
+      </p>
+      <img src="assets/inline-block-combined.svg" alt="diagram of p block element and strong inline element" height="160" width="800">
+      <p>The book is an <strong>American Gothic masterwork</strong></p>
+      <p>
+        So far you've learned a handful of inline elements, which you can now use to mark up your text with additional semantic meaning:
+        <ul>
+          <li>&lt;mark&gt; stands for marked and is used to notate or reference importance in text and it typically displays as <mark>highlighted text</mark></li>
+          <li>&lt;em&gt; is short for emphasis is used to stress emphasis in a passage and typically displays as <em>italicized text</em></li>
+          <li>&lt;strong&gt; is used to to indicate strong importance, seriousness, or urgency and usually displays as <strong>bold text</strong></li>
+        </ul>
+      </p>
+      <p>  
+        Of course to really use your paint and hang your lights, you're going to need to understand the rules around nesting elements.  
+      </p>
+      <h3>Nesting</h3>
+      <p>
+        You're learning the tools you need to build your own beautiful haus out of HTML.  So far you've learned about the bricks, the building blocks of any webpage, which are 
+        the block level text elements such as headings and paragraphs.  You've also learned inline text elements as well, such as mark, emphasis, and importance.  By combining these
+        elements or materials, you can start to tell your own stories, to build a durable, digital House of Usher.  You've probably already figured this out, but you can compose
+        elements together by nesting them.  It's important to nest them in order though.  Here's what I mean:
+      </p>
+      <p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p>
+      <textarea><p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p></textarea>
+      <p>
+        When you nest an inline element like emphasis inside of another element like a paragraph, you have to make sure you close your emphasis tag before the paragraph tag.
+        This simple rule will save you a lot of trouble and is worth remembering, as you'll be using elements together and nesting them often.  Speaking of The Velvet Voice
+        and soul music, it's important to also understand why you use tags like emphasis and how they change the meaning of a page beyond just the visual appearance in italics.
+      </p>
 
-    <h3>Nesting</h3>
-    <p>
-      You're learning the tools you need to build your own beautiful haus out of HTML.  So far you've learned about the bricks, the building blocks of any webpage, which are 
-      the block level text elements such as headings and paragraphs.  You've also learned inline text elements as well, such as emphasis and importance.  By combining these
-      elements or materials, you can start to tell your own stories, to build a durable, digital House of Usher.  You've probably already figured this out, but you can compose
-      elements together by nesting them.  It's important to nest them in order though.  Here's what I mean:
-    </p>
-    <p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p>
-    <textarea><p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p></textarea>
-    <p>
-      When you nest an inline element like emphasis inside of another element like a paragraph, you have to make sure you close your emphasis tag before the paragraph tag.
-      This simple rule will save you a lot of trouble and is worth remembering, as you'll be using elements together and nesting them often.  Speaking of The Velvet Voice
-      and soul music, it's important to also understand why you use tags like emphasis and how they change the meaning of a page beyond just the visual appearance in italics.
-    </p>
+      <h2>Semantic HTML</h2>
+      <p>
+        In soul music, there are ideas being communicated through the song that are beyond the simple words of the lyrics.  Semantic HTML is a lot like that, because certain tags
+        are used to identify content with an additional layer of meaning associated to it.  Here's a formal definition from Wikipedia:
+      </p>
+      <blockquote cite="https://en.wikipedia.org/wiki/Semantic_HTML">
+        Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
+        its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents.
+      </blockquote>
+      <p>
+        Two examples you've already learned are the <em>emphasis</em> &lt;em&gt; and <strong>strong</strong> &lt;strong&gt; tags.  The &lt;strong&gt; tag results in a visual 
+        difference, making the text it surrounds bold, but it also indicates that the text is also important.  Why does this matter?
+      </p>
+      <p>
+        The extra meaning added by the strong tag matters because of that last phrase above in the formal definition: <em>Semantic HTML is processed by... many other user agents</em>. 
+        One example of a user agent might be in a browser, whereby you're visually experiencing the content.  However, other examples of user agents reading your webpage might
+        come in the form of visually impaired humans experiencing your webpage without a browser, instead through a screen reader; or even beyond humans, computer programs
+        like search engines will be reading your webpage and determining what is important about it (or not).  In either case, by using the proper tags you convey
+        semantic meaning about your house, which makes it easier for all users to consume your content.
+      </p>
+      <h3>Accessibility</h3>
+      <p>
+        Using proper Semantic HTML is closely related to the concept of accessibility and universal design.  Universal design in building is the idea that all people should have equal access
+        to a building, regardless of their level of mobility.  That's why buildings have ramps for people in wheelchairs.  The same is true for our digital world on the web. Any user, regardless of their situation, should have the same ease of
+        access to your website as any other user.  This includes users that are visually impaired and might use a screen reader or users that are hearing impaired and will need
+        to read the captions on a video embedded in your site.
+      </p>
+      <img src="assets/ashkan-forouzani-czmRe87k_ww-unsplash.jpg" alt="Black heart drawn on red brick wall by Ashkan Forouzani on Unsplash" width="90%">
+      <p>
+        You've learned how to write a story.  You can build a basic house using HTML.  You've got an idea why it's important to build that house for everyone.  Let's start talking
+        about how we might decorate our house, connect the rooms with doors and hallways, and give the place some character.  I'm talking about HTML attributes. 
+      </p>
+      <h2>Attributes</h2>
+      <p>
+        An HTML attribute is an extra characteristic that you can add to a basic HTML tag, which will enrich it with additional information about the tag.  There are a few rules
+        to follow when you're adding attributes to your HTML tags:
+        <ul>
+          <li>Attributes are always specified in the start or opening tag</li>
+          <li>Attributes generally come in a pair of two: a name and a value</li>
+        </ul>
+      </p>
+      <p>
+        Here's a visual example showing an attribute called "style" which you can use to apply visual changes to your element.
+      </p>
+      <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="491">
+      <p>And here's how the actual HTML looks:</p>
+      <p style="color: red">She's a brick haus!</p>
+      <h2>Links</h2>
 
-    <h2>Semantic HTML</h2>
-    <p>
-      In soul music, there are ideas being communicated through the song that are beyond the simple words of the lyrics.  Semantic HTML is a lot like that, because certain tags
-      are used to identify content with an additional layer of meaning associated to it.  Here's a formal definition from Wikipedia:
-    </p>
-    <blockquote cite="https://en.wikipedia.org/wiki/Semantic_HTML">
-      Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
-      its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents.
-    </blockquote>
-    <p>
-      Two examples you've already learned are the <em>emphasis</em> &lt;em&gt; and <strong>strong</strong> &lt;strong&gt; tags.  The &lt;strong&gt; tag results in a visual 
-      difference, making the text it surrounds bold, but it also indicates that the text is also important.  Why does this matter?
-    </p>
-    <p>
-      Layering on this extra meaning matters because of that last phrase above in the formal definition: <em>Semantic HTML is processed by... many other user agents</em>. 
-      One example of a user agent might be in a browser, whereby you're visually experiencing the content.  However, other examples of user agents reading your webpage might
-      come in the form of visually impaired humans experiencing your webpage without a browser, instead through a screen reader; or even beyond humans, such as computer programs
-      like search engines reading your webpage and determining programmatically what is important about it (or not).  In either case, by using the proper tags you convey
-      semantic meaning about your house, which makes it easier for all users to consume your content.
-    </p>
-    <h3>Accessibility</h3>
-    <p>
-      Using proper Semantic HTML is closely related to the concept of accessibility and universal design.  Any user, regardless of their situation, should have the same ease of
-      access to your website as any other user.  This includes users that are visually impaired and might use a screen reader or users that are hearing impaired and will need
-      to read the captions on a video you publish.
-    </p>
-    <p>
-      You've learned how to write a story.  You can build a basic house using HTML.  You've got an idea why it's important to build that house for everyone.  Let's start talking
-      about how we might decorate our house, connect the rooms with doors and hallways, and give the place some character.  I'm talking about HTML attributes. 
-    </p>
-    <h2>Attributes</h2>
-    <p>
-      An HTML attribute is an extra characteristic that you can add to a basic HTML tag, which will enrich it with additional information about the tag.  There are a few rules
-      to follow when you're adding attributes to your HTML tags:
-      <ul>
-        <li>Attributes are always specific in the start or opening tag</li>
-        <li>Attributes generally come in a pair of two: a name and a value</li>
-      </ul>
-    </p>
-    <p>
-      Here's a visual example showing an attribute called "style" which you can use to apply visual changes to your element.
-    </p>
-    <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="491">
-    <p>And here's how the actual HTML looks:</p>
-    <p style="color: red">She's a brick haus!</p>
-    <h2>Links</h2>
-    <p>
-      <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
-    </p>
+      <h2>Sectioning</h2>
+      <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure, not
+        visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
+        relationship between HTML <em>logical structure</em> and how it's visually presented.  Just conventions:
+      </p>
+      <div id="layout">
+        <p>body</p>
+        <div id="header">
+          <p>header</p>
+          <p style="text-align: center">nav</p>
+        </div>
+        <div id="wrapper">
+          <div id="main">
+            <p>main</p>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4> 
+            <h5>h5</h5>
+            <h6>h6</h6>
+          </div>
+          <div id="aside">
+            <p>aside</p>
+          </div>
+        </div>
+        <div id="footer">
+          <p>footer</p>
+        </div>
+      </div>
+      <p>
+        <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
+      </p>
 
-    <hr>
-    <!-- TO DO: -->
-    <!-- 
-    Sectioning
-    Semantic HTML
-    Basic Metadata
-    Image/multimedia
-    Tables
-    Advanced Metadata
-    Forms
-    Interactive
-    -->
+      <hr>
+      <!-- TO DO: -->
+      <!-- 
+      Sectioning
+      Semantic HTML
+      Basic Metadata
+      Image/multimedia
+      Tables
+      Advanced Metadata
+      Forms
+      Interactive
+      -->
+      <!-- <h2>Future Images</h2>
+      <img src="assets/valeriy-kryukov-aRvKSkRO-vw-unsplash.jpg" alt="Red bricks with different languages stamped into them by Valeriy Kryukov on Unsplash" width="90%">
+      
+      <img src="assets/hana-barakat-T1uOZ2kEDsA-unsplash.jpg" alt="Wooden staircase and orante wooden frame in red brick building by Hana Barakat on Unsplash" width="90%">
+      
+      <img src="assets/ashkan-forouzani-qhcml9Xo_5k-unsplash.jpg" alt="Bright red door in front of red brick wall by Ashkan Forouzani on Unsplash" width="90%"> -->
+    </main>
   </body>
 </html>
