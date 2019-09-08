@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Haus | Home of Hyper Text Markup Language</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- <base href="https://html.haus/"> -->
   </head>
   <body>
@@ -11,9 +11,9 @@
       <nav>
         <span class="title"><a href="index.html">HTML.Haus</a></span>
         <ul>
-          <li><a href="templates.html">Use Templates</a></li>
-          <li><a href="reference.html">Reference Tags</a></li>
-          <li><a href="learn.html">Learn HTML</a></li>
+          <li><a href="templates.html">Templates</a></li>
+          <li><a href="reference.html">Reference</a></li>
+          <li><a href="learn.html">Learn</a></li>
         </ul>
       </nav>
     </header>
@@ -93,49 +93,97 @@
       It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a subordinate idea (&lt;h3&gt;) above a heading (&lt;h2&gt;)
       that is higher in the hiearchy.  Here's an example to demonstrate what I mean: 
     </p>
-    <div class="container" style="background-color: lightcoral; padding: 1rem">
-      <h1>The Fall of the House of Usher</h1>
-      <h2>Background</h2>
-      <h3>Publication History</h3>
+      <div class="container" style="border: 2px solid #FF4500; padding: 1rem">
+        <h1>The Fall of the House of Usher</h1>
+        <h2>Background</h2>
+        <h3>Publication History</h3>
+          <p>
+            The Fall of the House of Usher by Edgar Allan Poe was originally published in <em>Burton's Gentleman's Magazine</em> and <em>American Monthly Review</em> in 1839.
+            Poe later republished the Gothic narrative in a collection of short stories called <em>Tales of the Grotesque and Arabesque</em> in 1840.
+          </p>
+        <h3>Critical Acclaim</h3>
         <p>
-          The Fall of the House of Usher by Edgar Allan Poe was originally published in <em>Burton's Gentleman's Magazine</em> and <em>American Monthly Review</em> in 1839.
-          Poe later republished the Gothic narrative in a collection of short stories called <em>Tales of the Grotesque and Arabesque</em> in 1840.
+          The short story is a tale of haunting tone that relies on an unnamed narrator to convey a sense of unsettled fear.  It is largely regarded as an <strong>American Gothic 
+          masterwork</strong>.  In its time, it was criticized for being too formulaic, relying on similar themes and structures as some of Poe's earlier work.  However, it also 
+          influenced later works of literature such as the character Captain Ahab in Herman Melville's <em>Moby-Dick</em> (1851).
         </p>
-      <h3>Critical Acclaim</h3>
-      <p>
-        The short story is a tale of haunting tone that relies on an unnamed narrator to convey a sense of unsettled fear.  It is largely regarded as an <strong>American Gothic 
-        masterwork</strong>.  In its time, it was criticized for being too formulaic, relying on similar themes and structures as some of Poe's earlier work.  However, it also 
-        influenced later works of literature such as the character Captain Ahab in Herman Melville's <em>Moby-Dick</em> (1851).
-      </p>
-      <h2>Story</h2>
-      <p>
-        DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was --but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit. I say insufferable; for the feeling was unrelieved by any of that half-pleasurable, because poetic, sentiment, with which the mind usually receives even the sternest natural images of the desolate or terrible. I looked upon the scene before me --upon the mere house, and the simple landscape features of the domain --upon the bleak walls --upon the vacant eye-like windows --upon a few rank sedges --and upon a few white trunks of decayed trees --with an utter depression of soul which I can compare to no earthly sensation more properly than to the after-dream of the reveller upon opium --the bitter lapse into everyday life --the hideous dropping off of the veil...
-      </p>
-    </div>
+        <h2>Story</h2>
+        <p>
+          DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was --but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit. I say insufferable; for the feeling was unrelieved by any of that half-pleasurable, because poetic, sentiment, with which the mind usually receives even the sternest natural images of the desolate or terrible. I looked upon the scene before me --upon the mere house, and the simple landscape features of the domain --upon the bleak walls --upon the vacant eye-like windows --upon a few rank sedges --and upon a few white trunks of decayed trees --with an utter depression of soul which I can compare to no earthly sensation more properly than to the after-dream of the reveller upon opium --the bitter lapse into everyday life --the hideous dropping off of the veil...
+        </p>
+      </div>
     <p>The example above is about a famous work of literature, but the way we categorize and compartmentalize information follows a hierarchy.  The title of the story is the
-        &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;s, because they are subordinate to the H1 and they help separate the editor's background information from 
+        &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;, because they are subordinate to the H1 and they help separate the editor's background information from 
         the actual story itself.  And then finally, even within the <strong>Background</strong> section, there's &lt;h3&gt; elements to denote sections of the background, Publication 
         History and Critical Acclaim.  All of these headings help communicate how ideas are related to one another.
     </p>
-    <h3>Combining Text Elements</h3>
+
+    <h3>Nesting</h3>
     <p>
-      You're learning about all the tools you need to build your own beautiful haus out of HTML.  So far you've learned about the bricks, the building blocks
+      You're learning the tools you need to build your own beautiful haus out of HTML.  So far you've learned about the bricks, the building blocks of any webpage, which are 
+      the block level text elements such as headings and paragraphs.  You've also learned inline text elements as well, such as emphasis and importance.  By combining these
+      elements or materials, you can start to tell your own stories, to build a durable, digital House of Usher.  You've probably already figured this out, but you can compose
+      elements together by nesting them.  It's important to nest them in order though.  Here's what I mean:
     </p>
-    <h2>Nesting</h2>
+    <p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p>
+    <textarea><p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p></textarea>
     <p>
-      <em>This page is in progress, anything below this line is dangerous!  Come back later when it's finished.</em>
+      When you nest an inline element like emphasis inside of another element like a paragraph, you have to make sure you close your emphasis tag before the paragraph tag.
+      This simple rule will save you a lot of trouble and is worth remembering, as you'll be using elements together and nesting them often.  Speaking of The Velvet Voice
+      and soul music, it's important to also understand why you use tags like emphasis and how they change the meaning of a page beyond just the visual appearance in italics.
+    </p>
+
+    <h2>Semantic HTML</h2>
+    <p>
+      In soul music, there are ideas being communicated through the song that are beyond the simple words of the lyrics.  Semantic HTML is a lot like that, because certain tags
+      are used to identify content with an additional layer of meaning associated to it.  Here's a formal definition from Wikipedia:
+    </p>
+    <blockquote cite="https://en.wikipedia.org/wiki/Semantic_HTML">
+      Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
+      its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents.
+    </blockquote>
+    <p>
+      Two examples you've already learned are the <em>emphasis</em> &lt;em&gt; and <strong>strong</strong> &lt;strong&gt; tags.  The &lt;strong&gt; tag results in a visual 
+      difference, making the text it surrounds bold, but it also indicates that the text is also important.  Why does this matter?
+    </p>
+    <p>
+      Layering on this extra meaning matters because of that last phrase above in the formal definition: <em>Semantic HTML is processed by... many other user agents</em>. 
+      One example of a user agent might be in a browser, whereby you're visually experiencing the content.  However, other examples of user agents reading your webpage might
+      come in the form of visually impaired humans experiencing your webpage without a browser, instead through a screen reader; or even beyond humans, such as computer programs
+      like search engines reading your webpage and determining programmatically what is important about it (or not).  In either case, by using the proper tags you convey
+      semantic meaning about your house, which makes it easier for all users to consume your content.
+    </p>
+    <h3>Accessibility</h3>
+    <p>
+      Using proper Semantic HTML is closely related to the concept of accessibility and universal design.  Any user, regardless of their situation, should have the same ease of
+      access to your website as any other user.  This includes users that are visually impaired and might use a screen reader or users that are hearing impaired and will need
+      to read the captions on a video you publish.
+    </p>
+    <p>
+      You've learned how to write a story.  You can build a basic house using HTML.  You've got an idea why it's important to build that house for everyone.  Let's start talking
+      about how we might decorate our house, connect the rooms with doors and hallways, and give the place some character.  I'm talking about HTML attributes. 
+    </p>
+    <h2>Attributes</h2>
+    <p>
+      An HTML attribute is an extra characteristic that you can add to a basic HTML tag, which will enrich it with additional information about the tag.  There are a few rules
+      to follow when you're adding attributes to your HTML tags:
+      <ul>
+        <li>Attributes are always specific in the start or opening tag</li>
+        <li>Attributes generally come in a pair of two: a name and a value</li>
+      </ul>
+    </p>
+    <p>
+      Here's a visual example showing an attribute called "style" which you can use to apply visual changes to your element.
+    </p>
+    <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="491">
+    <p>And here's how the actual HTML looks:</p>
+    <p style="color: red">She's a brick haus!</p>
+    <h2>Links</h2>
+    <p>
+      <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
     </p>
 
     <hr>
-    <h2>Attributes</h2>
-    <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="491">
-    <h2>Semantic HTML</h2>
-    <blockquote>
-      Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define
-      its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to
-      human users.
-    </blockquote>
-
     <!-- TO DO: -->
     <!-- 
     Sectioning

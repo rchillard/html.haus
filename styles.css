@@ -1,0 +1,119 @@
+body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin: 0 auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 90%;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    width: 80%;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 70%;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    width: 60%;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 50%;
+  }
+}
+
+a {
+  color: orangered;
+}
+
+nav {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+nav .title {
+  float: left;
+}
+
+nav ul li {
+  float: right;
+  list-style-type: none;
+  list-style-position: inside;
+  margin-right: 1rem;
+}
+
+img {
+  padding: 1rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  padding-left: 1rem;
+}
+
+#layout {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+#header {
+  background-color: lightblue;
+  height: 5rem;
+  padding-top: .25rem;
+  width: 100%;
+}
+
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+#main {
+  background-color: lightgoldenrodyellow;
+  float: left;
+  height: 20rem;
+  padding-top: .25rem;
+  width: 70%;
+}
+
+#aside {
+  background-color: lightsalmon;
+  float: left;
+  height: 20rem;
+  padding-top: .25rem;
+  width: 30%;
+}
+
+#footer {
+  background-color: lightgreen;
+  height: 5rem;
+  padding-top: .25rem;
+  width: 100%;
+}
