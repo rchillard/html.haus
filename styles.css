@@ -39,7 +39,7 @@ body {
 }
 
 a {
-  color: orangered;
+  color: #DB3700;
 }
 
 mark {
@@ -67,7 +67,7 @@ img {
 }
 
 textarea {
-  border: 1px solid orangered;
+  border: 1px solid #DB3700;
   width: 100%;
 }
 
