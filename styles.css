@@ -1,7 +1,18 @@
+:root {
+  /* Breakpoints */
+  --breakpoint-small: 600px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 992px;
+  --breakpoint-xlarge: 1200px;
+
+  /* Colors */
+  --hausorange: #DB3700;
+}
+
 body {
   font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
   margin: 0 auto;
-}
+} 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -39,7 +50,12 @@ body {
 }
 
 a {
-  color: #DB3700;
+  color: var(--hausorange);
+}
+
+img {
+  padding: 1rem;
+  max-width: 100%;
 }
 
 mark {
@@ -62,12 +78,8 @@ nav ul li {
   margin-right: 1rem;
 }
 
-img {
-  padding: 1rem;
-}
-
 textarea {
-  border: 1px solid #DB3700;
+  border: 1px solid var(--hausorange);
   width: 100%;
 }
 
