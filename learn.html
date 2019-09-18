@@ -292,27 +292,31 @@
       <img src="assets/red-house-150.jpg" alt="Red house on side of green hill by Luke Stackpoole on Unsplash">
       <p>
         The src="assets/red-house-150.jpg" is referencing a file in relation to where my current html page that references the image is located.  In this case, it's inside of a subfolder
-        which is named "assets" and the image is named "red-house-150.jpg".  In this case, I was referencing an image on my computer, but you can also reference images on the internet by
+        which is named "assets" and the image is named "red-house-150.jpg".  I was referencing an image on my computer, but you can also reference images on the internet by
         using their exact location.  If you want to try, you can use the following address on your own HTML page: "https://html.haus/assets/red-house-150.jpg" 
       </p>
       <label>
         Here's the HTML for you to try:
         <textarea><img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
       </label>
-      <p>
       <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+      <p>
         You may have noticed another attribute attached to each of these images.  Images have two required attributes: the src attribute and the alt attribute.
+        The alt attribute stands for alternate text and it should be a meaningful description of the image.
       </p>
       <p>
-        The alt attribute stands for alternate text and it should be a meaningful description of the image.  Remember all those different users?  Alt text is there for visually impaired
-        users who rely on a screen reader to experience your webpage.  Even though they can't see the image, they still need to be able to experience your page as if they could.  Their
+        Remember all those different users and user agents?
+      </p>
+      <p>
+        Alt text is there for visually impaired users who rely on a screen reader to experience your webpage.  Even though they can't see the image, they still need to be able to experience your page as if they could.  Their
         screen reader will read the description you provide in your alternate text, so make sure you write a meaningful description there.  Also, screen readers already know that it's an
         image, so there's no need to ever write "Photo of" or "Image of" in your alternate text.  This is duplicative and unnecessary.
       </p>
       <h2>Self Closing Tags</h2>
       <p>
-        There's another peculiar thing above about img tags.  They don't have an ending or closing tag!  There's no such thing as a clsoing &lt;/img&gt; tag, in fact it's bad HTML.  That's
-        because certain tags are called self closing tags.  In an image's case, there's nothing for the image to wrap around, because the image itself is the element.  
+        You probably noticed above that there's another peculiar thing about img tags.  They don't have an ending or closing tag!  There's no such thing as a closing &lt;/img&gt; tag, 
+        in fact it's bad HTML.  That's because certain elements don't need a closing tag, because they stand alone without having to encompass anything else.  In an image's case, there's
+        nothing for the image to wrap around, because the image itself is the element.  The extra ending tag wouldn't be useful for this element.  That's why it's called a self closing tag.
       </p>
       <p>
         <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
@@ -368,7 +372,6 @@
       Sectioning
       Semantic HTML
       Basic Metadata
-      Image/multimedia
       Tables
       Advanced Metadata
       Forms
