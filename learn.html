@@ -260,10 +260,13 @@
         Color is a style property that defines a text element's font color.  Red is a standard color defined in browsers.  Combining the two on a &lt;p&gt; tag, we get a red paragraph.
         I know we promised this tutorial would be only about HTML, but you've actually just learned a little CSS as well.  CSS stands for Cascading Style Sheets, and if HTML
         is how you define structure and content with elements, then CSS is how you style an element's appearance and how each element displays in the browser.  I know that's a lot,
-        so don't worry about CSS right now.  We'll work on that later.  We're going to stick  to HTML for now, but if you need a break, here's a link to a song to help you relax:
-        <a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">Brick House</a>.
+        so don't worry about CSS right now.  We'll work on that later.
       </p>
-      <h3>Links</h3>
+      <p>
+        We're going to stick  to HTML for now, but if you need a break, here's a link to a song to help you relax:
+        <a href="https://www.youtube.com/watch?v=rrBx6mAWYPU" target="_blank">Brick House</a>.
+      </p>
+      <h2>Links</h2>
       <p>
         Speaking of links, a link (or hyperlink) is how you can define a door to another webpage.  So far you've learned everything you need to build an HTML haus, but you're
         going to want to link your houses together.  The link in the last paragraph is one of those doorways and it's defined by using an HTML attribute called href, which stands
@@ -274,9 +277,47 @@
       <textarea><a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">Brick House</a></textarea>
       <p>
         As you can see, the href attribute has a value of "https://www.youtube.com/watch?v=rrBx6mAWYPU" which is the address to another website.  It is applied inside of the opening &lt;a&gt; tag, and
-        within the tag area you see the text that has been marked up "Brick House".  This is no different than using the &lt;mark&gt; tag, except this creates a link instead of a 
-        highlight.  It's standard for browsers to display links as underlined text, which is how anchors tags usually render.
+        between the two tags, you see the text that has been marked up "Brick House".  This is no different than using the &lt;mark&gt; tag, except this creates a link instead of a 
+        highlight.  It's standard for browsers to display links as underlined text, which is how anchor tags usually render.
       </p>
+      <h2>Images</h2>
+      <p>
+        Similar to anchor tags, the &lt;img&gt; tag stands for image and it references the location of an image.  When you use this tag, it references the image's location and then your
+        browser displays it for you to see.  Instead of using the href attribute though, the img element uses the src or source attribute.  
+      </p>
+      <label>
+        You can see an example here:
+        <textarea><img src="assets/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
+      </label>
+      <img src="assets/red-house-150.jpg" alt="Red house on side of green hill by Luke Stackpoole on Unsplash">
+      <p>
+        The src="assets/red-house-150.jpg" is referencing a file in relation to where my current html page that references the image is located.  In this case, it's inside of a subfolder
+        which is named "assets" and the image is named "red-house-150.jpg".  In this case, I was referencing an image on my computer, but you can also reference images on the internet by
+        using their exact location.  If you want to try, you can use the following address on your own HTML page: "https://html.haus/assets/red-house-150.jpg" 
+      </p>
+      <label>
+        Here's the HTML for you to try:
+        <textarea><img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
+      </label>
+      <p>
+      <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+        You may have noticed another attribute attached to each of these images.  Images have two required attributes: the src attribute and the alt attribute.
+      </p>
+      <p>
+        The alt attribute stands for alternate text and it should be a meaningful description of the image.  Remember all those different users?  Alt text is there for visually impaired
+        users who rely on a screen reader to experience your webpage.  Even though they can't see the image, they still need to be able to experience your page as if they could.  Their
+        screen reader will read the description you provide in your alternate text, so make sure you write a meaningful description there.  Also, screen readers already know that it's an
+        image, so there's no need to ever write "Photo of" or "Image of" in your alternate text.  This is duplicative and unnecessary.
+      </p>
+      <h2>Self Closing Tags</h2>
+      <p>
+        There's another peculiar thing above about img tags.  They don't have an ending or closing tag!  There's no such thing as a clsoing &lt;/img&gt; tag, in fact it's bad HTML.  That's
+        because certain tags are called self closing tags.  In an image's case, there's nothing for the image to wrap around, because the image itself is the element.  
+      </p>
+      <p>
+        <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
+      </p>
+      <hr>
       <!-- Finish anchor tag explanation -->
       <h3>Global Attributes</h3>
       <p>
@@ -291,11 +332,7 @@
         </ul>
         There are more global attributes, but these are the core six that you'll use widely and often.
       </p>
-      <p>
-        <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
-      </p>
 
-      <hr>
       <h2>Sectioning</h2>
       <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure, not
         visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
