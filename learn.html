@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <h1>Learning HTML</h1>
+      <h1>Learn HTML</h1>
       <p>
         HTML stands for Hypertext Markup Language.  Technically HTML is not a programming language.  It's called a markup language, because it's a way to <em>mark up</em>
         regular text to specify structure and meaning.  This is similar to how you physically mark up an important passage in a book by highlighting it.  When you highlight
@@ -38,7 +38,7 @@
                assets/highlighted-text-2700.jpg 2700w"
       alt="Highlighted book by Hannah Busing on Unsplash">
       <p>
-        HTML gives you the same tools, such as a highlighter or bold pen, to digitally mark up content.  You use HTML on the web to define the structure or 'mark up' the
+        HTML gives you the digital equivalent of a physical highlighter to mark up content.  You use HTML on the web to define the structure or 'mark up' the
         elements of a web page so that they have meaning beyond the text that is displayed.  These meanings follow rules and allow you to define your page in different elements.
         Elements are the building blocks of a website.
       </p>
@@ -164,17 +164,17 @@
         In the House of Usher example above, you probably noticed that certain text appear in <i>italics</i> and other text appears in <b>bold</b>.  You were introduced to this idea
         earlier with the &lt;mark&gt; tag, but we should circle back on why you use these elements now.  Adding meaning to text in the same line means adding additional
         meaning through tags to emphasize text, mark importance, or notate references.  These are less like bricks and more like your paint or
-        lights, the parts of your haus that draw attention to certain elements and add special extra meaning to your basic text. You probably also noticed that even 
+        lights, the parts of your haus that draw attention to certain elements and add extra meaning to your basic text. You probably also noticed that even 
         though we are using elements in the text above, they're not creating new blocks like a &lt;p&gt; or &lt;h#&gt; tag might.  That's because they're inline elements.
         Inline elements only effect text in the same line and do not alter the visual flow of the page or document.
       </p>
       <img src="assets/inline-block-combined.svg" alt="diagram of p block element and strong inline element" height="160" width="100%">
       <p>The book is an <strong>American Gothic masterwork</strong></p>
       <p>
-        So far you've learned a handful of inline elements, which you can now use to mark up your text with additional semantic meaning:
+        So far you've learned a handful of inline elements, which you can use to mark up your text with additional meaning:
         <ul>
           <li>&lt;mark&gt; stands for marked and is used to notate or reference importance in text and it typically displays as <mark>highlighted text</mark></li>
-          <li>&lt;em&gt; is short for emphasis is used to stress emphasis in a passage and typically displays as <em>italicized text</em></li>
+          <li>&lt;em&gt; stands for emphasis and is used to add stress to a passage and typically displays as <em>italicized text</em></li>
           <li>&lt;strong&gt; is used to to indicate strong importance, seriousness, or urgency and usually displays as <strong>bold text</strong></li>
         </ul>
       </p>
@@ -251,27 +251,32 @@
         </ul>
       </p>
       <p>
-        Here's a visual example showing an attribute called style which you can use to apply display changes to your element.
+        Here's a visual example showing an attribute called style which you can use to change how your element is displayed.
       </p>
       <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="100%">
       <p>And here's how the actual HTML looks:</p>
       <p style="color: red">She's a brick haus!</p>
       <p>
-        Color is a CSS property that defines a text element's font color.  Red is a standard color defined in browsers.  Combining the two on a p tag, we get a red paragraph.
-      </p>
-      <p>
+        Color is a style property that defines a text element's font color.  Red is a standard color defined in browsers.  Combining the two on a &lt;p&gt; tag, we get a red paragraph.
         I know we promised this tutorial would be only about HTML, but you've actually just learned a little CSS as well.  CSS stands for Cascading Style Sheets, and if HTML
-        is how you define structure and content with elements, then CSS is how you define element appearance and how each element displays in the browser.  We're going to stick
-        to HTML for now, but if you think you're ready to jump ahead to CSS, then try out our next tutorial via a link to <a href="https://css.city/">CSS.City</a>.
+        is how you define structure and content with elements, then CSS is how you style an element's appearance and how each element displays in the browser.  I know that's a lot,
+        so don't worry about CSS right now.  We'll work on that later.  We're going to stick  to HTML for now, but if you need a break, here's a link to a song to help you relax:
+        <a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">Brick House</a>.
       </p>
+      <h3>Links</h3>
       <p>
         Speaking of links, a link (or hyperlink) is how you can define a door to another webpage.  So far you've learned everything you need to build an HTML haus, but you're
-        going to want to build separate abodes, link them together, and even give your guests doors or pathways to other homes as well.  The link in the last paragraph is one 
-        of those doorways and it's defined by using an HTML attribute called href, which stands for hypertext reference.  The href attribute is applied to an HTML element called
-        an anchor tag &lt;a&gt;.  It's a hypertext reference because it's referring to another piece of HTML.
+        going to want to link your houses together.  The link in the last paragraph is one of those doorways and it's defined by using an HTML attribute called href, which stands
+        for hypertext reference.  The href attribute is applied to an HTML element called an anchor tag &lt;a&gt;.  It's a hypertext reference because it's referring to another 
+        piece of HTML.
       </p>
-      <p>The link above to CSS.City looks like this in HTML:</p>
-      <textarea><a href="https://css.city/">CSS.City</a></textarea>
+      <p>The link above to The Commodores song looks like this in HTML:</p>
+      <textarea><a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">Brick House</a></textarea>
+      <p>
+        As you can see, the href attribute has a value of "https://www.youtube.com/watch?v=rrBx6mAWYPU" which is the address to another website.  It is applied inside of the opening &lt;a&gt; tag, and
+        within the tag area you see the text that has been marked up "Brick House".  This is no different than using the &lt;mark&gt; tag, except this creates a link instead of a 
+        highlight.  It's standard for browsers to display links as underlined text, which is how anchors tags usually render.
+      </p>
       <!-- Finish anchor tag explanation -->
       <h3>Global Attributes</h3>
       <p>
@@ -282,7 +287,7 @@
           <li>id, used to identify individual elements, mostly for the purpose of attaching CSS styles</li>
           <li>style, used to apply in line CSS styles, as the example above for style="color: red"</li>
           <li>tabindex, allows you to specify whether an element should be focusable and when</li>
-          <li>title, </li>
+          <li>title, allows you to specify extra information about an element</li>
         </ul>
         There are more global attributes, but these are the core six that you'll use widely and often.
       </p>
@@ -291,9 +296,6 @@
       </p>
 
       <hr>
-
-      <h2>Links</h2>
-      <a href="https://www.youtube.com/watch?v=CGib6okEeZ4">A House is Not a Home</a>
       <h2>Sectioning</h2>
       <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure, not
         visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
