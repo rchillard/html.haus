@@ -64,6 +64,44 @@
         they will follow this pattern.  In our haus metaphor, you can think of this kind of element as being the first brick or building material.  The slash "/" in the
         closing tag is the mortar that seals the element, completing it and holding it in place.
       </p>
+      <h2>Getting Started</h2>
+      <p>
+        Before we go any further, as a part of active learning it's important to do exercises and practice, as well as read and comprehend.  The active exercising of the new knowledge
+        you just learned is what will actually ingrain that knowledge in your brain, making it accessible to you later on.  For that reason, for every HTML element and new concept we
+        learn, I highly recommend you type out the HTML or copy and paste the sample I provide and change it to make it your own.  You will learn through this tutorial, but you should
+        also build a sample page to go along with your learning.  Build as you learn.
+      </p>
+      <h3>Basic Template</h3>
+      <p>
+        You don't need to understand all of this markup to use the template below, but it will help you get started faster.
+      </p>
+      <label>
+        Open a text editor and copy and paste the text below into a blank file:
+        <textarea rows="10">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playground</title>
+  </head>
+  <body>
+    <mark>The haus is on fire!</mark>
+  </body>
+</html>
+        </textarea>
+      </label>
+      <p>Save the file as index.html and open it in your browser of choice.  You should see your sample page!</p>
+      <p>
+        You already learned that elements start with one tag and end with another closing tag.  As you can see above there are a lot of elements, including one called
+        body.  For now, all you need to focus on is that space between the body opening and closing tags.  That will be your playground.  As you go through parts of
+        this tutorial, I will provide sample HTML for you.  Feel free to transpose it manually by typing or copying and pasting, but make sure you take the time to make it your own.
+        This part is really important.  Here are some ideas on pages you could build as part of this tutorial:
+      </p>
+      <ul>
+        <li>Synopsis of your favorite book</li>
+        <li>Article dedicated to a band</li>
+        <li>Personal diary or blog</li>
+      </ul>
+      <p>Choose a project and as you learn HTML, utilize your new skills to build out a page of your own.  It will help the knowledge stick.  Really.</p>
       <h2>Text Content</h2>
       <p>
         The &lt;mark&gt; tag above helps us describe text content.  Remember that websites started as pages or documents, and text today is just as much a fundamental part of
@@ -91,13 +129,13 @@
                assets/brickwall-2700.jpg 2700w"
       alt="Red bricks peaking through white stucco wall by Gabriele Diwald on Unsplash">
       <p>
-        I lied before because the &lt;p&gt; tag should really be the first building block in your world of new materials.  See how the &lt;p&gt; tag is creating a new 
+        I lied before because the p tag should really be the first building block in your world of new materials.  See how the p tag is creating a new 
         visual block right here, in this very paragraph, which is separate and apart from the image above and the next paragraph below?  
         That's the purpose of this block level type of element.
       </p>
       <label>
         Here's the raw HTML from the paragraph above in an editable and easy to copy and paste format:
-        <textarea rows="3"><p>I lied before because the &lt;p&gt; tag should really be the first building block in your world of new materials.  See how the &lt;p&gt; tag is creating a new visual block right here, in this very paragraph, which is separate and apart from the image above and the next paragraph below?  That's the purpose of this block level type of element.</p></textarea>  
+        <textarea rows="3"><p>I lied before because the p tag should really be the first building block in your world of new materials.  See how the p tag is creating a new visual block right here, in this very paragraph, which is separate and apart from the image above and the next paragraph below?  That's the purpose of this block level type of element.</p></textarea>  
       </label>
        <p>
         All right, so you've learned how to start stacking bricks in the form of paragraphs, using the &lt;p&gt; tag, but what do the bricks hold on to?  How do you give
@@ -325,7 +363,7 @@
       </p>
       <ul>
         <li>What an HTML element is</li>
-        <li>Different kinds elements: block vs. inline</li>
+        <li>Different kinds of elements: block vs. inline</li>
         <li>How to structure text content using headings and paragraphs</li>
         <li>What Semantic HTML means and why you should write it</li>
         <li>The importance of universal design and accessibility</li>
@@ -337,33 +375,50 @@
         In order to really absorb and retain this information, I recommend you follow a cycle of first learn, then build, and finally teach.  Building this website, HTML.Haus, was part of my
         own study to learn HTML5 and fulfill the teach part of my cycle.  Take the concepts you've learned today and tell your own story by building a webpage.  The internet needs you.
       </p>
+      <label>
+        Here's a template to get you started covering all the elements we learned together today:
+        <textarea rows="13">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title Appears in Browser Tab</title>
+  </head>
+  <body>
+    <h1>This is your H1</h1>
+    <p>I'm placeholder text.  I learned how to do this on <a href="https://html.haus/">HTML.Haus</a>.</p>
+    <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+  </body>
+</html>
+        </textarea>
+      </label>
+      <p>You can copy and paste this into a text editor and save the file as index.html.  Loading that file in a browser shows your page!</p>
+      <h2>Next Steps</h2>
       <p>
-        Of course, there's a lot more to learn after this.  You learned how to build a house today, but you can build veritable castles out of HTML.  To keep learning, check out these other sections:
+        Of course, there's a lot more to learn after this.  You learned how to build a house today, but you can build veritable castles out of HTML.  There are big parts of HTML that this
+        introductory tutorial didn't cover, such as forms and tables, interactive elements, and metadata.  To keep learning these additional areas, check out these other sections:
       </p>
       <ul>
-        <li><a href="reference.html">Referencing HTML elements and properties</a></li>
-        <li><a href="templates.html">HTML templates for rapid deployment</a></li>
+        <li><a href="reference.html">Reference of all HTML elements and properties</a></li>
+        <li><a href="templates.html">HTML templates from basic to advanced</a></li>
       </ul>
       <p>
         <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
       </p>
       <hr>
-      <!-- Finish anchor tag explanation -->
-      <h3>Global Attributes</h3>
-      <p>
-        Here's a list of common HTML attributes that you can apply to any element:
-        <ul>
-          <li>class, used to group elements together, as well as attach CSS styles to them collectively</li>
-          <li>hidden, specifies whether the element should be visible or not</li>
-          <li>id, used to identify individual elements, mostly for the purpose of attaching CSS styles</li>
-          <li>style, used to apply in line CSS styles, as the example above for style="color: red"</li>
-          <li>tabindex, allows you to specify whether an element should be focusable and when</li>
-          <li>title, allows you to specify extra information about an element</li>
-        </ul>
-        There are more global attributes, but these are the core six that you'll use widely and often.
-      </p>
 
-      <h2>Sectioning</h2>
+      <!-- TO DO: -->
+      <!-- 
+      Sectioning
+      Semantic HTML
+      Basic Metadata
+      Tables
+      Advanced Metadata
+      Forms
+      Interactive
+      -->
+
+      <!-- <h2>Sectioning</h2>
       <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure, not
         visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
         relationship between HTML <em>logical structure</em> and how it's visually presented.  Just conventions:
@@ -391,18 +446,8 @@
         <div id="footer">
           <p>footer</p>
         </div>
-      </div>
+      </div> -->
 
-      <!-- TO DO: -->
-      <!-- 
-      Sectioning
-      Semantic HTML
-      Basic Metadata
-      Tables
-      Advanced Metadata
-      Forms
-      Interactive
-      -->
       <!-- <h2>Future Images</h2>
       <img src="assets/valeriy-kryukov-aRvKSkRO-vw-unsplash.jpg" alt="Red bricks with different languages stamped into them by Valeriy Kryukov on Unsplash" width="90%">
       
@@ -410,5 +455,8 @@
       
       <img src="assets/ashkan-forouzani-qhcml9Xo_5k-unsplash.jpg" alt="Bright red door in front of red brick wall by Ashkan Forouzani on Unsplash" width="90%"> -->
     </main>
+    <footer>
+      Created by <a href="https://rchillard.com/">RCH</a>
+    </footer>
   </body>
 </html>
