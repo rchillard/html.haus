@@ -32,18 +32,18 @@
       including how you give your page a title (that appears in your browser tab) and how to link to a CSS stylesheet:
     </p>
     <textarea rows="13">
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="UTF-8">
-        <title>Title Appears in Browser Tab</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-      </head>
-      <body>
-        <h1>This is your H1</h1>
-        <p>I'm a placeholder text</p>
-      </body>
-    </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title Appears in Browser Tab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>This is your H1</h1>
+    <p>I'm a placeholder text</p>
+  </body>
+</html>
     </textarea>
 
     <h2>Basic Layout</h2>
@@ -52,28 +52,57 @@
       header, main, and footer.  In general, every one of your pages should probably have all three of these sections.  Here's how it looks:
     </p>
     <textarea rows="21">
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="UTF-8">
-        <title>Title Appears in Browser Tab</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-      </head>
-      <body>
-        <header>
-          Site title here, maybe also a navbar? Header things
-        </header>
-        <main>
-          <h1>This is your H1</h1>
-          <p>I'm a placeholder text</p>
-        </main>
-        <footer>
-          Copyright info, site map, other footer things
-        </footer>
-      </body>
-    </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title Appears in Browser Tab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      Site title here, maybe also a navbar? Header things
+    </header>
+    <main>
+      <h1>This is your H1</h1>
+      <p>I'm a placeholder text</p>
+    </main>
+    <footer>
+      Copyright info, site map, other footer things
+    </footer>
+  </body>
+</html>
     </textarea>
 
+    <h2>Basic Metadata</h2>
+    <p>
+      Building on the basic layout and page, the following template below also has necessary meta tags needed to pass basic SEO requirements of a Chrome lighthouse audit, 
+      as well as lang="en" set.  These additional meta tags tell browsers (and search engines) how to size their screen and give a description of the website.
+    </p>
+    <textarea rows="23">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="A meaningful description or synopsis of your page and its contents">
+    <title>Title Appears in Browser Tab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      Site title here, maybe also a navbar? Header things
+    </header>
+    <main>
+      <h1>This is your H1</h1>
+      <p>I'm a placeholder text</p>
+    </main>
+    <footer>
+      Copyright info, site map, other footer things
+    </footer>
+  </body>
+</html>
+    </textarea>
     <!-- TO DO 
     - Basic page skeleton
     - Navigation/menu bar
