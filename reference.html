@@ -20,22 +20,27 @@
       </nav>
     </header>
     <p>
-      <em>This page is in progress!  Come back later when it's finished.</em>
+      <em>This page is still under construction!  Come back later when it's finished.</em>
     </p>
     <h1>Catalog of HTML Tags</h1>
     <h2>Introduction</h2>
     <p>
       This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference.  
       Hover over HTML in the previous sentence to see an example.  As part of this introduction, I just showed you how to use the abbr or abbreviation tag.
-      Here's the code that made this happen:
     </p>
+    <label>
+      Here's the code that made this happen:
     <textarea>This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference!</textarea>
+    </label>
     <p>
       So, why is the above in a textarea tag?  Well, I'll tell you: textarea is a raw text element, meaning it displays whatever appears inside of it as raw
       or plain text, even including HTML tags.  The nice part is that you can display HTML tags inside of a textarea with very little extra work.  This is 
-      important for demonstration and teaching persons.  Let me show you, this is the HTML from the textarea above:
+      important for demonstration and teaching persons.
     </p>
+    <label>
+      This is the HTML from the textarea above:
     <textarea>&lt;textarea&gt;This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference! &lt;/textarea&gt; </textarea>
+    </label>
     <p>
       But how do you embed one textarea inside of another?  Won't the browser think the first closing &lt;/textarea&gt; tag is real and close the actual textarea?
       Yes, exactly.  That's true! In order to get around this special case, you have escape the opening tag (left arrow) or &lt; with a special sequence of characters.
