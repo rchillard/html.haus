@@ -64,11 +64,11 @@
         they will follow this pattern.  In our haus metaphor, you can think of this kind of element as being the first brick or building material.  The slash "/" in the
         closing tag is the mortar that seals the element, completing it and holding it in place.
       </p>
-      <h2>Getting Started</h2>
+      <h2>Getting Started Building</h2>
       <p>
-        Before we go any further, as a part of active learning it's important to do exercises and practice, as well as read and comprehend.  The active exercising of the new knowledge
+        Before we go any further, as a part of active learning it's important to do exercises and practice, as well as read and comprehend.  Actively exercising the new knowledge
         you just learned is what will actually ingrain that knowledge in your brain, making it accessible to you later on.  For that reason, for every HTML element and new concept we
-        learn, I highly recommend you type out the HTML or copy and paste the sample I provide and change it to make it your own.  You will learn through this tutorial, but you should
+        learn, I highly recommend you type out the HTML.  You can copy and paste the sample I provide, but retyping it will help your retention.  You will learn through this tutorial, but you should
         also build a sample page to go along with your learning.  Build as you learn.
       </p>
       <h3>Basic Template</h3>
@@ -76,7 +76,7 @@
         You don't need to understand all of this markup to use the template below, but it will help you get started faster.
       </p>
       <label>
-        Open a text editor and copy and paste the text below into a blank file:
+        Open a text editor and copy and paste the contents below into a blank file:
         <textarea rows="10">
 <!DOCTYPE html>
 <html>
@@ -101,7 +101,7 @@
         <li>Article dedicated to a band</li>
         <li>Personal diary or blog</li>
       </ul>
-      <p>Choose a project and as you learn HTML, utilize your new skills to build out a page of your own.  It will help the knowledge stick.  Really.</p>
+      <p>Choose a project, and as you learn HTML, utilize your new skills to build out a page of your own.  It will help the knowledge stick.</p>
       <h2>Text Content</h2>
       <p>
         The &lt;mark&gt; tag above helps us describe text content.  Remember that websites started as pages or documents, and text today is just as much a fundamental part of
@@ -159,7 +159,7 @@
         <h6>h6</h6>
       </div>
       <p>
-        It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a subordinate idea (&lt;h3&gt;) above a heading (&lt;h2&gt;)
+        It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a related subordinate idea (&lt;h3&gt;) above a superior heading (&lt;h2&gt;)
         that is higher in the hiearchy.  Here's an example to demonstrate what I mean: 
       </p>
         <div class="container" style="border: 2px solid #FF4500; padding: 1rem">
@@ -183,9 +183,28 @@
         </div>
       <p>The example above shows the way we categorize and compartmentalize information following a hierarchy.  The title of the story is the
           &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;, because they are subordinate to the h1 and they help separate the editor's background information from 
-          the actual story itself.  And then finally, even within the Background section, there's &lt;h3&gt; elements to denote subsections of the background, Publication 
+          the actual story itself.  And then finally, even within the Background section, there's &lt;h3&gt; elements to denote subsections of the Background, Publication 
           History and Critical Acclaim.  All of these headings help communicate how ideas are related to one another.  They serve as the wooden frame that defines the structure of your content.
       </p>
+      <label>The HTML that serves as the framing with headings:
+        <textarea rows="19">
+<h1>The Fall of the House of Usher</h1>
+<h2>Background</h2>
+<h3>Publication History</h3>
+<p>
+  The Fall of the House of Usher by Edgar Allan Poe was originally published in <em>Burton's Gentleman's</em>...
+</p>
+<h3>Critical Acclaim</h3>
+<p>
+  The short story is a tale of haunting tone that relies on an unnamed narrator to convey a sense of unsettled fear.  It is largely regarded as an <strong>American Gothic masterwork</strong>...
+</p>
+<h2>Story</h2>
+<p>
+  DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was --but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit...
+</p>
+        </textarea>
+      </label>
+
       <img src="assets/wooden-frame-600.jpg"
       sizes="(max-width: 600px) 95vw,
              (min-width: 600px) 90vw, 
@@ -208,6 +227,15 @@
       </p>
       <img src="assets/inline-block-combined.svg" alt="diagram of p block element and strong inline element" height="160" width="100%">
       <p>The book is an <strong>American Gothic masterwork</strong></p>
+      <label>The HTML used to display the text above:
+        <textarea><p>The book is an <strong>American Gothic masterwork</strong></p></textarea>
+      </label>
+      <p>
+        You might notice that in our diagram the &lt;p&gt; tag is on different lines, while in the HTML above, the &lt;p&gt; tags are on the same line.  That's because
+        HTML ignores white space found outside of tags. Since the &lt;p&gt; element informs structure as well as meaning, you can add linebreaks between blocks of text
+        in HTML and only a new set of &lt;p&gt; tags (or another block element) will actually render as a new line on the website's page. It makes it much easier to read
+        HTML if you wrap the tag around the content and indent it properly, as the diagram shows above.  This is particulary useful for long paragraphs of text.
+      </p>
       <p>
         So far you've learned a handful of inline elements, which you can use to mark up your text with additional meaning:
         <ul>
@@ -228,7 +256,7 @@
       </p>
       <p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p>
       <label>
-        And the HTML:
+        The HTML shows how tags need to be closed in order:
       <textarea><p>Luther Vandross was a special talent, possessing <em>The Velvet Voice</em> and supporting lead singers across four decades.</p></textarea>
       </label>
       <p>
@@ -253,7 +281,7 @@
       <p>
         The extra meaning added by the strong tag matters because of that last phrase above in the formal definition: <em>Semantic HTML is processed by... many other user agents</em>. 
         One example of a user agent might be in a browser, whereby you're visually experiencing the content.  However, other examples of user agents reading your webpage might
-        come in the form of visually impaired humans experiencing your webpage without a browser, instead through a screen reader; or even beyond humans, computer programs
+        come in the form of visually impaired people experiencing your webpage without a browser, instead through a screen reader; or even beyond people, computer programs
         like search engines will be reading your webpage and determining what is important about it (or not).  In either case, by using the proper tags you convey
         semantic meaning about your house, which makes it easier for all users to consume your content.
       </p>
@@ -276,12 +304,12 @@
                assets/red-heart-brickwall-2700.jpg 2700w"
       alt="Black heart drawn on red brick wall by Ashkan Forouzani on Unsplash">
       <p>
-        You've learned how to write a story.  You can build a basic house using HTML.  You've got an idea why it's important to build that house for everyone.  Let's start talking
+        You've learned how to write a story.  You can build a basic house using HTML, and now you understand why it's important to build that house for everyone.  Let's start learning
         about how we might decorate our house, connect the rooms with doors and hallways, and give the place some character.  I'm talking about HTML attributes. 
       </p>
       <h2>Attributes</h2>
       <p>
-        An HTML attribute is an extra characteristic that you can add to a basic HTML tag, which will enrich it with additional information about the tag.  There are a few rules
+        An HTML attribute is an extra characteristic that you can add to a basic HTML tag which will enrich it with additional information about the tag.  There are a few rules
         to follow when you're adding attributes to your HTML tags:
         <ul>
           <li>Attributes are always specified in the start or opening tag</li>
@@ -294,6 +322,9 @@
       <img src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160" width="100%">
       <p>And here's how the actual HTML looks:</p>
       <p style="color: red">She's a brick haus!</p>
+      <label>The raw HTML for your copying pleasure:
+        <textarea><p style="color: red">She's a brick haus!</p></textarea>
+      </label>
       <p>
         Color is a style property that defines a text element's font color.  Red is a standard color defined in browsers.  Combining the two on a &lt;p&gt; tag, we get a red paragraph.
         I know we promised this tutorial would be only about HTML, but you've actually just learned a little CSS as well.  CSS stands for Cascading Style Sheets, and if HTML
@@ -319,6 +350,47 @@
         between the two tags, you see the text that has been marked up "Brick House".  This is no different than using the &lt;mark&gt; tag, except this creates a link instead of a 
         highlight.  It's standard for browsers to display links as underlined text, which is how anchor tags usually render.
       </p>
+      <p>
+        For building your own website, you can link to another .html page on your computer by referencing it.  It doesn't have to be on the internet.  Your reference will
+        follow the structure of your computer's file folders.  Sometimes it's easier to see this with an example.
+      </p>
+      <label>Here's the index.html page with a link to a new page:
+        <textarea rows="12">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playground</title>
+  </head>
+  <body>
+    <p>
+      Here's a link to<a href="about.html">About Me</a>.
+    </p>
+  </body>
+</html>
+        </textarea>
+      </label>
+      <p>
+        Do you see how the link above doesn't have an https as part of it?  That's because it's a local reference to a file.  Your site isn't on the internet yet;
+        https is a protocol that the internet uses called Hypertext Transfer Protocol.  I bet you can guess what it does!
+      </p>
+      <label>Here's the about.html page:
+        <textarea rows="14">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <p>I'm becoming a builder!  A budding web developer!</p>
+    <p>
+      Return to the <a href="index.html">Home Page</a>.
+    </p>
+  </body>
+</html>
+        </textarea>
+      </label>
+      <p>For the example above to work, it's important that you have saved both index.html and about.html in the same file folder!</p>
       <h2>Images</h2>
       <p>
         Similar to anchor tags, the &lt;img&gt; tag stands for image and it references the location of an image.  When you use this tag, it references the image's location and then your
@@ -355,7 +427,54 @@
       <p>
         You probably noticed above that there's another peculiar thing about img tags.  They don't have an ending or closing tag!  There's no such thing as a closing &lt;/img&gt; tag, 
         in fact it's bad HTML.  That's because certain elements don't need a closing tag, because they stand alone without having to encompass anything else.  In an image's case, there's
-        nothing for the image to wrap around, because the image itself is the element.  The extra ending tag wouldn't be useful for this element.  That's why it's called a self closing tag.
+        nothing for the image to wrap around, because the image itself is the element.  The extra ending tag wouldn't be useful for this element.  That's why it's a self closing tag.
+      </p>
+      <h2>Hanging the Roof</h2>
+      <p>
+        It's time to revisit where we started, bring it all together, and put the roof on your HTML house.
+      </p>
+      <p>
+        At the beginning of this tutorial, I shared a template without explaining it. I wanted to get you into building HTML as fast as I could, so we skipped a 
+        few basic parts.  Before you finish, it's important to understand them.
+      </p>
+      <label>
+          Our starter template from the beginning:
+          <textarea rows="10">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playground</title>
+  </head>
+  <body>
+    <mark>The haus is on fire!</mark>
+  </body>
+</html>
+          </textarea>
+      </label>
+      <p>
+        All HTML documents are wrapped in a parent &lt;html&gt; tag.  Inside of the HTML element, there are essential two component parts:
+        <ul>
+          <li>head</li>
+          <li>body</li>
+        </ul>
+        The head element contains information about the document or page that is important for your computer's browser (and other user agents, such as search engines),
+        but is not displayed to you visually as part of the page.  As an example in the head tag above, there's a title element, which defines the text that appears in
+        your browser's tab, giving a title to your page.  There are many more elements that can go in the head, but title is the first one you should learn.
+      </p>
+      <p>
+        The body element contains your actual page, and it's what you've been working in this entire time.  HTML demands and requires that the body element follow the head
+        and that the entire content of your webpage is captured inside the body.
+      </p>
+      <p>
+        I like to think of the &lt;head&gt; as being the the attic of your HTML house, where important things like ducts, wiring, and air conditioning units live, except
+        in HTML these things are the title of your page, links to CSS styles, or maybe even metadata about your website.  You never see what is in the attic, but the roof of
+        the house is supported by the attic, so it still serves a very important purpose.  Similarly, the body is the house itself, the part you experience as the user.
+      </p>
+      <h3>Metadata</h3>
+      <p>
+        Metadata in HTML can help you describe the author of the webpage or the description that should appear in search results.  Think of this as additional information that
+        other user agents might need in order to process, categorize, or understand your page correctly.  Without delving too deeply into this, I recommend you read through the 
+        conclusion and then check out the References section for a peek into all the possibilities.
       </p>
       <h2>Conclusion</h2>
       <p>
@@ -374,7 +493,7 @@
       </ul>
       <p>
         In order to really absorb and retain this information, I recommend you follow a cycle of first learn, then build, and finally teach.  Building this website, HTML.Haus, was part of my
-        own study to learn HTML5 and fulfill the teach part of my cycle.  Take the concepts you've learned today and tell your own story by building a webpage.  The internet needs you.
+        own study to learn HTML5 and fulfill the teach part of my cycle.  Take the concepts you've learned today and tell your own story by building a webpage.  The internet needs you.  We need you.
       </p>
       <label>
         Here's a template to get you started covering all the elements we learned together today:
@@ -383,11 +502,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Title Appears in Browser Tab</title>
+    <title>Title Appears in Top of Browser Window</title>
   </head>
   <body>
-    <h1>This is your H1</h1>
-    <p>I'm placeholder text.  I learned how to do this on <a href="https://html.haus/">HTML.Haus</a>.</p>
+    <h1>Congratulations</h1>
+    <p>I'm proud of you for learning HTML and building your very own <a href="https://html.haus/">HTML.Haus</a>.</p>
     <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
   </body>
 </html>
@@ -403,61 +522,9 @@
         <li><a href="reference.html">Reference of all HTML elements and properties</a></li>
         <li><a href="templates.html">HTML templates from basic to advanced</a></li>
       </ul>
-      <p>
-        <em>This page is in progress, anything below this line is incomplete and a work in progress!  Come back later when it's finished.</em>
-      </p>
-      <hr>
-
-      <!-- TO DO: -->
-      <!-- 
-      Sectioning
-      Semantic HTML
-      Basic Metadata
-      Tables
-      Advanced Metadata
-      Forms
-      Interactive
-      -->
-
-      <!-- <h2>Sectioning</h2>
-      <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure, not
-        visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
-        relationship between HTML <em>logical structure</em> and how it's visually presented.  Just conventions:
-      </p>
-      <div id="layout">
-        <p>body</p>
-        <div id="header">
-          <p>header</p>
-          <p style="text-align: center">nav</p>
-        </div>
-        <div id="wrapper">
-          <div id="main">
-            <p>main</p>
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
-            <h4>h4</h4> 
-            <h5>h5</h5>
-            <h6>h6</h6>
-          </div>
-          <div id="aside">
-            <p>aside</p>
-          </div>
-        </div>
-        <div id="footer">
-          <p>footer</p>
-        </div>
-      </div> -->
-
-      <!-- <h2>Future Images</h2>
-      <img src="assets/valeriy-kryukov-aRvKSkRO-vw-unsplash.jpg" alt="Red bricks with different languages stamped into them by Valeriy Kryukov on Unsplash" width="90%">
-      
-      <img src="assets/hana-barakat-T1uOZ2kEDsA-unsplash.jpg" alt="Wooden staircase and orante wooden frame in red brick building by Hana Barakat on Unsplash" width="90%">
-      
-      <img src="assets/ashkan-forouzani-qhcml9Xo_5k-unsplash.jpg" alt="Bright red door in front of red brick wall by Ashkan Forouzani on Unsplash" width="90%"> -->
-    </main>
+      </main>
     <footer>
-      Created by <a href="https://rchillard.com/">RCH</a>
+      Made with <img src="assets/red-heart.png" alt="Red Heart" width="15px"> by <a href="https://rchillard.com/">RCH</a>
     </footer>
   </body>
 </html>
