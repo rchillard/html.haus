@@ -23,10 +23,13 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 0.9rem;
     grid-template-columns: 3% 94% 3%;
     /* width: 95vw; */
     /* 570 px */
+  }
+
+  nav {
+    font-size: 0.9rem;
   }
 }
 
@@ -37,6 +40,7 @@ body {
     /* width: 90vw; */
     /* 540 px */
   }
+
   nav {
     font-size: 1rem;
   }
@@ -62,6 +66,7 @@ body {
     /* width: 60vw; */
     /* 595.2 px */
   }
+
   nav {
     font-size: 1.2rem;
   }
@@ -74,6 +79,7 @@ body {
     /* width: 50vw; */
     /* 600 px */
   }
+
   nav {
     font-size: 1.3rem;
   }
@@ -81,27 +87,6 @@ body {
 
 header {
   grid-area: header;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-  text-align: center;
-}
-
-a {
-  color: var(--hausorange);
-}
-
-img {
-  max-width: 100%;
-}
-
-mark {
-  background-color: lightsalmon;
 }
 
 nav {
@@ -126,13 +111,31 @@ nav #templates {
   grid-column: 4;
 }
 
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+a {
+  color: var(--hausorange);
+}
+
+img {
+  max-width: 100%;
+}
+
+mark {
+  background-color: lightsalmon;
+}
+
 textarea {
   border: 1px solid var(--hausorange);
   width: 100%;
-}
-
-.container {
-  padding-left: 1rem;
 }
 
 #layout {
