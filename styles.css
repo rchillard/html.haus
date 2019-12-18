@@ -96,6 +96,7 @@ nav {
 }
 
 nav #title {
+  justify-self: start;
   grid-column: 1;
 }
 
