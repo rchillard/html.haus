@@ -122,6 +122,36 @@ footer {
   text-align: center;
 }
 
+article {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 2;
+  grid-column-gap: 1rem;
+  grid-template-areas:
+    "name description description"
+    "display code attributes";
+}
+
+.name {
+  grid-area: name;
+}
+
+.description {
+  grid-area: description;
+}
+
+.display {
+  grid-area: display;
+}
+
+.code {
+  grid-area: code;
+}
+
+.attributes {
+  grid-area: attributes;
+}
+
 a {
   color: var(--hausorange);
 }

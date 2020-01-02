@@ -21,105 +21,124 @@
       <p>
         <em>This page is still under construction!  Come back later when it's finished.</em>
       </p>
-      <h1>Catalog of HTML Tags</h1>
+      <h1>Tag Reference</h1>
       <h2>Introduction</h2>
-      <p>
-        This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference.  
-        Hover over HTML in the previous sentence to see an example.  As part of this introduction, I just showed you how to use the abbr or abbreviation tag.
-      </p>
-      <label>
-        Here's the code that made this happen:
-      <textarea>This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference!</textarea>
-      </label>
-      <p>
-        So, why is the above in a textarea tag?  Well, I'll tell you: textarea is a raw text element, meaning it displays whatever appears inside of it as raw
-        or plain text, even including HTML tags.  The nice part is that you can display HTML tags inside of a textarea with very little extra work.  This is 
-        important for demonstration and teaching persons.
-      </p>
-      <p>
-        This reference makes heavy use of the &lt;textarea&gt; tag in order to show raw HTML.
-      </p>
-      <!-- <label>
-        This is the HTML from the textarea above:
-      <textarea>&lt;textarea&gt;This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference! &lt;/textarea&gt; </textarea>
-      </label>
-      <p>
-        But how do you embed one textarea inside of another?  Won't the browser think the first closing &lt;/textarea&gt; tag is real and close the actual textarea?
-        Yes, exactly.  That's true! In order to get around this special case, you have escape the opening tag (left arrow) or &lt; with a special sequence of characters.
-      </p> -->
-      <h2>Structure of Catalog</h2>
-      <p>Each HTML element has four components as part of its reference:</p>
-      <ul>
-        <li>Name of Element</li>
-        <li>Live View/Display</li>
-        <li>Code Example</li>
-        <li>Attribues</li>
-      </ul>
-      <h2>Types of Tags</h2>
-      <ul>
-        <li>Normal tags</li>
-        <li>Self closing tags</li>
-      </ul>
-      <h2>Types of Elements</h2>
-      <p>HTML is divided into different types of elements, each family of which serves a purpose in structuring content for the user.  Some elements organize, Some
-      elements denote, some add tabular structures, while others allow you to submit data or interact with the page. Here are the different kinds of elements:</p>
-      <ul>
-        <li>Metadata</li>
-        <li>Sectioning</li>
-        <li>Text content</li>
-        <li>Text semantics</li>
-        <li>Multimedia</li>
-        <li>Embedded</li>
-        <li>Scripting</li>
-        <li>Edits</li>
-        <li>Tables</li>
-        <li>Forms</li>
-        <li>Interactive</li>
-        <li>Web Components</li>
-      </ul>
-      <h3>Metadata</h3>
-      <h3>Global Attributes</h3>
-      <p>
-        Here's a list of common HTML attributes that you can apply to any element:
+        <p>
+          This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference.  
+          Hover over HTML in the previous sentence to see an example.  As part of this introduction, I just showed you how to use the abbr or abbreviation tag.
+        </p>
+        <label>
+          Here's the code that made this happen:
+        <textarea>This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference!</textarea>
+        </label>
+        <p>
+          So, why is the above in a textarea tag?  Well, I'll tell you: textarea is a raw text element, meaning it displays whatever appears inside of it as raw
+          or plain text, even including HTML tags.  The nice part is that you can display HTML tags inside of a textarea with very little extra work.  This is 
+          important for demonstration and teaching persons.
+        </p>
+        <p>
+          This reference makes heavy use of the &lt;textarea&gt; tag in order to show raw HTML.
+        </p>
+      <h3>Structure of Catalog</h3>
+        <p>Each HTML element has four components as part of its reference in the catalog:</p>
         <ul>
-          <li>class, used to group elements together, as well as attach CSS styles to them collectively</li>
-          <li>hidden, specifies whether the element should be visible or not</li>
-          <li>id, used to identify individual elements, mostly for the purpose of attaching CSS styles</li>
-          <li>style, used to apply in line CSS styles, as the example above for style="color: red"</li>
-          <li>tabindex, allows you to specify whether an element should be focusable and when</li>
-          <li>title, allows you to specify extra information about an element</li>
+          <li>Name of Element</li>
+          <li>Description</li>
+          <li>Display/Live View</li>
+          <li>Code Example</li>
+          <li>Attribues</li>
         </ul>
-        There are more global attributes, but these are the core six that you'll use widely and often.
-      </p>
-      <h3>Sectioning</h3>
-      <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure not
-        visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
-        relationship between HTML <em>logical structure</em> and how it's visually presented.  Just conventions:
-      </p>
-      <div id="layout">
-        <p>body</p>
-        <div id="header">
-          <p>header</p>
-          <p style="text-align: center">nav</p>
-        </div>
-        <div id="wrapper">
-          <div id="main">
-            <p>main</p>
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
-            <h4>h4</h4> 
-            <h5>h5</h5>
-            <h6>h6</h6>
+        <p>You'll see this appear in order like in the following example of the abbr tag:</p>
+        <article>
+          <div class="name">
+            <p>Name</p>
+            <p>abbr</p>
           </div>
-          <div id="aside">
-            <p>aside</p>
+          <div class="description">
+            <p>Description</p>
+            <p>Used to capture an abbreviation, by default this displays a tooltip of the 'title' attribute on hover</p>
           </div>
-        </div>
-        <div id="footer">
-          <p>footer</p>
-        </div>
-      </div>
+          <div class="display">
+            <p>Display</p>
+            <abbr title="abbreviation">abbr</abbr>
+          </div>
+          <div class="code">
+            <p>Code</p>
+            <textarea><abbr title="abbreviation">abbr</abbr></textarea>
+          </div>
+          <div class="attributes">
+            <p>Attributes</p>
+            <ul>
+              <li>title</li>
+            </ul>
+          </div>
+        </article>
+      <h3>Types of Tags</h3>
+        <ul>
+          <li>Normal tags</li>
+          <li>Self closing tags</li>
+        </ul>
+      <h3>Global Attributes</h3>
+        <p>
+          Here's a list of common HTML attributes that you can apply to any element:
+          <ul>
+            <li>class, used to group elements together, as well as attach CSS styles to them collectively</li>
+            <li>hidden, specifies whether the element should be visible or not</li>
+            <li>id, used to identify individual elements, mostly for the purpose of attaching CSS styles</li>
+            <li>style, used to apply in line CSS styles, as the example above for style="color: red"</li>
+            <li>tabindex, allows you to specify whether an element should be focusable and when</li>
+            <li>title, allows you to specify extra information about an element</li>
+          </ul>
+          There are more global attributes, but these are the core six that you'll use widely and often.
+        </p>
+      <h2>Types of Elements</h2>
+        <p>HTML is divided into different types of elements, each family of which serves a purpose in structuring content for the user.  Some elements organize, Some
+        elements denote, some add tabular structures, while others allow you to submit data or interact with the page. Here are the different kinds of elements:</p>
+        <ul>
+          <li>Metadata</li>
+          <li>Sectioning</li>
+          <li>Text content</li>
+          <li>Text semantics</li>
+          <li>Multimedia</li>
+          <li>Embedded</li>
+          <li>Scripting</li>
+          <li>Edits</li>
+          <li>Tables</li>
+          <li>Forms</li>
+          <li>Interactive</li>
+          <li>Web Components</li>
+        </ul>
+      <h2>Catalog/Reference</h2>
+        <h3>Metadata</h3>
+        <h3>Sectioning</h3>
+          <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure not
+            visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
+            relationship between HTML <em>logical structure</em> and how it's visually presented.  Just conventions:
+          </p>
+          <div id="layout">
+            <p>body</p>
+            <div id="header">
+              <p>header</p>
+              <p style="text-align: center">nav</p>
+            </div>
+            <div id="wrapper">
+              <div id="main">
+                <p>main</p>
+                <h1>h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4> 
+                <h5>h5</h5>
+                <h6>h6</h6>
+              </div>
+              <div id="aside">
+                <p>aside</p>
+              </div>
+            </div>
+            <div id="footer">
+              <p>footer</p>
+            </div>
+          </div>
     </main>
     <footer>
       Made with <img src="assets/red-heart.png" alt="Red Heart" width="15px"> by <a href="https://rchillard.com/">RCH</a>
