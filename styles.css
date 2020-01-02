@@ -191,7 +191,7 @@ textarea {
 #main {
   background-color: lightgoldenrodyellow;
   float: left;
-  height: 20rem;
+  height: 22rem;
   padding-top: 0.25rem;
   width: 70%;
 }
@@ -199,7 +199,7 @@ textarea {
 #aside {
   background-color: lightsalmon;
   float: left;
-  height: 20rem;
+  height: 22rem;
   padding-top: 0.25rem;
   width: 30%;
 }
