@@ -55,7 +55,8 @@
       </p>
       <p>
         <strong>Easy</strong> means easy to use.  This page strikes a balance between including too much detail and not enough.  The goal is to provide the essentials, so 
-        that all the noise you find in other references is excluded.  Also, this reference is in a single HTML page so that you can search it using CTRL+F.
+        that all the noise you find in other references is excluded.  Also, this reference is in a single HTML page so that you can search it using CTRL+F.  In addition,
+        elements may not always be in perfect alphabetical order, but instead will consider dependent situations, such as when a parent element is necessary before children.
       </p>
       <p>
         <strong>Fast</strong> means that the page is rendered with minimal assets and no images, exclusively in HTML/CSS, so that it's lightning fast on any device.  Also, that
@@ -100,7 +101,7 @@
           it's self evident which tags are normal (with opening and closing tags) and which are self closing tags.  In cases where this really matters,
           the description will specify which type of tag the element uses.
         </p>
-      <h3>Global Attributes</h3>
+      <h3 id="global-attributes">Global Attributes</h3>
         <p>
           There are common HTML attributes that apply to every element.  This list is omitted from the reference for individual elements, because
           it would be incredibly duplicative and you should know them anyway.  Common or global HTML attributes:
@@ -161,6 +162,32 @@
                 </ul>
               </div>
             </article>
+            <article id="head">
+                <div class="name">
+                  <p>Name</p>
+                  <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></p>
+                </div>
+                <div class="description">
+                  <p>Description</p>
+                  <p>Place for metadata tags read by machine driven user agents (e.g. user's browser or search engine)</p>
+                </div>
+                <div class="display">
+                  <p>Display</p>
+                  N/A
+                </div>
+                <div class="code">
+                  <p>Code</p>
+                  <textarea>
+<head>
+  <base href="https://html.haus/">
+</head>
+                  </textarea>
+                </div>
+                <div class="attributes">
+                  <p>Attributes</p>
+                  <p><a href="#global-attributes">globals</a></p>
+                </div>
+              </article>
         <h3 id="sectioning">Sectioning</h3>
           <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure not
             visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
