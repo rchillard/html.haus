@@ -123,6 +123,7 @@ footer {
 }
 
 article {
+  border-left: 1px solid red;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 3;
@@ -131,6 +132,7 @@ article {
     "name description description reference"
     "display display code code"
     "attributes attributes attributes attributes";
+  padding-left: 1rem;
 }
 
 .name {
