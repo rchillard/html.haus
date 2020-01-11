@@ -125,14 +125,94 @@
         </ul>
       <h2>Catalog</h2>
         <h3 id="metadata">Metadata</h3>
-          <article id="base">
+          <article id="head">
+            <div class="name">
+              <p>Name</p>
+              <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></p>
+            </div>
+            <div class="description">
+              <p>Description</p>
+              <p>Container for metadata read by machine driven user agents (e.g. user's browser or search engine)</p>
+            </div>
+            <div class="display">
+              <p>Display</p>
+              N/A
+            </div>
+            <div class="code">
+              <p>Code</p>
+              <textarea>
+<head>Elements that add metadata go here</head>
+              </textarea>
+            </div>
+            <div class="attributes">
+              <p>Attributes</p>
+              <p><a href="#global-attributes">globals</a></p>
+            </div>
+          </article>
+          <article id="title">
               <div class="name">
                 <p>Name</p>
-                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">base</a></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">title</a></p>
               </div>
               <div class="description">
                 <p>Description</p>
-                <p>Specifies the base URL for all relative URLs in an HTML document</p>
+                <p>Set the page's title, which displays in the browser's menu bar</p>
+              </div>
+              <div class="display">
+                <p>Display</p>
+                See title in browser window
+              </div>
+              <div class="code">
+                <p>Code</p>
+                <textarea>
+<title>HTML Haus | Reference Elements</title>
+                </textarea>
+              </div>
+              <div class="attributes">
+                <p>Attributes</p>
+                <p><a href="#global-attributes">globals</a></p>
+              </div>
+          </article>
+          <article id="style">
+              <div class="name">
+                <p>Name</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">style</a></p>
+              </div>
+              <div class="description">
+                <p>Description</p>
+                <p>Defines CSS styles to be applied to the document</p>
+              </div>
+              <div class="display">
+                <p>Display</p>
+                <p style="color: lightcoral">Tag does not display but the effect of CSS shown here</p>
+              </div>
+              <div class="code">
+                <p>Code</p>
+<textarea rows="6">
+<style>
+  p {
+    color: lightcoral;
+  }
+</style>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p>Attributes</p>
+                <ul>
+                  <li>media: defines media to apply style to, accepts a media query value, defaulting to all if attribute missing</li>
+                  <li>nonce: cryptographic nonce (number used once) used to whitelist inline styles, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src">style-src CSP</a></li>
+                  <li>title: specifies an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Alternative_style_sheets">alternative style sheet set</a></li>
+                </ul>
+              </div>
+            </article>
+            <article id="link">
+              <div class="name">
+                <p>Name</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">link</a></p>
+              </div>
+              <div class="description">
+                <p>Description</p>
+                <p>Links to an external resource, such as a stylesheet, favicon, or JavaScript file</p>
               </div>
               <div class="display">
                 <p>Display</p>
@@ -140,42 +220,94 @@
               </div>
               <div class="code">
                 <p>Code</p>
-                <textarea><base href="https://html.haus/"></textarea>
+<textarea>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</textarea>
               </div>
               <div class="attributes">
                 <p>Attributes</p>
                 <ul>
-                  <li>href: hypertext reference or address</li>
-                  <li>target: keyword (_self, _blank, _parent, _top) or name of default browsing context to display the result of links</li>
+                  <li>href: hypertext reference or address of the external resources</li>
+                  <li>rel: relationship of linked document to current document, e.g. "stylesheet"</li>
+                  <li>type: MIME type such as text/html or text/css</li>
                 </ul>
               </div>
             </article>
-            <article id="head">
-                <div class="name">
-                  <p>Name</p>
-                  <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></p>
-                </div>
-                <div class="description">
-                  <p>Description</p>
-                  <p>Place for metadata tags read by machine driven user agents (e.g. user's browser or search engine)</p>
-                </div>
-                <div class="display">
-                  <p>Display</p>
-                  N/A
-                </div>
-                <div class="code">
-                  <p>Code</p>
-                  <textarea>
-<head>
-  <base href="https://html.haus/">
-</head>
-                  </textarea>
-                </div>
-                <div class="attributes">
-                  <p>Attributes</p>
-                  <p><a href="#global-attributes">globals</a></p>
-                </div>
-              </article>
+          <article id="base">
+            <div class="name">
+              <p>Name</p>
+              <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">base</a></p>
+            </div>
+            <div class="description">
+              <p>Description</p>
+              <p>Specifies the base URL for all relative URLs in an HTML document</p>
+            </div>
+            <div class="display">
+              <p>Display</p>
+              N/A
+            </div>
+            <div class="code">
+              <p>Code</p>
+              <textarea><base href="https://html.haus/"></textarea>
+            </div>
+            <div class="attributes">
+              <p>Attributes</p>
+              <ul>
+                <li>href: hypertext reference or address</li>
+                <li>target: keyword (_self, _blank, _parent, _top) or name of default browsing context to display the result of links</li>
+              </ul>
+            </div>
+          </article>
+          <article id="meta">
+              <div class="name">
+                <p>Name</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">meta</a></p>
+              </div>
+              <div class="description">
+                <p>Description</p>
+                <p>Sets metadata not covered by other tags</p>
+              </div>
+              <div class="display">
+                <p>Display</p>
+                N/A
+              </div>
+              <div class="code">
+                <p>Code</p>
+<textarea rows="6">
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="2; url=https://html.haus/reference.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reference for the most common and popular HTML elements, their tag syntax, sample code, and examples">
+</textarea>
+              </div>
+              <div class="attributes">
+                <p>Attributes</p>
+                <ul>
+                  <li>charset: declares the page's character encoding (please just use UTF-8)</li>
+                  <li>content: contains the value for the http-equiv or name attribute</li>
+                  <li>http-equiv: defines directives, allowing values named after HTTP headers</li>
+                    <ul>
+                      <li>content-security-policy: define a content policy for the current page, protecting against cross-site scripting</li>
+                      <li>refresh: number of seconds until page should be reloaded/redirected, requires inclusion of '; url='</li>
+                    </ul>
+                  <li>name: defines name of document-level metadata</li>
+                    <ul>
+                      <li>application-name: name of web application running in page (only used for applications)</li>
+                      <li>author</li>
+                      <li>description: short and accurate summary of the page's content</li>
+                      <li>generator: identifier of software that generated page</li>
+                      <li>keywords: words relevant to the page's content separated by commas</li>
+                      <li>referrer: address of previous webpage</li>
+                      <li>theme-color: suggested color used to customize display of page; content attribute accepts valid CSS color</li>
+                      <li>color-scheme: specifies light or dark color modes (accepts normal, light | dark, only light)</li>
+                      <li>publisher</li>
+                      <li>robots: defines behavior that web crawlers should follow</li>
+                      <li>viewport: used by mobile devices to hint at the initial size of the viewport</li>
+                    </ul>
+                </ul>
+              </div>
+            </article>
+
         <h3 id="sectioning">Sectioning</h3>
           <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure not
             visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
