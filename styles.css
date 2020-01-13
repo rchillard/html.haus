@@ -140,6 +140,11 @@ article {
   grid-area: name;
 }
 
+/* .name:nth-child(2) {
+  background-color: red;
+  font-size: 1.2em;
+} */
+
 .description {
   grid-area: description;
 }
