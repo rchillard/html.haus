@@ -24,14 +24,14 @@
       <h1>HTML Reference</h1>
       <h2>Introduction</h2>
         <p>
-          This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference.  There's plenty of reference documentation in the world. </p>
+          This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags, which can be used for reference.
         </p>
-        <p>Why build <em>another</em>?</p>
+        <p>There's plenty of HTML reference documentation in the world, so why build <em>another</em>?</p>
         <p>
           Other HTML reference documentation is either too verbose, meaning there's so much detail it makes it hard to find the key parts that you need, or
           it's too minimal, meaning there are important parts left off in favor of making it very condensed.  
         </p>
-        <p>This catalog aims to serve a goldilocks solution by trading comprehensive documentation for ease of use.</p>
+        <p>This catalog aims to serve a goldilocks solution by balancing comprehensive documentation with ease of use.</p>
       <h3>Goals of Reference</h3>
       <p>The goals of this reference catalog are to be:</p>
       <p>
@@ -162,7 +162,7 @@
               <p><a href="#global-attributes">global attributes</a></p>
             </div>
           </article>
-          <article id="title">
+          <article id="el-title">
               <div class="name">
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">&lt;title&gt;</a></p>
               </div>
@@ -369,6 +369,210 @@
                 </ul>
               </div>
             </article>
+            <article id="el-header">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">&lt;header&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Container for introductory content, navigation, site title, a logo, etc.</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="6">
+<header>
+  <nav>
+    <img src="logo.png" alt="site logo">
+  </nav>
+</header>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-nav">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Section that contains navigational links (menus, tables of content, indexes), often found in header</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="8">
+<header>
+  <nav>
+    <a href="learn.html">Learn</a>
+    <a href="reference.html">Reference</a>
+    <a href="templates.html">Templates</a>
+  </nav>
+</header>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-main">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Container for holding the content of the main or primary purpose of the document</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="6">
+<main>
+  <p>
+    This is a catalog of HTML tags, which can be used for reference.
+  </p>
+</main>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-aside">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">&lt;aside&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Portion of content with indirectly related content to the main section (sidebars, call-out boxes)</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="9">
+<p>HTML stands for Hyper Text Markup Language, and although it's not a programming language, it is the foundation of the web.</p>
+<aside>
+  <p>CSS, Cascading Style Sheets, work with HTML to help make up the web's view layer.</p>
+</aside>
+<p>HTML is called a markup language, because it's a way to <em>mark up</em> regular text to specify structure.  </p>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-article">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">&lt;article&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Self-contained portion of a document which is designed to be independently distributable or reusable (e.g. forum post, magazine article, blog entry)</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="10">
+<article>
+  <h2>HTML Haiku</h2>
+  <p>
+    The Website you seek <br>
+    Cannot be located, but <br>
+    Countless more exist. <br>
+    -- Joy Rothke
+  </p>
+</article>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-section">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">&lt;section&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Stand alone section that is not represented by another more specific content section element.  This is the sectioning version of a div or span (generic, without specific semantic meaning), but should not be used in place of a div.  A section should still appear in a document outline.</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="9">
+<section>
+  <h1>Glossary</h1>
+  <ol>
+    <li>CSS: Cascading Style Sheets, the styling language of the web</li>
+    <li>HTML: Hyper Text Markup Language, web technology used to define meaning and structure</li>
+    <li>JS: JavaScript, the programming or scripting language of the web</li>
+  </ol>
+</section>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-h1-h6">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">&lt;h1-h6&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Descending levels of section headings which are used to give titles and introduce content. &lt;h1&gt; represents the highest level section.  It's possible to have multiple sets of headings on a page, as long as they apply to different sections.</p>
+              </div>
+              <div class="display">
+                <span style="font-weight: bold; font-size: 0.9rem">Favorite Books</span>
+                  <p style="font-weight: bold; font-size: 0.8rem">Fantasy</p>
+                    <p style="font-weight: bold; font-size: 0.7rem">High/Epic</p>
+                    <ul style="font-size: 0.6rem">
+                      <li>The Lord of the Rings</li>
+                      <li>The Wheel of Time</li>
+                    </ul>
+                    <p style="font-weight: bold; font-size: 0.7rem">Magical Realism</p>
+                  <p style="font-weight: bold; font-size: 0.8rem">Science Fiction</p>
+              </div>
+              <div class="code">
+<textarea rows="10">
+<h1>Favorite Books</h1>
+  <h2>Fantasy</h2>
+    <h3>High/Epic</h3>
+    <ul>
+      <li>The Lord of the Rings</li>
+      <li>The Wheel of Time</li>
+    </ul>
+    <h3>Magical Realism</h3>
+  <h2>Science Fiction</h2>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+            <article id="el-footer">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">&lt;footer&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Footer for nearest content section (article, aside, nav, section) or root element (body)</p>
+              </div>
+              <div class="display">
+                <p>Displays content</p>
+              </div>
+              <div class="code">
+<textarea rows="4">
+<footer>
+  <span id="copyright">© 2020 HTML.Haus</span>
+</footer>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p><a href="#global-attributes">global attributes</a></p>
+              </div>
+            </article>
+                
         <h3 id="text-content">Text content</h3>
         <h3 id="text-semantics">Text semantics</h3>
         <h3 id="multimedia">Multimedia</h3>
