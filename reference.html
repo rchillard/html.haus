@@ -31,7 +31,7 @@
           Other HTML reference documentation is either too verbose, meaning there's so much detail it makes it hard to find the key parts that you need, or
           it's too minimal, meaning there are important parts left off in favor of making it very condensed.  
         </p>
-        <p>This catalog seeks to be a goldilocks solution by balancing ease of use against expansive documentation.</p>
+        <p>This catalog aims to serve a goldilocks solution by trading comprehensive documentation for ease of use.</p>
       <h3>Goals of Reference</h3>
       <p>The goals of this reference catalog are to be:</p>
       <p>
@@ -41,8 +41,9 @@
       </p>
       <p>
         <strong>Easy</strong> means easy to use.  This page strikes a balance between including too much detail and not enough.  The goal is to provide the essentials, so 
-        that all the noise you find in other references is excluded.  Also, this reference is in a single HTML page so that you can search it using CTRL+F.  In addition,
-        elements may not always be in perfect alphabetical order, but instead will consider dependent situations, such as when a parent element is necessary before children.
+        that all the noise you find in other references is excluded.  Also, this reference is in a single HTML page so that it is easily searchable.  In addition,
+        elements may not always be in perfect alphabetical order, but instead will consider dependent situations, such as when a parent element is necessary before children
+        (e.g. in the metadata section, head comes first, because it contains all metadata and is needed to create context and understand the other metadata elements).
       </p>
       <p>
         <strong>Fast</strong> means that the page is rendered with minimal assets and no images, exclusively in HTML/CSS, so that it's lightning fast on any device.  Also, that
@@ -93,13 +94,13 @@
           </div>
           <div class="attributes">
             <ul>
-              <li>title, determines tooltip text that user sees upon hovering over the abbreviationt tag</li>
+              <li>title, determines tooltip text that user sees upon hovering over the abbreviation tag</li>
             </ul>
           </div>
         </article>
       <h3>Types of Tags</h3>
-        <p>Other HTML references focus on categorizing tags as normal or self closing.  This one does not.  Since example code is provided with each element/tag, I think
-          it's self evident which tags are normal (with opening and closing tags) and which are self closing tags.  In cases where this really matters,
+        <p>Other HTML references focus on categorizing tags as normal or self closing.  This one does not.  Since example code is provided with each element/tag, it
+          should be clear which elements are normal (with opening and closing tags) and which are self closing tags.  In cases where this really matters,
           the description will specify which type of tag the element uses.
         </p>
       <h3 id="global-attributes">Global Attributes</h3>
@@ -140,69 +141,57 @@
         </ul>
       <h2>Catalog</h2>
         <h3 id="metadata">Metadata</h3>
+        <p>Metadata is data that describes other data or provides information in the form of a label.  For an HTML document, that means data about the title of the document, its relationship to other resources, how various user agents should treat it, and more.
+        </p>
           <article id="head">
             <div class="name">
-              <p>Name</p>
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">&lt;head&gt;</a></p>
             </div>
             <div class="description">
-              <p>Description</p>
-              <p>Container for metadata read by machine driven user agents (e.g. user's browser or search engine)</p>
+              <p>Container for all metadata and required as a part of any HTML document</p>
             </div>
             <div class="display">
-              <p>Display</p>
-              N/A
+              <p>Does not display</p>
             </div>
             <div class="code">
-              <p>Code</p>
               <textarea>
 <head>Elements that add metadata go here</head>
               </textarea>
             </div>
             <div class="attributes">
-              <p>Attributes</p>
-              <p><a href="#global-attributes">globals</a></p>
+              <p><a href="#global-attributes">global attributes</a></p>
             </div>
           </article>
           <article id="title">
               <div class="name">
-                <p>Name</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">&lt;title&gt;</a></p>
               </div>
               <div class="description">
-                <p>Description</p>
                 <p>Set the page's title, which displays in the browser's menu bar</p>
               </div>
               <div class="display">
-                <p>Display</p>
-                See title in browser window
+                <p>See title in browser window</p>
               </div>
               <div class="code">
-                <p>Code</p>
                 <textarea>
 <title>HTML Haus | Reference Elements</title>
                 </textarea>
               </div>
               <div class="attributes">
-                <p>Attributes</p>
-                <p><a href="#global-attributes">globals</a></p>
+                <p><a href="#global-attributes">global attributes</a></p>
               </div>
           </article>
           <article id="style">
               <div class="name">
-                <p>Name</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt;</a></p>
               </div>
               <div class="description">
-                <p>Description</p>
                 <p>Defines CSS styles to be applied to the document</p>
               </div>
               <div class="display">
-                <p>Display</p>
                 <p style="color: lightcoral">Tag does not display but the effect of CSS shown here</p>
               </div>
               <div class="code">
-                <p>Code</p>
 <textarea rows="6">
 <style>
   p {
@@ -212,7 +201,6 @@
 </textarea>
               </div>
               <div class="attributes">
-                <p>Attributes</p>
                 <ul>
                   <li>media: defines media to apply style to, accepts a media query value, defaulting to all if attribute missing</li>
                   <li>nonce: cryptographic nonce (number used once) used to whitelist inline styles, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src">style-src CSP</a></li>
@@ -222,25 +210,20 @@
             </article>
             <article id="link">
               <div class="name">
-                <p>Name</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">&lt;link&gt;</a></p>
               </div>
               <div class="description">
-                <p>Description</p>
                 <p>Links to an external resource, such as a stylesheet, favicon, or JavaScript file</p>
               </div>
               <div class="display">
-                <p>Display</p>
-                N/A
+                <p>Does not display</p>
               </div>
               <div class="code">
-                <p>Code</p>
 <textarea>
 <link rel="stylesheet" type="text/css" href="styles.css">
 </textarea>
               </div>
               <div class="attributes">
-                <p>Attributes</p>
                 <ul>
                   <li>href: hypertext reference or address of the external resources</li>
                   <li>rel: relationship of linked document to current document, e.g. "stylesheet"</li>
@@ -250,23 +233,18 @@
             </article>
           <article id="base">
             <div class="name">
-              <p>Name</p>
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">&lt;base&gt;</a></p>
             </div>
             <div class="description">
-              <p>Description</p>
               <p>Specifies the base URL for all relative URLs in an HTML document</p>
             </div>
             <div class="display">
-              <p>Display</p>
-              N/A
+              <p>Does not display</p>
             </div>
             <div class="code">
-              <p>Code</p>
               <textarea><base href="https://html.haus/"></textarea>
             </div>
             <div class="attributes">
-              <p>Attributes</p>
               <ul>
                 <li>href: hypertext reference or address</li>
                 <li>target: keyword (_self, _blank, _parent, _top) or name of default browsing context to display the result of links</li>
@@ -275,19 +253,15 @@
           </article>
           <article id="meta">
               <div class="name">
-                <p>Name</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">&lt;meta&gt;</a></p>
               </div>
               <div class="description">
-                <p>Description</p>
                 <p>Sets metadata not covered by other tags</p>
               </div>
               <div class="display">
-                <p>Display</p>
-                N/A
+                <p>Does not display</p>
               </div>
               <div class="code">
-                <p>Code</p>
 <textarea rows="6">
 <meta charset="utf-8" />
 <meta http-equiv="refresh" content="2; url=https://html.haus/reference.html">
@@ -296,7 +270,6 @@
 </textarea>
               </div>
               <div class="attributes">
-                <p>Attributes</p>
                 <ul>
                   <li>charset: declares the page's character encoding (please just use UTF-8)</li>
                   <li>content: contains the value for the http-equiv or name attribute</li>
@@ -326,7 +299,7 @@
         <h3 id="sectioning">Sectioning</h3>
           <p>Sectioning elements are used to organize a document into logical pieces.  Think of this as your document's outline.  Elements give logical structure not
             visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
-            relationship between HTML <em>logical structure</em> and how it's visually presented.  Just conventions:
+            relationship between HTML <em>logical structure</em> and how it's visually presented:
           </p>
           <div id="layout">
             <p>body</p>
@@ -352,6 +325,50 @@
               <p>footer</p>
             </div>
           </div>
+          <p>These are the conventions that most pages will follow.  Everything starts with the body tag though:</p>
+          <article id="body">
+              <div class="name">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">&lt;body&gt;</a></p>
+              </div>
+              <div class="description">
+                <p>Container for all visible content and a required part of any HTML document</p>
+              </div>
+              <div class="display">
+                <p>Displays as white space by default</p>
+              </div>
+              <div class="code">
+<textarea rows="6">
+<body>
+  <p>
+    All the document's content goes here
+  </p>
+</body>
+</textarea>
+              </div>
+              <div class="attributes">
+                <p>Attributes on the body tag all assign a function to be called when a certain event happens:</p>
+                <ul>
+                  <li>onafterprint</li>
+                  <li>onbeforeprint</li>
+                  <li>onbeforeunload</li>
+                  <li>onblur</li>
+                  <li>onerror</li>
+                  <li>onfocus</li>
+                  <li>onhashchange</li>
+                  <li>onlanguagechange</li>
+                  <li>onload</li>
+                  <li>onmessage</li>
+                  <li>onoffline</li>
+                  <li>ononline</li>
+                  <li>onpopstate</li>
+                  <li>onredo</li>
+                  <li>onresize</li>
+                  <li>onstorage</li>
+                  <li>onundo</li>
+                  <li>onunload</li>
+                </ul>
+              </div>
+            </article>
         <h3 id="text-content">Text content</h3>
         <h3 id="text-semantics">Text semantics</h3>
         <h3 id="multimedia">Multimedia</h3>
