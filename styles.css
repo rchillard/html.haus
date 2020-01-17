@@ -149,7 +149,7 @@ article {
   grid-area: description;
 }
 
-.refernece {
+.reference {
   grid-area: reference;
 }
 
@@ -166,6 +166,10 @@ article {
 }
 
 a {
+  color: var(--hausorange);
+}
+
+hr {
   color: var(--hausorange);
 }
 
