@@ -137,6 +137,7 @@ article {
 }
 
 .name {
+  font-size: 1.2em;
   grid-area: name;
 }
 
@@ -163,6 +164,10 @@ article {
 
 .attributes {
   grid-area: attributes;
+}
+
+.attributes a {
+  color: black;
 }
 
 a {
