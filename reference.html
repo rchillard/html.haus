@@ -646,7 +646,11 @@
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>reversed: specify whether list should be in reverse order</li>
+                <li>start: integer to start counting the list from (must be numeral: 1, 2, 3)</li>
+                <li>type: sets numbering type (letters [a, A], roman numerals [i, I], numbers [1, default])</li>
+              </ul>
             </div>
           </article>
           <article id="el-li">
@@ -660,6 +664,7 @@
               <ol>
                 <li>HTML</li>
                 <li>CSS</li>
+                <li value="4">JS</li>
               </ol>
             </div>
             <div class="code">
@@ -667,11 +672,14 @@
 <ol>
   <li>HTML</li>
   <li>CSS</li>
+  <li value="4">JS</li>
 </ol>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>value: current value of ordered list item</li>  
+              </ul>
             </div>
           </article>
           <article id="el-ul">
@@ -706,14 +714,18 @@
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">&lt;figure&gt;</a></p>
             </div>
             <div class="description">
-              <p>Image, graph, diagram, chart, or other visual element</p>
+              <p>Image, graph, diagram, chart, codeblock or other visual element referenced as a single element</p>
             </div>
             <div class="display">
-              <figure></figure>
+              <figure>
+                <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+              </figure>
             </div>
             <div class="code">
-<textarea>
-<figure></figure>
+<textarea rows="4">
+<figure>
+  <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+</figure>
 </textarea>
             </div>
             <div class="attributes">
@@ -729,13 +741,15 @@
             </div>
             <div class="display">
               <figure>
-                <figcaption></figcaption>
+                <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+                <figcaption>HTML's Red Haus</figcaption>
               </figure>
             </div>
             <div class="code">
-<textarea rows="4">
+<textarea rows="5">
 <figure>
-  <figcaption></figcaption>
+  <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
+  <figcaption>HTML's Red Haus</figcaption>
 </figure>
 </textarea>
             </div>
@@ -751,19 +765,23 @@
               <p>Extended quotation that should be indented and separately credited as part of another work</p>
             </div>
             <div class="display">
-              <blockquote>
-                To be, or not to be, that is a question!
+              <blockquote cite="https://hamlet.com/">
+                To be, or not to be, that is the question!
+                <cite>-Hamlet</cite>
               </blockquote>
             </div>
             <div class="code">
-<textarea rows="4">
-<blockquote>
-  To be, or not to be, that is a question!
+<textarea rows="5">
+<blockquote cite="https://hamlet.com/">
+  To be, or not to be, that is the question!
+  <cite>-Hamlet</cite>
 </blockquote>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>cite: URL that designates the source of the quote</li>
+              </ul>
             </div>
           </article>
           <article id="el-pre">
@@ -790,14 +808,32 @@
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">&lt;dl&gt;</a></p>
             </div>
             <div class="description">
-              <p>tbd</p>
+              <p>A description/definition list element captures a list of terms (&lt;dt&gt;) and their definitions (&lt;dd&gt;)</p>
             </div>
             <div class="display">
-              <p>Paragraph here</p>
+              <p>Web Technologies</p>
+              <dl>
+                <dt>Hyper Text Markup Language</dt>
+                <dd>Used to create elements and define documents</dd>
+                <dt>Cascading Style Sheets</dt>
+                <dd>Applies visual styles to HTML elements</dd>
+                <dt>JavaScript</dt>
+                <dt>ECMAScript</dt>
+                <dd>Enables interactivity inside of documents</dd>
+              </dl>
             </div>
             <div class="code">
-<textarea>
-<p>Paragraph here</p>
+<textarea rows="11">
+<p>Web Technologies</p>
+<dl>
+  <dt>Hyper Text Markup Language</dt>
+  <dd>Used to create elements and define documents</dd>
+  <dt>Cascading Style Sheets</dt>
+  <dd>Applies visual styles to HTML elements</dd>
+  <dt>JavaScript</dt>
+  <dt>ECMAScript</dt>
+  <dd>Enables interactivity inside of documents</dd>
+</dl>
 </textarea>
             </div>
             <div class="attributes">
@@ -809,14 +845,20 @@
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt">&lt;dt&gt;</a></p>
             </div>
             <div class="description">
-              <p>dt</p>
+              <p>Description/definition term specifies a single term in a list, which will be defined by a &lt;dd&gt;</p>
             </div>
             <div class="display">
-              <p>Paragraph here</p>
+              <dl>
+                <dt>Hyper Text Markup Language</dt>
+                <dd>Used to create elements and define documents</dd>
+              </dl>
             </div>
             <div class="code">
-<textarea>
-<p>Paragraph here</p>
+<textarea rows="5">
+<dl>
+  <dt>Hyper Text Markup Language</dt>
+  <dd>Used to create elements and define documents</dd>
+</dl>
 </textarea>
             </div>
             <div class="attributes">
@@ -828,14 +870,20 @@
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd">&lt;dd&gt;</a></p>
             </div>
             <div class="description">
-              <p>dd</p>
+              <p>Description/definition for the preceding term defined with a &lt;dt&gt;</p>
             </div>
             <div class="display">
-              <p>Paragraph here</p>
+              <dl>
+                <dt>Cascading Style Sheets</dt>
+                <dd>Applies visual styles to HTML elements</dd>
+              </dl>
             </div>
             <div class="code">
-<textarea>
-<p>Paragraph here</p>
+<textarea rows="5">
+<dl>
+  <dt>Cascading Style Sheets</dt>
+  <dd>Applies visual styles to HTML elements</dd>
+</dl>
 </textarea>
             </div>
             <div class="attributes">
