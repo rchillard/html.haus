@@ -101,6 +101,29 @@
   </body>
 </html>
       </textarea>
+      <h2>Utility</h2>
+      <h3>Redirect</h3>
+      <p>
+        If you ever need to create a redirect, then here's a template to do it in a bulletproof way, which will work regardless of a user's browser settings, even if they have JavaScript turned off.
+      </p>
+<textarea rows="17">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Refresh" content="2; url=https://html.haus/">
+    <meta charset="utf-8" />
+    <title>HTML Haus Redirect</title>
+    <script type="text/javascript">
+      window.location = "https://html.haus/"
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>This page will redirect to <a href="https://html.haus/">html.haus</a> in 2 seconds</p>
+    </noscript>
+  </body>
+</html>
+</textarea>
     <!-- TO DO 
     - Basic page skeleton
     - Navigation/menu bar
