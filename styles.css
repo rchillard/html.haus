@@ -232,3 +232,12 @@ textarea {
   padding-top: 0.25rem;
   width: 100%;
 }
+
+#brand {
+  color: var(--hausorange);
+  font-style: italic;
+}
+
+u {
+  text-decoration: var(--hausorange) wavy underline;
+}
