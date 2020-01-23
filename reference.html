@@ -1487,7 +1487,18 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>src: source contains the reference to the image you are embedding</li>
+                <li>alt: provides alternate text for the image in case it cannot load or for screen readers</li>
+                <li>height: intrinsic height of the image in pixels (must be an integer)</li>
+                <li>width: intrinsic width of the image in pixels (must be an integer)</li>
+                <li>sizes: indicates a set of source sizes described as strings separated by commas, which contain a media condition and a soruce size value.  Media conditions describe the viewport, e.g. (max-width: 600px) 95vw, (min-width: 600px) 90vw</li>
+                <li>srcset: indicates a set of image sources described as strings separated by commas, which contain the URL to an image and a width descriptor, e.g. assets/foundation-600.jpg 600w, assets/foundation-900.jpg 900w</li>
+                <li>crossorigin: indicates if CORS is required to retrieve/fetch the image (values: anonymous or use-credentials)</li>
+                <li>decoding: suggests to the browser how to decode (sync, async, auto)</li>
+                <li>ismap: boolean indicating that the image is part of a <a href="https://en.wikipedia.org/wiki/Image_map#Server-side">server-side map</a></li>
+                <li>usemap: the partial url (starting with #) of an image map (see below) associated with the element</li>
+              </ul>
             </div>
           </article>
           <article id="el-map">
