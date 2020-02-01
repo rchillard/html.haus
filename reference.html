@@ -1509,14 +1509,24 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p>Defines an image map, used in conjunction with the &lt;area&gt; tag (see next)</p>
             </div>
             <div class="display">
-              
+              <map name="haus">
+                <area shape="rect" coords="25,25,125,125" href="https://html.haus/" alt="HTML's Haus" />
+              </map>
+              <img usemap="#haus" src="https://html.haus/assets/red-house-150.jpg" alt="Red house on hill">
             </div>
             <div class="code">
-<textarea>
+<textarea rows="5">
+<map name="haus">
+  <area shape="rect" coords="25,25,125,125" href="https://html.haus/" alt="HTML's Haus" />
+</map>
+<img usemap="#haus" src="https://html.haus/assets/red-house-150.jpg" alt="Red house on hill">
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>name, this attribute is used to reference the map and is required</li>
+                <li>id, if specified, then must be the same value as the name attribute</li>
+              </ul>
             </div>
           </article>
           <article id="el-area">
@@ -1524,17 +1534,45 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area">&lt;area&gt;</a></p>
             </div>
             <div class="description">
-              <p>Defines a region on an image inside of an image map &lt;map&gt; (see previous)</p>
+              <p>
+                Defines a region of an image inside an image map (see previous); it's important to remember that this element is essentially a fancy
+                anchor element, so has access to similar attributes
+              </p>
             </div>
             <div class="display">
-              
+              <map name="haus2">
+                <area shape="rect" coords="25,25,125,100" href="https://html.haus/" alt="Red house for HTML" />
+                <area shape="react" coords="0,100,150,150" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" alt="Green slope to MDN Documents" />
+              </map>
+              <img usemap="#haus2" src="https://html.haus/assets/red-house-150.jpg" alt="Red house on hill">
             </div>
             <div class="code">
-<textarea>
+<textarea rows="7">
+<map name="haus2">
+  <area shape="rect" coords="25,25,125,100" href="https://html.haus/" alt="Red house for HTML" />
+  <area shape="react" coords="0,100,150,150" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" alt="Green slope to MDN Documents" />
+</map>
+<img usemap="#haus2" src="https://html.haus/assets/red-house-150.jpg" alt="Red house on hill">
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>alt: provides alternate text for the image in case it cannot load or for screen readers</li>
+                <li>coords: set of values specifying the coordinates of the hot spot or region of the map</li>
+                <ul>
+                  <li>circle: x,y,r, with the center expressed as x,y and then the radius as r</li>
+                  <li>poly: set of x,y pairs for every point in the polygon</li>
+                  <li>rect: two pairs of coordinates describing the left, top, right, bottom</li>
+                </ul>
+                <li>download: prompts to save the linked URL instead of navigating to it</li>
+                <li>href: URL that the hyperlink points to, which can be sections of a page, pieces of media files, 'tel:' numbers, 'mailto:' addresses</li>
+                <li>hreflang: the human language of the linked URL; allowed values are the same as the global lang</li>
+                <li>ping: space-separated list of URLs, which the browser will send POST requests with the body PING to, when the link is followed</li>
+                <li>referrerpolicy: how much of the referrer to send when following the link</li>
+                <li>rel: relationship of the linked URL as space-separated link types</li>
+                <li>shape: default uses the entire image, while circle, poly, and rect describe subsets with coordinates</li>
+                <li>target: where to display the linked URL (tab, window, or iframe) with keywords: _self, _blank, _parent, _top</li>
+              </ul>
             </div>
           </article>
           <article id="el-audio">
