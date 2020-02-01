@@ -1583,14 +1583,31 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p>Embed sound content in your document, allowing for more than one audio source</p>
             </div>
             <div class="display">
-              
+              <audio controls style="width: 100%">
+                <source src="assets/De-Haus.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+              </audio>
             </div>
             <div class="code">
-<textarea>
+<textarea rows="5">
+<audio controls>
+  <source src="assets/De-Haus.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>autoplay: boolean specifying automatic playback</li>
+                <li>controls: if present, user will be provided controls for volume, seek, and pause/resume</li>
+                <li>crossorigin: indicates whether to use CORS or not (anonymous or use-credentials)</li>
+                <li>currentTime: reading returns current playback position, setting adjusts to given time</li>
+                <li>duration: total length of the audio in secondss</li>
+                <li>loop: boolean determing if audio should start over after it reaches maximum duration</li>
+                <li>muted: boolean indicating whether the audio will be initially silenced</li>
+                <li>preload: hints to browser what best user experience will be (none, metadata, auto)</li>
+                <li>src: URL of audio to embed; you may also use the source element instead</li>
+              </ul>
             </div>
           </article>
           <article id="el-video">
@@ -1601,14 +1618,36 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p>Embed a media player that will play video into the document</p>
             </div>
             <div class="display">
-              
+              <video controls width="100%">
+                <source src="" type="">
+                Your browser does not support the video element.
+              </video>
             </div>
             <div class="code">
-<textarea>
+<textarea rows="5">
+<video controls>
+  <source src="" type="">
+  Your browser does not support the video element.
+</video>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>autoplay: boolean specifying whether video should automatically start playing</li>
+                <li>buffered: attribute that returns a TimeRanges object describing the already buffered media</li>
+                <li>controls: if present, the browser will present controls to allow pause, resume, seek and volume</li>
+                <li>crossorigin: whether to use CORS to fetch the related image or not (anonymous, use-credentials)</li>
+                <li>currentTime: reading returns current playback position, setting adjusts to given time</li>
+                <li>duration: total length of media returned in seconds</li>
+                <li>height: attribute setting height in CSS pixels, requires absolute values only (no percentages)</li>
+                <li>loop: boolean determining if browser will automatically restart at beginning once end is reached</li>
+                <li>muted: boolean determining if audio should be initially silenced</li>
+                <li>playsinline: boolean attribute determining that the video should be played inside of the element's area (not fullscreen)</li>
+                <li>poster: URL for image to be shown while the video is downloading</li>
+                <li>preload: hints to browser what best user experience will be (none, metadata, auto)</li>
+                <li>src: URL of video to embed, you may use the source element inside the video block instead</li>
+                <li>width: width of video's display area in CSS pixels, requires absolute values only (no percentages)</li>
+              </ul>
             </div>
           </article>
           <article id="el-track">
@@ -1619,14 +1658,38 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p>Child of either audio or video elements, specifying the timed text tracks</p>
             </div>
             <div class="display">
-              
+              <audio controls style="width: 100%">
+                <source src="assets/De-Haus.ogg" type="audio/ogg">
+                <track default kind="captions" srclang="en" src="" />
+                <track kind="captions" srclang="en" src="" />
+                Your browser does not support the audio element.
+              </audio>
             </div>
             <div class="code">
-<textarea>
+<textarea rows="7">
+<audio controls>
+  <source src="assets/De-Haus.ogg" type="audio/ogg">
+  <track default kind="captions" srclang="en" src="" />
+  <track kind="captions" srclang="en" src="" />
+  Your browser does not support the audio element.
+</audio>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>default: only usable on one track element, indicates that this track should be enabled unless otherwise specified</li>
+                <li>kind: how the track is to be used</li>
+                <ul>
+                  <li>subtitles: translations of content or additional information such as date, time, or location of a scene</li>
+                  <li>captions: transcription of audio (possibly a translation as well), music cues, or sound effects</li>
+                  <li>descriptions: textual description of the video content</li>
+                  <li>chapters: chapter titles to be used for the purpose of navigation</li>
+                  <li>metadata: tracks used by scripts which are not visible to the user</li>
+                </ul>
+                <li>label: user readable title that is listed to the user</li>
+                <li>src: URL to the track (a .vtt file)</li>
+                <li>srclang: valid language of track text data, and if the kind is subtitles, then srclang must be defined</li>
+              </ul>
             </div>
           </article>
         <h3 id="embedded">Embedded</h3>
