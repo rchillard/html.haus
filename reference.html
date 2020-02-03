@@ -1699,13 +1699,14 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed">&lt;embed&gt;</a></p>
             </div>
             <div class="description">
-              <p></p>
+              <p>Content usually provided by an external application or browser plug-in (do not use)</p>
             </div>
             <div class="display">
-              
+              <p>Do not use</p>
             </div>
             <div class="code">
 <textarea>
+  Do not use
 </textarea>
             </div>
             <div class="attributes">
@@ -1717,17 +1718,54 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">&lt;iframe&gt;</a></p>
             </div>
             <div class="description">
-              <p></p>
+              <p>Embeds one HTML page inside of another, creating nested browsing context, which means a new session history and document</p>
             </div>
             <div class="display">
-              
+              <iframe width="150" height="150" src="https://css.city/"></iframe>
             </div>
             <div class="code">
 <textarea>
+<iframe width="150" height="150" src="https://css.city/"></iframe>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+               <li>allow: specifies a feature policy for the iframe (e.g. allow="fullscreen")</li>
+                <ul>
+                  <li>fullscreen: allows iframe to call requestFullscreen() method</li>
+                  <li>payment: allows iframe to call the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API">payment request API</a></li>
+                </ul>
+                <li>height: height of the frame in CSS pixels (default is 150)</li>
+                <li>name: name for embedded browsing context</li>
+                <li>referrerpolicy: which referer to send when fetching the frame's resources</li>
+                <ul>
+                  <li>no-referrer: does not send the referer header</li>
+                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                </ul>
+                <li>sandbox: applies extra restrictions to the content in the frame; empty applies all restrictions, while space separated list removes restrictions individually</li>
+                <ul>
+                  <li>allow-forms: allows the iframe to submit forms</li>
+                  <li>allow-modals: allows the iframe to open modal windows</li>
+                  <li>allow-orientation-lock: allows the iframe to lock screen orientation</li>
+                  <li>allow-pointer-lock: allows the iframe to use the pointer lock API</li>
+                  <li>allow-popups: allows popups</li>
+                  <li>allow-popups-to-escape-sandbox: allows popups that do not inherit the sandbox rules</li>
+                  <li>allow-presentation: allows a presentaion session to start</li>
+                  <li>allow-same-origin: pass the same-origin policy</li>
+                  <li>allow-scripts: allow the iframe to run scripts but not create popup windows</li>
+                  <li>allow-top-navigation: allow the iframe to navigate the top level browsing context</li>
+                  <li>allow-top-navigation-by-user-activation: allow the iframe to navigate top if a user gesture initiates</li>
+                </ul>
+                <li>src: URL of document to embed</li>
+                <li>srcdoc: inline HTML to embed, overriding the src attrbutes</li>
+                <li>width: width of iframe in CSS pixels (default is 300)</li>
+              </ul>
             </div>
           </article>
           <article id="el-object">
@@ -1735,17 +1773,29 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object">&lt;object&gt;</a></p>
             </div>
             <div class="description">
-              <p></p>
+              <p>A generic external resource that can be an image, iframe or resource for a plugin</p>
             </div>
             <div class="display">
-              
+              <object type="application/pdf" data="assets/reference.pdf" width="150" height="150">
+              </object>
             </div>
             <div class="code">
 <textarea>
+<object type="application/pdf" data="assets/reference.pdf" width="150" height="150">
+</object>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>data: address of resource as a valid URL, required</li>
+                <li>type: content type of resource specified by data, required</li>
+                <li>form: ID of a form element the object is associated with in the document</li>
+                <li>height: height of displayed resource in CSS pixels (absolute values required, no percentages)</li>
+                <li>name: name of valid browsing context</li>
+                <li>typemustmatch: boolean indicating that type and actual content type of the resource must match</li>
+                <li>usemap: hash-name reference to a map element (e.g. #haus)</li>
+                <li>width: width of displayed resource in CSS pixels (absolute values required, no percentages)</li>
+              </ul>
             </div>
           </article>
           <article id="el-param">
@@ -1753,17 +1803,23 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param">&lt;param&gt;</a></p>
             </div>
             <div class="description">
-              <p></p>
+              <p>Defines a parameter inside of an object element</p>
             </div>
             <div class="display">
-              
+              Does not display
             </div>
             <div class="code">
-<textarea>
+<textarea rows="4">
+<object type="application/pdf" data="assets/reference.pdf" width="150" height="150">
+  <param name="purpose" value="cheatsheet">
+</object>
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>name: name of the parameter</li>
+                <li>value: value of the parameter</li>
+              </ul>
             </div>
           </article>
           <article id="el-picture">
@@ -1771,7 +1827,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a></p>
             </div>
             <div class="description">
-              <p></p>
+              <p>Element with multiple source elements and one image element that allows the browser to select the best image for the device and situation (e.g. screen size, network bandwidth)</p>
             </div>
             <div class="display">
               
@@ -1799,7 +1855,11 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 </textarea>
             </div>
             <div class="attributes">
-              <p><a href="#global-attributes">global attributes</a></p>
+              <ul>
+                <li>media: media condition to be evaluated for the source element</li>
+                <li>srcset: list of possible images based on size</li>
+                <li>type: specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MIME type</a> for the resource URLs</li>
+              </ul>
             </div>
           </article>
         <h3 id="scripting">Scripting</h3>
