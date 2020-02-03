@@ -1863,10 +1863,10 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             </div>
           </article>
         <h3 id="scripting">Scripting</h3>
-        <p></p>
-        <article id="el-">
+        <p>Elements to import JavaScript, the web's programming language primarily used to add interactivity to documents</p>
+        <article id="el-script">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">&lt;script&gt;</a></p>
           </div>
           <div class="description">
             <p></p>
@@ -1880,6 +1880,74 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           </div>
           <div class="attributes">
             <p><a href="#global-attributes">global attributes</a></p>
+          </div>
+        </article>
+        <article id="el-noscript">
+          <div class="name">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript">&lt;noscript&gt;</a></p>
+          </div>
+          <div class="description">
+            <p></p>
+          </div>
+          <div class="display">
+            
+          </div>
+          <div class="code">
+<textarea>
+</textarea>
+          </div>
+          <div class="attributes">
+            <p><a href="#global-attributes">global attributes</a></p>
+          </div>
+        </article>
+        <article id="el-canvas">
+          <div class="name">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;</a></p>
+          </div>
+          <div class="description">
+            <p>Element that can draw graphics and animations</p>
+          </div>
+          <div class="display">
+            <canvas id="canvas" width="150" height="150"> 
+              Simple red rectangle with triangle on top, representing a house 
+            </canvas> 
+            <script>
+              var canvas = document.getElementById('canvas'); 
+              const context = canvas.getContext('2d'); 
+              context.fillStyle = 'red'; 
+              context.fillRect(55, 50, 40, 50);
+              context.fillStyle = 'black';
+              context.beginPath();
+              context.moveTo(50, 50);
+              context.lineTo(75, 25);
+              context.lineTo(100, 50);
+              context.fill();
+            </script>
+          </div>
+          <div class="code">
+<textarea rows="16">
+<canvas id="canvas-example" width="150" height="150"> 
+  Simple red rectangle with triangle on top, representing a house 
+</canvas> 
+<script>
+  var canvas = document.getElementById('canvas'); 
+  const context = canvas.getContext('2d'); 
+  context.fillStyle = 'red'; 
+  context.fillRect(55, 50, 40, 50);
+  context.fillStyle = 'black';
+  context.beginPath();
+  context.moveTo(50, 50);
+  context.lineTo(75, 25);
+  context.lineTo(100, 50);
+  context.fill();
+</script>
+</textarea>
+          </div>
+          <div class="attributes">
+            <ul>
+              <li>height: height in CSS pixels of the drawing space (canvas)</li>
+              <li>width: width in CSS pixels of the drawing space (canvas)</li>
+            </ul>
           </div>
         </article>
         <h3 id="edits">Edits</h3>
