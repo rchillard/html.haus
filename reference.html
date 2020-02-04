@@ -914,6 +914,16 @@
                 <li>hreflang: the human language of the linked URL; allowed values are the same as the global lang</li>
                 <li>ping: space-separated list of URLs, which the browser will send POST requests with the body PING to, when the link is followed</li>
                 <li>referrerpolicy: how much of the referrer to send when following the link</li>
+                <ul>
+                  <li>no-referrer: does not send the referer header</li>
+                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                </ul>
                 <li>rel: relationship of the linked URL as space-separated link types</li>
                 <li>target: where to display the linked URL (tab, window, or iframe) with keywords: _self, _blank, _parent, _top</li>
                 <li>type: linked URL's format with a <abbr title="Media Type (e.g. text/css or audio/mp4)">MIME</abbr> type</li>
@@ -1569,6 +1579,16 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                 <li>hreflang: the human language of the linked URL; allowed values are the same as the global lang</li>
                 <li>ping: space-separated list of URLs, which the browser will send POST requests with the body PING to, when the link is followed</li>
                 <li>referrerpolicy: how much of the referrer to send when following the link</li>
+                <ul>
+                  <li>no-referrer: does not send the referer header</li>
+                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                </ul>
                 <li>rel: relationship of the linked URL as space-separated link types</li>
                 <li>shape: default uses the entire image, while circle, poly, and rect describe subsets with coordinates</li>
                 <li>target: where to display the linked URL (tab, window, or iframe) with keywords: _self, _blank, _parent, _top</li>
@@ -1869,17 +1889,52 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">&lt;script&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Embed JavaScript into your document with this element</p>
           </div>
           <div class="display">
-            
+            <span id="dtarget">MM/DD/YY</span>
+            <script>
+              let date = new Date()
+              let displaydate = document.getElementById("dtarget")
+              displaydate.innerHTML = date  
+            </script>
           </div>
           <div class="code">
-<textarea>
+<textarea rows="7">
+<span id="datetimetarget">MM/DD/YY</span>
+<script>
+  let date = new Date()
+  let displaydate = document.getElementById("datetimetarget")
+  displaydate.innerHTML = date  
+</script>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>async: script will be fetched in parallel to document parsing and evaluated as soon as is possible</li>
+              <li>crossorigin: force passing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin">CORS</a> checks, allowing error logging when a site uses a separate domain for static media</li>
+              <li>defer: boolean indicating script should be executed after the document has been parsed but before DOMContentLoaded</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">integrity</a>: inline metadata used to verify that a fetched resource has been delivered without manipulation</li>
+              <li>nomodule: boolean indicating script should not be executed if browser supports ES2015 modules</li>
+              <li>nonce: cryptographic number used once (nonce) to whitelist in-line scripts in a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src">script-src CSP</a></li>
+              <li>referrerpolicy: indicates which referrer to send when fetching the script</li>
+              <ul>
+                <li>no-referrer: does not send the referer header</li>
+                <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+              </ul>
+              <li>src: specifies the URI of an external script, which is to be used as an alternative to embedding a script</li>
+              <li>type: type of script</li>
+              <ul>
+                <li>text/javascript: this is the safest MIME type for all browsers and for forward compatibility</li>
+                <li>module: treat code as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript module</a> (requires use of CORS)</li>
+              </ul>
+            </ul>
           </div>
         </article>
         <article id="el-noscript">
@@ -1887,13 +1942,18 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript">&lt;noscript&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Defines what is displayed if JavaScript is unsupported or scripting is turned off in the browser</p>
           </div>
           <div class="display">
-            
+            <noscript>
+              JavaScript is disabled.
+            </noscript>
           </div>
           <div class="code">
-<textarea>
+<textarea rows="4">
+<noscript>
+  JavaScript is disabled.
+</noscript>
 </textarea>
           </div>
           <div class="attributes">
@@ -1914,8 +1974,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <script>
               var canvas = document.getElementById('canvas'); 
               const context = canvas.getContext('2d'); 
-              context.fillStyle = 'red'; 
-              context.fillRect(55, 50, 40, 50);
+              context.fillStyle = "#db3700"; 
+              context.fillRect(55, 50, 40, 30);
               context.fillStyle = 'black';
               context.beginPath();
               context.moveTo(50, 50);
@@ -1932,8 +1992,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 <script>
   var canvas = document.getElementById('canvas'); 
   const context = canvas.getContext('2d'); 
-  context.fillStyle = 'red'; 
-  context.fillRect(55, 50, 40, 50);
+  context.fillStyle = "#db3700"; 
+  context.fillRect(55, 50, 40, 30);
   context.fillStyle = 'black';
   context.beginPath();
   context.moveTo(50, 50);
