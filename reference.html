@@ -22,10 +22,26 @@
         <em>This page is still under construction!  Come back later when it's finished.</em>
       </p>
       <h1>Reference HTML</h1>
-      <h2>Catalog</h2>
+      <h2>Introduction</h2>
+      <p>
+        This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags.  There's plenty of HTML reference documentation in the world, so <em>why build another?</em></p>
+      <p>
+        Other reference documentation is either too verbose, meaning there's so much detail it makes it hard to find the key parts that you need, or
+        it's too minimal, meaning there are important parts left off in favor of making it highly condensed.  This catalog aims to provide a goldilocks solution 
+        by balancing comprehensive documentation with ease of use.
+      </p>
+      <p>
+        The goals of this catalog are to be clear, easy to use, and fast:
+        <ul>
+          <li><strong>Clear</strong> in that deprecated, obsolete, theoretical, or widely unsupported HTML elements are not included.</li>
+          <li><strong>Easy to use</strong> means the entire reference is on a single page, making it easy to natively search and navigate.</li>
+          <li><strong>Fast</strong> means that the page is rendered exclusively in HTML/CSS with minimal assets and images.</li>
+        </ul>
+      </p>
+      <h2>Table of Contents</h2>
       <p>
         HTML is divided into different types of elements, each of which serves a purpose in structuring content for the user.  Some elements organize, some
-        denote meaning, some add tabular structures, while others allow you to submit data or interact with the page. Here are the different kinds of elements:
+        denote meaning, some add tabular structures, while others allow you to submit data or interact with the page. Here are the different categories of elements:
       </p>
       <ul>
         <li><a href="#metadata">Metadata</a></li>
@@ -41,19 +57,8 @@
         <li><a href="#interactive">Interactive</a></li>
         <li><a href="#web-components">Web Components</a></li>
       </ul>
-      <h3>Introduction</h3>
-        <p>
-          This is a catalog of <abbr title="Hyper Text Markup Language">HTML</abbr> tags.  There's plenty of HTML reference documentation in the world, so <em>why build another?</em></p>
-        <p>
-          Other HTML reference documentation is either too verbose, meaning there's so much detail it makes it hard to find the key parts that you need, or
-          it's too minimal, meaning there are important parts left off in favor of making it highly condensed.  This catalog aims to provide a goldilocks solution 
-          by balancing comprehensive documentation with ease of use. The goals of this catalog are to be clear, easy to use, and fast:</p>
-        <ul>
-          <li><strong>Clear</strong> in that deprecated, obsolete, theoretical, or widely unsupported HTML elements are not included.</li>
-          <li><strong>Easy to use</strong> means the entire reference is on a single page, making it easy to natively search and navigate.</li>
-          <li><strong>Fast</strong> means that the page is rendered exclusively in HTML/CSS with minimal assets and images.</li>
-        </ul>
-      <h4>Structure</h4>
+      <h2>Using the Catalog</h2>
+      <h3>Structure</h3>
         <p>Each element in the catalog has name, description, display, code, and attributes. These appear in a compact layout as follows:</p>
         <article>
             <div class="name">
@@ -94,12 +99,12 @@
             </ul>
           </div>
         </article>
-      <h4>Types of Tags</h4>
+      <h3>Types of Tags</h3>
         <p>Other HTML references focus on categorizing elements as having normal or self closing tags.  This one does not.  Since example code is provided with each element/tag, it
           should be clear which elements are normal (with opening and closing tags) and which have self closing tags.  In cases where this really matters,
           the description will specify which type of tag the element uses.
         </p>
-      <h4 id="global-attributes">Global Attributes</h4>
+      <h3 id="global-attributes">Global Attributes</h3>
         <p>
           There are common HTML attributes that apply to every element.  This list is omitted from the reference for individual elements, because
           it would be incredibly duplicative to reproduce them under each element.  The most common global HTML attributes:
@@ -114,8 +119,10 @@
             <li>tabindex, allows you to specify whether an element should be focusable and when</li>
             <li>title, allows you to specify extra information about an element</li>
           </ul>
+          This concludes the section on using the catalog.  On to the elements!
         </p>
         <hr>
+        <h2>Catalog</h2>
         <h3 id="metadata">Metadata</h3>
         <p>Metadata is data that describes other data or provides information in the form of a label.  For an HTML document, that means data about the title of the document, its relationship to other resources, how various user agents should treat it, and more.
         </p>
@@ -910,7 +917,7 @@
                   <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
                   <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
                   <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
                   <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
                   <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
                 </ul>
@@ -1575,7 +1582,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                   <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
                   <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
                   <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
                   <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
                   <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
                 </ul>
@@ -1754,7 +1761,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                   <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
                   <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
                   <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
                   <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
                   <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
                 </ul>
@@ -1914,7 +1921,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                 <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
                 <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
                 <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                <li>strict-origin: only send origin when security protocol remains the same (HTTPS -> HTTPS)</li>
+                <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
                 <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
                 <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
               </ul>
