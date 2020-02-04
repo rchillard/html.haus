@@ -2065,13 +2065,105 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           </div>
         </article>
         <h3 id="tables">Tables</h3>
-        <p>Elements to create tables and handle tabular data (presented as columns and rows)</p>
-        <article id="el-">
+        <p>Elements to create tables and handle tabular data (presented as rows and columns)</p>
+        <article id="el-table">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">&lt;table&gt;</a></p>
           </div>
           <div class="description">
-
+            <p>Creates a two-dimensional table comprised of rows (tr) and columns with cells (td)</p>
+          </div>
+          <div class="display">
+            <table>
+              <tr>
+                <td>Technology</td>
+                <td>Purpose</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Define structure</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Style content</td>
+              </tr>
+            </table>
+          </div>
+          <div class="code">
+<textarea rows="15">
+<table>
+  <tr>
+    <td>Technology</td>
+    <td>Purpose</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>Define structure</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>Style content</td>
+  </tr>
+</table>
+</textarea>
+          </div>
+          <div class="attributes">
+            <p><a href="#global-attributes">global attributes</a></p>
+          </div>
+        </article>
+        <article id="el-caption">
+          <div class="name">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption">&lt;caption&gt;</a></p>
+          </div>
+          <div class="description">
+            <p>Provides the name or title of a table</p>
+          </div>
+          <div class="display">
+            <table>
+              <caption>Web Technology</caption>
+              <tr>
+                <td>Language</td>
+                <td>Purpose</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Define structure</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Style content</td>
+              </tr>
+            </table>
+          </div>
+          <div class="code">
+<textarea rows="16">
+<table>
+  <caption>Web Technology</caption>
+  <tr>
+    <td>Language</td>
+    <td>Purpose</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>Define structure</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>Style content</td>
+  </tr>
+</table>
+</textarea>
+          </div>
+          <div class="attributes">
+            <p><a href="#global-attributes">global attributes</a></p>
+          </div>
+        </article>
+        <article id="el-tr">
+          <div class="name">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr">&lt;tr&gt;</a></p>
+          </div>
+          <div class="description">
+            <p>Table row element defines a row inside your table</p>
           </div>
           <div class="display">
 
@@ -2085,12 +2177,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-td">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td">&lt;td&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Table data element defines a cell (and its data) within a table row</p>
           </div>
           <div class="display">
 
@@ -2104,12 +2196,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-th">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th">&lt;th&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Table header is the first cell of either a row or column, as specified by scope and headers attributes</p>
           </div>
           <div class="display">
 
@@ -2123,12 +2215,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-col">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col">&lt;col&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Defines a column within a table, usually used within a colgroup (see next) element</p>
           </div>
           <div class="display">
 
@@ -2142,12 +2234,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-colgroup">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup">&lt;colgroup&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Defines a group of columns within a table and has col elements as children</p>
           </div>
           <div class="display">
 
@@ -2161,12 +2253,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-thead">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead">&lt;thead&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Defines a set of rows as the head columns inside a table</p>
           </div>
           <div class="display">
 
@@ -2180,12 +2272,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-tbody">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody">&lt;tbody&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Encloses a set of rows identified as the body of the table, containing data</p>
           </div>
           <div class="display">
 
@@ -2199,50 +2291,12 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="#global-attributes">global attributes</a></p>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-tfooter">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfooter">&lt;tfooter&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
-          </div>
-          <div class="display">
-
-          </div>
-          <div class="code">
-<textarea>
-
-</textarea>
-          </div>
-          <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
-          </div>
-        </article>
-        <article id="el-">
-          <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
-          </div>
-          <div class="description">
-            <p></p>
-          </div>
-          <div class="display">
-
-          </div>
-          <div class="code">
-<textarea>
-
-</textarea>
-          </div>
-          <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
-          </div>
-        </article>
-        <article id="el-">
-          <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
-          </div>
-          <div class="description">
-            <p></p>
+            <p>Defines a set of rows that summarizes or totals the columns of the table</p>
           </div>
           <div class="display">
 
