@@ -2008,42 +2008,60 @@ Houses are built with certain kinds of material like <b class="material">wood</b
         </article>
         <h3 id="edits">Edits</h3>
         <p>Elements that mark parts of the document that have been edited</p>
-        <article id="el-">
+        <article id="el-del">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del">&lt;del&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Represents a range of text that has been deleted</p>
           </div>
           <div class="display">
-
+            <p>Tonight's Open House: <br>
+              <del>Tickets Available for $50</del>
+            </p>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="5">
+<p>
+  Tonight's Open House: <br>
+  <del>Tickets Available for $50</del>
+</p>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>cite: URI for a resource that explains the change</li>
+              <li>datetime: time and date of the change, must be <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats#Local_date_and_time_strings">valid datetime format</a></li>
+            </ul>
           </div>
         </article>
-        <article id="el-">
+        <article id="el-ins">
           <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins">&lt;ins&gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+            <p>Represents a range of text that has been inserted</p>
           </div>
           <div class="display">
-
+            <p>Tonight's Open House: <br>
+              <del>Tickets Available for $50</del> <br>
+              <ins>SOLD OUT!</ins>
+            </p>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="6">
+<p>
+  Tonight's Open House: <br>
+  <del>Tickets Available for $50</del> <br>
+  <ins>SOLD OUT!</ins>
+</p>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>cite: URI for a resource that explains the change</li>
+              <li>datetime: time and date of the change, must be <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats#Local_date_and_time_strings">valid datetime format</a></li>
+            </ul>
           </div>
         </article>
         <h3 id="tables">Tables</h3>
@@ -2053,7 +2071,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">&lt; &gt;</a></p>
           </div>
           <div class="description">
-            <p></p>
+
           </div>
           <div class="display">
 
