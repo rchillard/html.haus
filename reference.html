@@ -2166,11 +2166,29 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Table row element defines a row inside your table</p>
           </div>
           <div class="display">
-
+            <table>
+              <tr>
+                <td>Name</td>
+                <td>Profession</td>
+              </tr>
+              <tr>
+                <td>Hypertext Hank</td>
+                <td>Build Webpages</td>
+              </tr>
+            </table>
           </div>
           <div class="code">
 <textarea>
-
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Profession</td>
+    </tr>
+    <tr>
+      <td>Hypertext Hank</td>
+      <td>Build Webpages</td>
+    </tr>
+  </table>
 </textarea>
           </div>
           <div class="attributes">
@@ -2185,15 +2203,37 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Table data element defines a cell (and its data) within a table row</p>
           </div>
           <div class="display">
-
+            <table>
+              <tr>
+                <td>Material</td>
+                <td>Purpose</td>
+              </tr>
+              <tr>
+                <td>Wood 2x4s</td>
+                <td>Framing</td>
+              </tr>
+            </table>
           </div>
           <div class="code">
 <textarea>
-
+  <table>
+    <tr>
+      <td>Material</td>
+      <td>Purpose</td>
+    </tr>
+    <tr>
+      <td>Wood 2x4s</td>
+      <td>Framing</td>
+    </tr>
+  </table>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>colspan: accepts integer value that indicates how many columns the cell extends</li>
+              <li>headers: list of space-separated strings corresponding to the ids of th elements (see below)</li>
+              <li>rowspan: accepts integer value that indicates how many rows the cell extends</li>
+            </ul>
           </div>
         </article>
         <article id="el-th">
@@ -2204,15 +2244,71 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Table header is the first cell of either a row or column, as specified by scope and headers attributes</p>
           </div>
           <div class="display">
-
+            <table>
+              <tr>
+                <th abrr="language or technology" scope="col">Lang</th>
+                <th scope="col">Chars</th>
+                <th scope="col">Purpose</th>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>4</td>
+                <td>Create structure</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>3</td>
+                <td>Style content</td>
+              </tr>
+              <tr>
+                <td>JS</td>
+                <td>2</td>
+                <td>Make interactive</td>
+              </tr>
+            </table>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="24">
+<table>
+  <tr>
+    <th abrr="language or technology" scope="col">Lang</th>
+    <th scope="col">Chars</th>
+    <th scope="col">Purpose</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>4</td>
+    <td>Create structure</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>3</td>
+    <td>Style content</td>
+  </tr>
+  <tr>
+    <td>JS</td>
+    <td>2</td>
+    <td>Make interactive</td>
+  </tr>
+</table>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>abbr: abbreviated description of the cell's contents</li>
+              <li>colspan: accepts integer value that indicates how many columns the cell extends</li>
+              <li>headers: list of space-separated strings corresponding to the ids of th elements (see below)</li>
+              <li>rowspan: accepts integer value that indicates how many rows the cell extends</li>
+              <li>scope: defines the cells that the header defined in the th element relates to:
+                <ul>
+                  <li>row: header relates to all cells of the row it belongs to</li>
+                  <li>rowgroup: belongs to a rowgroup and relates to all of its cells</li>
+                  <li>col: header relates to all cells of the column it belongs to</li>
+                  <li>colgroup: belongs to a colgroup and relates to all of its cells</li>
+                  <li>auto: default value</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </article>
         <article id="el-col">
@@ -2223,7 +2319,24 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Defines a column within a table, usually used within a colgroup (see next) element</p>
           </div>
           <div class="display">
-
+            <table>
+              <colgroup>
+                <col span="2" class="table-lang">
+                <col span="2" class="table-char">
+              </colgroup>
+              <tr>
+                <th scope="col">Language</th>
+                <th scope="col">Characters</th>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>3</td>
+              </tr>
+            </table>
           </div>
           <div class="code">
 <textarea>

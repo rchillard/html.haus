@@ -238,6 +238,11 @@ textarea {
   font-style: italic;
 }
 
+.table-lang {
+  background-color: lightpink;
+  border: 1px solid black;
+}
+
 u {
   text-decoration: var(--hausorange) wavy underline;
 }
