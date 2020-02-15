@@ -2629,7 +2629,6 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                   <li>_top: load into the top-level browsing context</li>
                 </ul>
               </li>
-              <li></li>
             </ul>
           </div>
         </article>
@@ -2641,15 +2640,45 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Group several form elements together within a form</p>
           </div>
           <div class="display">
-
+            <form>
+              <fieldset>
+                <legend>Favorite web technology</legend>
+                <label for="html">
+                  <input type="radio" id="html" name="HTML">HTML
+                </label><br/>
+                <label for="css">
+                  <input type="radio" id="css" name="CSS">CSS
+                </label><br/>
+                <label for="js">
+                  <input type="radio" id="js" name="JS">JS
+                </label><br/>
+              </fieldset>
+            </form>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="15">
+<form>
+  <fieldset>
+    <legend>Favorite web technology</legend>
+    <label for="html">
+      <input type="radio" id="radio-html" name="webtech">HTML
+    </label><br/>
+    <label for="css">
+      <input type="radio" id="radio-css" name="webtech">CSS
+    </label><br/>
+    <label for="js">
+      <input type="radio" id="radio-js" name="webtech">JS
+    </label><br/>
+  </fieldset>
+</form>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>disabled: boolean determining if form controls within fieldset are disabled or not</li>
+              <li>form: takes value of an id attribute of a form element that you want fieldset to be a part of, even outside of the form</li>
+              <li>name: associated with the group</li>
+            </ul>
           </div>
         </article>
         <article id="el-legend">
@@ -2660,11 +2689,37 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Caption or title for the contents of a fieldset, usually the first child element</p>
           </div>
           <div class="display">
-
+            <form>
+                <fieldset>
+                  <legend>Favorite web technology</legend>
+                  <label for="html">
+                    <input type="radio" id="radio-html" name="webtech">HTML
+                  </label><br/>
+                  <label for="css">
+                    <input type="radio" id="radio-css" name="webtech">CSS
+                  </label><br/>
+                  <label for="js">
+                    <input type="radio" id="radio-js" name="webtech">JS
+                  </label><br/>
+                </fieldset>
+              </form>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="15">
+<form>
+  <fieldset>
+    <legend>Favorite web technology</legend>
+    <label for="html">
+      <input type="radio" id="radio-html" name="webtech">HTML
+    </label><br/>
+    <label for="css">
+      <input type="radio" id="radio-css" name="webtech">CSS
+    </label><br/>
+    <label for="js">
+      <input type="radio" id="radio-js" name="webtech">JS
+    </label><br/>
+  </fieldset>
+</form>
 </textarea>
           </div>
           <div class="attributes">
