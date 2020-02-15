@@ -2584,15 +2584,53 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Parent element to encase interactive controls for submitting information</p>
           </div>
           <div class="display">
-
+            <form action="" method="get">
+              <label>Your name: 
+                <input type="text" name="name" id="name">
+                <input type="submit" value="Sign up">
+              </label>
+            </form>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="7">
+<form action="" method="get">
+  <label>Your name: 
+    <input type="text" id="sample-name-form">
+    <input type="submit" value="Sign up">
+  </label>
+</form>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>accept-charset: space-separated character encodings that the server accepts; browser will use them in order</li>
+              <li>action: the URL (endpoint) that processes the form submission, can be overriden by a formaction attribute on a button or input type=submit or input type=image element</li>
+              <li>autocomplete: indicates whether the form or an input element inside the form can be autocompleted by the browser, either 'off' or 'on' values</li>
+              <li>enctype: if the value of the method (see next) attribute is post, thne enctype is the MIME type of the form submission
+                <ul>
+                  <li>application/x-www-form-urlencoded: default value</li>
+                  <li>multipart/form-data: used if the form contains an input type=file element</li>
+                  <li>text/plain: used for debugging purposes</li>
+                </ul>
+              </li>
+              <li>method: the HTTP method used to submit the form
+                <ul>
+                  <li>post: the POST method means the form data is sent as the request body</li>
+                  <li>get: the GET method appends form data to the action URL with a ? separator, useful when form has <a href="https://developer.mozilla.org/en-US/docs/Glossary/Idempotent">no side-effects</a></li>
+                  <li>dialog: when the form is inside a dialog, closes the dialog on submission</li>
+                </ul>
+              </li>
+              <li>novalidate: form should not be validated when submitted</li>
+              <li>target: where to display the response after submitting the form
+                <ul>
+                  <li>_self (default): loads into same browsing context as current</li>
+                  <li>_blank: load into a new unnamed browsing context</li>
+                  <li>_parent: load into the parent browsing context of the current one</li>
+                  <li>_top: load into the top-level browsing context</li>
+                </ul>
+              </li>
+              <li></li>
+            </ul>
           </div>
         </article>
         <article id="el-fieldset">
