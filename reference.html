@@ -2642,7 +2642,6 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           <div class="display">
             <form>
               <fieldset>
-                <legend>Favorite web technology</legend>
                 <label for="html">
                   <input type="radio" id="html" name="webtech">HTML
                 </label><br/>
@@ -2659,7 +2658,6 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 <textarea rows="15">
 <form>
   <fieldset>
-    <legend>Favorite web technology</legend>
     <label for="html">
       <input type="radio" id="radio-html" name="webtech">HTML
     </label><br/>
@@ -2803,30 +2801,52 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             </form>
           </div>
           <div class="code">
-<textarea rows="27">
+<textarea rows="48">
 <form>
-  <label>button <input type="button" value="button"></label><br/>
-  <label>checkbox <input type="checkbox"></label><br/>
-  <label>color <input type="color"></label><br/>
-  <label>date <input type="date"></label><br/>
-  <label>datetime <input type="datetime"></label><br/>
+  <label>button <input type="button" value="button"></label>
+  <br/>
+  <label>checkbox <input type="checkbox"></label>
+  <br/>
+  <label>color <input type="color"></label>
+  <br/>
+  <label>date <input type="date"></label>
+  <br/>
+  <label>datetime <input type="datetime"></label>
+  <br/>
   <label>datetime-local <input type="datetime-local"></label>
-  <label>email <input type="email"></label><br/>
-  <label><input type="file"></label><br/>
-  <label>hidden <input type="hidden"></label><br/>
-  <label>image <input type="image" src="assets/red-heart.png" width="20"></label><br/>
-  <label>month <input type="month"></label><br/>
-  <label>number <input type="number"></label><br/>
-  <label>password <input type="password"></label><br/>
-  <label>radio <input type="radio"></label><br/>
-  <label>range <input type="range"></label><br/>
-  <label>reset <input type="reset"></label><br/>
-  <label>search <input type="search"></label><br/>
-  <label>submit <input type="submit"></label><br/>
-  <label>tel <input type="tel"></label><br/>
-  <label>text <input type="text"></label><br/>
-  <label>time <input type="time"></label><br/>
-  <label>url <input type="url"></label><br/>
+  <br/>
+  <label>email <input type="email"></label>
+  <br/>
+  <label><input type="file"></label>
+  <br/>
+  <label>hidden <input type="hidden"></label>
+  <br/>
+  <label>image <input type="image" src="assets/red-heart.png" width="20"></label>
+  <br/>
+  <label>month <input type="month"></label>
+  <br/>
+  <label>number <input type="number"></label>
+  <br/>
+  <label>password <input type="password"></label>
+  <br/>
+  <label>radio <input type="radio"></label>
+  <br/>
+  <label>range <input type="range"></label>
+  <br/>
+  <label>reset <input type="reset"></label>
+  <br/>
+  <label>search <input type="search"></label>
+  <br/>
+  <label>submit <input type="submit"></label>
+  <br/>
+  <label>tel <input type="tel"></label>
+  <br/>
+  <label>text <input type="text"></label>
+  <br/>
+  <label>time <input type="time"></label>
+  <br/>
+  <label>url <input type="url"></label>
+  <br/>
   <label>week <input type="week"></label>
 </form>
 </textarea>
@@ -3116,15 +3136,20 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Displays a progress bar, indicating how complete any given thing is</p>
           </div>
           <div class="display">
-
+            <label for="progress-ex">Experience to next level:</label>
+            <progress id="experience" max="100" value="30">30%</progress>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="3">
+<label for="progress">Experience to next level:</label>
+<progress id="exp" max="100" value="30">30%</progress>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>max: describes how much work the task indicated by the progress element requires</li>
+              <li>value: describes how much of the task has been completed, indicating how much progress was achieved</li>
+            </ul>
           </div>
         </article>
         <article id="el-button">
