@@ -2735,15 +2735,15 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           </div>
           <div class="display">
             <form>
-              <label for="webdev">Are you a web developer?</label>
-              <input type="checkbox" id="webdev">
+              <label for="webdev2">Are you a web developer?</label>
+              <input type="checkbox" id="webdev2">
               <label>Do you love HTML?
-                <input type="checkbox" id="lovehtml">
+                <input type="checkbox" id="lovehtml2">
               </label>
               <br/>
               <!-- This is incorrect, because the label is not associated to the input type -->
               <label>Do you label properly?</label>
-              <input type="checkbox" id="propery">              
+              <input type="checkbox" id="propery2">              
             </form>
           </div>
           <div class="code">
@@ -2941,18 +2941,49 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup">&lt;optgroup&gt;</a></p>
           </div>
           <div class="description">
-            <p>Groups option elements within a select</p>
+            <p>Groups option elements within a select element</p>
           </div>
           <div class="display">
-
+            <label>
+              Favorite pizza toppings:
+              <select>
+                <optgroup label="Sweet">
+                  <option>Pineapple</option>
+                  <option>Nutella</option>
+                  <option>Balsamic Glaze</option>
+                </optgroup>
+                <optgroup disabled label="Savory">
+                  <option>Pepperoni</option>
+                  <option>Mushroom</option>
+                  <option>Chicken</option>
+                </optgroup>
+              </select>
+            </label>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="16">
+<label>
+  Favorite pizza toppings:
+  <select>
+    <optgroup label="Sweet">
+      <option>Pineapple</option>
+      <option>Nutella</option>
+      <option>Balsamic Glaze</option>
+    </optgroup>
+    <optgroup disabled label="Savory">
+      <option>Pepperoni</option>
+      <option>Mushroom</option>
+      <option>Chicken</option>
+    </optgroup>
+  </select>
+</label>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>disabled: boolean determining if option group is available</li>
+              <li>label: name of the group of options</li>
+            </ul>
           </div>
         </article>
         <article id="el-datalist">
@@ -2963,11 +2994,25 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Contains a set of option elements that are available to choose from within other controls</p>
           </div>
           <div class="display">
-
+            <label for="topping-choice-ex">Favorite pizza toppings:</label>
+            <input list="savory-pizza-toppings-ex" id="topping-choice-ex" name="topping-choice" />
+            <datalist id="savory-pizza-toppings-ex">
+              <option>Pepperoni</option>
+              <option>Mushroom</option>
+              <option>Chicken</option>
+              <option>Bell pepper</option>
+            </datalist>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="9">
+<label for="topping-choice">Favorite pizza toppings:</label>
+<input list="savory-pizza-toppings" id="topping-choice" name="topping-choice" />
+<datalist id="savory-pizza-toppings">
+  <option>Pepperoni</option>
+  <option>Mushroom</option>
+  <option>Chicken</option>
+  <option>Bell pepper</option>
+</datalist>
 </textarea>
           </div>
           <div class="attributes">
@@ -2982,15 +3027,50 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Multi-line plain text input box which is suited to users entering large amounts of text</p>
           </div>
           <div class="display">
-
+            <label>Text area:
+              <textarea rows="3"></textarea>
+            </label>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="4">
+<label>Text area:
+  &lt;textarea rows="3"&gt;&lt;/textarea&gt;
+</label>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>autocomplete: indicates whether the value of the textarea can be automatically completed
+                <ul>
+                  <li>"on": the browser can automatically complete the textarea based on values previously used</li>
+                  <li>"off": the user must explicitly enter a value into this field for every use (or the document provides its own auto-complete)</li>
+                </ul>
+              </li>
+              <li>autofocus: boolean determining whether textarea should have focus when page loads</li>
+              <li>cols: visible width of textarea in average character widths; it must be a positive integer (default is 20)</li>
+              <li>disabled: boolean determining whether textarea is usable or not</li>
+              <li>form: the associated parent or owner of the textarea element</li>
+              <li>maxlength: maxiumum number of characters (UTF-16 code units) that can be entered into the textarea</li>
+              <li>minlength: minimum number of characters (UTF-16 code units) required to be entered into the textarea</li>
+              <li>name: name of the textarea</li>
+              <li>placeholder: hint to user what should be entered into the textarea</li>
+              <li>readonly: boolean indicating that user cannot modify value of textarea</li>
+              <li>required: boolean indicating that user must fill in a value before form can be submitted</li>
+              <li>rows: visible height of textarea</li>
+              <li>spellcheck: specifies whether textarea is subject to spell checking by the browser or operating system 
+                <ul>
+                  <li>"true": indicates that element input should have spelling and grammar checked</li>
+                  <li>"false": indicates that element input should not be spell checked</li>
+                  <li>"default": indicates that element input should follow parent element's own 'spellcheck' value</li>
+                </ul>
+              </li>
+              <li>wrap: indicates how the textarea wraps text at the end of a line
+                <ul>
+                  <li>"hard": browser automatically inserts line breaks so that each line has no more width than control, requires cols</li>
+                  <li>"soft": browser ensures that all line breaks in the value consist of a CR+LF pair, but does not insert additional breaks</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </article>
         <article id="el-meter">
