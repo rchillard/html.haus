@@ -2731,18 +2731,41 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">&lt;label&gt;</a></p>
           </div>
           <div class="description">
-            <p>Caption for an item or input within a form</p>
+            <p>A caption for a portion of your user interface, explaining what it does and associating with it</p>
           </div>
           <div class="display">
-
+            <form>
+              <label for="webdev">Are you a web developer?</label>
+              <input type="checkbox" id="webdev">
+              <label>Do you love HTML?
+                <input type="checkbox" id="lovehtml">
+              </label>
+              <br/>
+              <!-- This is incorrect, because the label is not associated to the input type -->
+              <label>Do you label properly?</label>
+              <input type="checkbox" id="propery">              
+            </form>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="12">
+<form>
+  <label for="webdev">Are you a web developer?</label>
+  <input type="checkbox" id="webdev">
+  <label>Do you love HTML?
+    <input type="checkbox" id="lovehtml">
+  </label>
+  <br/>
+  <!-- This is incorrect, because the label is not associated to the input type -->
+  <label>Do you label properly?</label>
+  <input type="checkbox" id="propery">              
+</form>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>for: id of a labelable form-related element in the same document</li>
+              <li>form: id of a form element in the same document (this allows you to label from outside a form)</li>
+            </ul>
           </div>
         </article>
         <article id="el-input">
