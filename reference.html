@@ -3262,7 +3262,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
         </article>
 
         <h3 id="interactive">Interactive</h3>
-        <p></p>
+        <p>Interactive elements such as expandable areas and dialog boxes</p>
         <article id="el-details">
           <div class="name">
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">&lt;details&gt;</a></p>
@@ -3271,11 +3271,44 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Creates a disclosure widget in which information is only available when toggled open</p>
           </div>
           <div class="display">
-
+            <details>
+              <summary>HTML Tips</summary>
+              First default to using elements with semantic meaning.  Once exhausting all of those, consider using generic elements like div and span.
+            </details>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="6">
+<details>
+  <summary>HTML Tips</summary>
+  First default to using elements with semantic meaning.  Once exhausting all of those, consider using generic elements like div and span.
+</details>
+</textarea>
+          </div>
+          <div class="attributes">
+            <ul>
+              <li>open: boolean attribute indicating whether or not the details are currently visible</li>
+            </ul>
+          </div>
+        </article>
+        <article id="el-summary">
+          <div class="name">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary">&lt;summary&gt;</a></p>
+          </div>
+          <div class="description">
+            <p>A summary, caption, or legend as part of a details element disclosure box</p>
+          </div>
+          <div class="display">
+            <details>
+              <summary>CSS Tips</summary>
+              CSS Grid is the new hotness, and it makes grid layouts super easy to compose and understand.
+            </details>
+          </div>
+          <div class="code">
+<textarea rows="6">
+<details>
+  <summary>CSS Tips</summary>
+  CSS Grid is the new hotness, and it makes grid layouts super easy to compose and understand.
+</details>
 </textarea>
           </div>
           <div class="attributes">
@@ -3289,54 +3322,30 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           <div class="description">
             <p>Dialog box or other interactive component such as an inspector or window</p>
           </div>
-          <div class="display">
-
+          <div>
+            <button onclick="window.dialog.showModal();">explore dialog</button>
+            <dialog id="dialog">
+              <p>Hello from the Haus!  I'm a dialog.</p>
+              <form method="dialog">
+                <button>Close</button>
+              </form>
+            </dialog>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="8">
+<button onclick="window.dialog.showModal();">explore dialog</button>
+<dialog id="dialog">
+  <p>Hello from the Haus!  I'm a dialog.</p>
+  <form method="dialog">
+    <button>Close</button>
+  </form>
+</dialog>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
-          </div>
-        </article>
-        <article id="el-menu">
-          <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu">&lt;menu&gt;</a></p>
-          </div>
-          <div class="description">
-            <p>Group of commands that a user can perform or activate, such as list menus (as you might see on top of a screen) or contextual menus (as you might see after clicking a button)</p>
-          </div>
-          <div class="display">
-
-          </div>
-          <div class="code">
-<textarea>
-
-</textarea>
-          </div>
-          <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
-          </div>
-        </article>
-        <article id="el-summary">
-          <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary">&lt;summary&gt;</a></p>
-          </div>
-          <div class="description">
-            <p>A summary, caption, or legend as part of a details element disclosure box</p>
-          </div>
-          <div class="display">
-
-          </div>
-          <div class="code">
-<textarea>
-
-</textarea>
-          </div>
-          <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>open: boolean attribute indicating whether or not the dialog is currently open</li>
+            </ul>
           </div>
         </article>
         <h3 id="web-components">Web Components</h3>
