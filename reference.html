@@ -3081,15 +3081,31 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Scalar value within a known range or a fractional value</p>
           </div>
           <div class="display">
-
+            <label>HTML learned:
+              <meter id="progress-ex" min="0" max="100" value="80">
+                80%
+              </meter>
+            </label>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="6">
+<label>HTML learned:
+  <meter id="progress" min="0" max="100" value="80">
+    80%
+  </meter>
+</label>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>min: lower numeric bound of the measured range (the minimum)</li>
+              <li>max: higher numeric bound of the measured range (the maximum)</li>
+              <li>value: the current numeric value inside of the range</li>
+              <li>low: the upper numeric bound of the low end of the measured range</li>
+              <li>high: the lower numeric bound of the high end of the measured range</li>
+              <li>optimum: the optimal numeric value, used with the low or high attributes to indicate where along the range is preferable</li>
+              <li>form: the parent or owner form element of the progress element</li>
+            </ul>
           </div>
         </article>
         <article id="el-progress">
