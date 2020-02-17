@@ -2856,15 +2856,48 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Control that provides a menu of options</p>
           </div>
           <div class="display">
-
+            <label>Favorite global attributes
+              <select name="favhtmlattributes" multiple size="9">
+                <option value="class">class</option>
+                <option value="data-">data-</option>
+                <option value="draggable">draggable</option>
+                <option value="hidden">hidden</option>
+                <option value="id">id</option>
+                <option value="inputmode">inputmode</option>
+                <option value="style">style</option>
+                <option value="tabindex">tabindex</option>
+                <option value="title">title</option>
+              </select>
+            </label>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="14">
+<label>Favorite global attributes
+  <select name="favhtmlattributes" multiple size="9">
+    <option value="class">class</option>
+    <option value="data-">data-</option>
+    <option value="draggable">draggable</option>
+    <option value="hidden">hidden</option>
+    <option value="id">id</option>
+    <option value="inputmode">inputmode</option>
+    <option value="style">style</option>
+    <option value="tabindex">tabindex</option>
+    <option value="title">title</option>
+  </select>
+</label>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>autocomplete: provides a hint as to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">how autocomplete</a> should work</li>
+              <li>autofocus: boolean determining if form receives focus when the page loads</li>
+              <li>disabled: boolean indicating whether select element can be used</li>
+              <li>form: the parent form or owner of the select element</li>
+              <li>multiple: boolean indicating whether multiple options can be selected (or not)</li>
+              <li>name: name of the element</li>
+              <li>required: boolean indicating whether element is required to be selected</li>
+              <li>size: if multiple is true, then this determines number of visible rows</li>
+            </ul>
           </div>
         </article>
         <article id="el-option">
