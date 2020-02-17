@@ -2905,18 +2905,35 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option">&lt;option&gt;</a></p>
           </div>
           <div class="description">
-            <p>Used to define individual options within a select element</p>
+            <p>Used to define individual options within a select, optgroup, or datalist element</p>
           </div>
           <div class="display">
-
+            <label>Favorite web technology
+              <select>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js" disabled>JS</option>
+              </select>
+            </label>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="8">
+<label>Favorite web technology
+  <select>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js" disabled>JS</option>
+  </select>
+</label>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>disabled: boolean determining if option is checkable</li>
+              <li>label: text for the label indicating the meaning of the option (if undefined, then element's text content serves in its place)</li>
+              <li>selected: boolean determining if this option is initially selected</li>
+              <li>value: value to be submitted with the form, if the option is selected</li>
+            </ul>
           </div>
         </article>
         <article id="el-optgroup">
