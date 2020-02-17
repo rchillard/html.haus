@@ -3160,15 +3160,51 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Clickable button used to submit forms</p>
           </div>
           <div class="display">
-
+            <button>Read HTML Tutorial</button>
           </div>
           <div class="code">
 <textarea>
-
+<button>Read HTML Tutorial</button>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>autofocus: boolean determining whether button should have focus when page loads</li>
+              <li>disabled: disabled: boolean determining whether button is usable or not</li>
+              <li>form: the associated parent or owner of the button element, as identified by its id attribute</li>
+              <li>formaction: the URL that processes the information submitted by the button, overriding action attribute of button's form</li>
+              <li>formenctype: specifies how to encode the form data that is submitted
+                <ul>
+                  <li>application/x-www-form-urlencoded: default value</li>
+                  <li>multipart/form-data: used if the form contains an input type=file element</li>
+                  <li>text/plain: used for debugging purposes</li>
+                </ul>
+              </li>
+              <li>formmethod: specifies the HTTP method used to submit the form
+                <ul>
+                    <li>post: the POST method means the form data is sent as the request body</li>
+                    <li>get: the GET method appends form data to the action URL with a ? separator, useful when form has <a href="https://developer.mozilla.org/en-US/docs/Glossary/Idempotent">no side-effects</a></li>
+                  </ul>
+              </li>
+              <li>formnovalidate: boolean attribute specifies that form should not be validated when it is submitted</li>
+              <li>formtarget: where to display the response after submitting the form
+                <ul>
+                  <li>_self (default): loads into same browsing context as current</li>
+                  <li>_blank: load into a new unnamed browsing context</li>
+                  <li>_parent: load into the parent browsing context of the current one</li>
+                  <li>_top: load into the top-level browsing context</li>
+                </ul>
+              </li>
+              <li>name: name of the button</li>
+              <li>type: default behavior of the button
+                <ul>
+                  <li>submit: submits form data to the server (default)</li>
+                  <li>reset: resets all controls to their initial values (same as input type="reset")</li>
+                  <li>button: no default behavior, does nothing when pressed, possible to use for client-side scripts and element events</li>
+                </ul>
+              </li>
+              <li>value: defines the value associated with the button's name when the form data is submitted, passing as parameters</li>
+            </ul>
           </div>
         </article>
         <article id="el-output">
@@ -3179,15 +3215,27 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Container element that accepts the results of a user action or calculation</p>
           </div>
           <div class="display">
-
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+              <input type="text" id="a-ex" name="a" value="2" /> +
+              <input type="text" id="b-ex" name="b" value="2" /> =
+              <output name="result" for="a-ex b-ex">4</output>
+            </form>
           </div>
           <div class="code">
-<textarea>
-
+<textarea rows="6">
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="text" id="a" name="a" value="2" /> +
+  <input type="text" id="b" name="b" value="2" /> =
+  <output name="result" for="a b">4</output>
+</form>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>for: space-separated list of other element ids, indicating that those elements contributed input values to the calculation</li>
+              <li>form: form element to associate with the output (the owner)</li>
+              <li>name: the name of the output element</li>
+            </ul>
           </div>
         </article>
 
