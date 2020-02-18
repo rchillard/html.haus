@@ -6,6 +6,7 @@
     <meta name="Description" content="Reference for the most common and popular HTML elements, their tag syntax, sample code, and examples">
     <title>HTML Haus | Reference Elements</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="slot.js" defer></script>
     <!-- <base href="https://html.haus/"> -->
   </head>
   <body>
@@ -3365,7 +3366,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                   font-size: 1.2rem;
                 }
                 .website-url {
-                  color: #db3700;
+                  color: slategray;
                   font-size: 0.8rem;
                 }
               </style>
@@ -3401,7 +3402,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
       font-size: 1.2rem;
     }
     .website-url {
-      color: #db3700;
+      color: slategray;
       font-size: 0.8rem;
     }
   </style>
@@ -3442,16 +3443,87 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           </div>
           <div class="display">
             <template id="slot-example">
-              
+              <style>
+                h4 {
+                  color: #db3700;
+                  font-size: 1.2rem;
+                }
+                small {
+                  color: slategray;
+                  font-size: 0.8rem;
+                }
+              </style>
+              <h4>
+                <slot name="site-name">Website Name Here</slot>
+              </h4>
+              <p>
+                <slot name="site-desc">Description of your site here!</slot>
+              </p>
+              <small>
+                <slot name="site-legal">Your legal disclaimer here</slot>
+              </small>          
             </template>
+            <my-slot-example></my-slot-example>
+            <my-slot-example>
+              <span slot="site-name">HTML.Haus</span>
+              <span slot="site-desc">Website for teaching HTML to everyone.</span>
+              <span slot="site-legal">Forever free to do whatever</span>
+            </my-slot-example>
           </div>
           <div class="code">
-<textarea>
+<textarea rows="47">
+// slot.js file contents
+customElements.define(
+  "my-slot-example",
+  class extends HTMLElement {
+    constructor() {
+      super();
+      let template = document.getElementById("slot-example");
+      let templateContent = template.content;
+      const shadowRoot = this.attachShadow({ mode: "open" }).appendChild(
+        templateContent.cloneNode(true)
+      );
+    }
+  }
+);
 
+  <!-- Placed in the <head> element -->
+<script src="slot.js" defer></script>
+
+<!-- Found in your main <body> -->
+<template id="slot-example">
+  <style>
+    h4 {
+      color: #db3700;
+      font-size: 1.2rem;
+    }
+    small {
+      color: slategray;
+      font-size: 0.8rem;
+    }
+  </style>
+  <h4>
+    <slot name="site-name">Website Name Here</slot>
+  </h4>
+  <p>
+    <slot name="site-desc">Description of your site here!</slot>
+  </p>
+  <small>
+    <slot name="site-legal">Your legal disclaimer here</slot>
+  </small>          
+</template>
+<my-slot-example></my-slot-example>
+<my-slot-example>
+  <span slot="site-name">HTML.Haus</span>
+  <span slot="site-desc">Website for teaching HTML to everyone.</span>
+  <span slot="site-legal">Forever free to do whatever</span>
+</my-slot-example>
 </textarea>
           </div>
           <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
+            <ul>
+              <li>name: the name of the slot used for reference</li>
+            </ul>
           </div>
         </article>
     </main>
