@@ -3384,9 +3384,9 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               ]
               websites.forEach(website => {
                 const site = document.importNode(websitelist.content, true)
-                site.querySelector('.website-name').innerHTML = website.name
-                site.querySelector('.website-desc').innerHTML = website.desc
-                site.querySelector('.website-url').innerHTML = website.url
+                site.querySelector('.website-name').textContent = website.name
+                site.querySelector('.website-desc').textContent = website.desc
+                site.querySelector('.website-url').textContent = website.url
 
                 document.getElementById('sites').appendChild(site)
               })
@@ -3420,9 +3420,9 @@ Houses are built with certain kinds of material like <b class="material">wood</b
   ]
   websites.forEach(website => {
     const site = document.importNode(websitelist.content, true)
-    site.querySelector('.website-name').innerHTML = website.name
-    site.querySelector('.website-desc').innerHTML = website.desc
-    site.querySelector('.website-url').innerHTML = website.url
+    site.querySelector('.website-name').textContent = website.name
+    site.querySelector('.website-desc').textContent = website.desc
+    site.querySelector('.website-url').textContent = website.url
 
     document.getElementById('sites-ex').appendChild(site)
   })
