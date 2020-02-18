@@ -3350,25 +3350,6 @@ Houses are built with certain kinds of material like <b class="material">wood</b
         </article>
         <h3 id="web-components">Web Components</h3>
         <p>Elements that allow you to create and use custom elements as if they were regular HTML</p>
-        <article id="el-slot">
-          <div class="name">
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot">&lt;slot&gt;</a></p>
-          </div>
-          <div class="description">
-            <p>Placeholder inside a web component that can contain markup, which enables the creation of separate DOM trees</p>
-          </div>
-          <div class="display">
-
-          </div>
-          <div class="code">
-<textarea>
-
-</textarea>
-          </div>
-          <div class="attributes">
-            <p><a href="#global-attributes">global attributes</a></p>
-          </div>
-        </article>
         <article id="el-template">
           <div class="name">
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">&lt;template&gt;</a></p>
@@ -3377,7 +3358,92 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <p>Mechanism for holding HTML that will not be rendered immediately when a page is loaded, but can be instantiated during runtime</p>
           </div>
           <div class="display">
+            <template id="template-example">
+              <style>
+                .website-name {
+                  color: #db3700;
+                  font-size: 1.2rem;
+                }
+                .website-url {
+                  color: #db3700;
+                  font-size: 0.8rem;
+                }
+              </style>
+              <p>
+                <span class="website-name"></span><br/>
+                <span class="website-desc"></span><br/>
+                <span class="website-url"></span>
+              </p>
+            </template>
+            <div id="sites"></div>
+            <script>
+              const websitelist = document.getElementById('template-example')
+              const websites = [
+                { name: 'HTML Haus', url: 'https://html.haus/', desc: 'Website for teaching HTML to everyone.' },
+                { name: 'CSS City', url: 'https://css.city/', desc: 'Website for illustrating the world of CSS possibilities.' }
+              ]
+              websites.forEach(website => {
+                const site = document.importNode(websitelist.content, true)
+                site.querySelector('.website-name').innerHTML = website.name
+                site.querySelector('.website-desc').innerHTML = website.desc
+                site.querySelector('.website-url').innerHTML = website.url
 
+                document.getElementById('sites').appendChild(site)
+              })
+            </script>
+          </div>
+          <div class="code">
+<textarea rows="36">
+<template id="template-ex">
+  <style>
+    .website-name {
+      color: #db3700;
+      font-size: 1.2rem;
+    }
+    .website-url {
+      color: #db3700;
+      font-size: 0.8rem;
+    }
+  </style>
+  <p>
+    <span class="website-name"></span><br/>
+    <span class="website-desc"></span><br/>
+    <span class="website-url"></span>
+  </p>
+</template>
+<div id="sites-ex"></div>
+<script>
+  const websitelist = document.getElementById('template-ex')
+  const websites = [
+    { name: 'HTML Haus', url: 'https://html.haus/', desc: 'Website for teaching HTML to everyone.' },
+    { name: 'CSS City', url: 'https://css.city/', desc: 'Website for illustrating the world of CSS possibilities.' }
+  ]
+  websites.forEach(website => {
+    const site = document.importNode(websitelist.content, true)
+    site.querySelector('.website-name').innerHTML = website.name
+    site.querySelector('.website-desc').innerHTML = website.desc
+    site.querySelector('.website-url').innerHTML = website.url
+
+    document.getElementById('sites-ex').appendChild(site)
+  })
+</script>
+</textarea>
+          </div>
+          <div class="attributes">
+            <p><a href="#global-attributes">global attributes</a></p>
+          </div>
+        </article>
+        <article id="el-slot">
+          <div class="name">
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot">&lt;slot&gt;</a></p>
+          </div>
+          <div class="description">
+            <p>Placeholder inside a web component containing markup, enabling creation of separate DOM trees</p>
+          </div>
+          <div class="display">
+            <template id="slot-example">
+              
+            </template>
           </div>
           <div class="code">
 <textarea>
