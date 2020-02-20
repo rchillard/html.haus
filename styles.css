@@ -87,6 +87,7 @@ body {
 
 header {
   grid-area: header;
+  margin-top: 1rem;
 }
 
 nav {
@@ -118,6 +119,7 @@ main {
 
 footer {
   grid-area: footer;
+  margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
 }
