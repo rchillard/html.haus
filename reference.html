@@ -6,16 +6,16 @@
     <meta name="Description" content="Reference for the most common and popular HTML elements, their tag syntax, sample code, and examples">
     <title>HTML Haus | Reference Elements</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <base href="https://html.haus/reference.html">
+    <!-- <base href="https://html.haus/reference.html"> -->
     <script src="slot.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <span id="title"><a href="index.html">HTML.Haus</a></span>
-        <span id="learn"><a href="learn.html">Learn</a></span>
-        <span id="reference"><a href="reference.html">Reference</a></span>
-        <span id="templates"><a href="templates.html">Templates</a></span>
+        <span id="menu-title"><a href="index.html">HTML.Haus</a></span>
+        <span id="menu-learn"><a href="learn.html">Learn</a></span>
+        <span id="menu-reference"><a href="reference.html">Reference</a></span>
+        <span id="menu-templates"><a href="templates.html">Templates</a></span>
       </nav>
     </header>
     <main>
@@ -40,20 +40,91 @@
         HTML is divided into different types of elements, each of which serves a purpose in structuring content for the user.  Some elements organize, some
         denote meaning, some add tabular structures, while others allow you to submit data or interact with the page. Here are the different categories of elements:
       </p>
-      <ul>
-        <li><a href="#metadata">Metadata</a></li>
-        <li><a href="#sectioning">Sectioning</a></li>
-        <li><a href="#block-content">Block content</a></li>
-        <li><a href="#inline-content">Inline content</a></li>
-        <li><a href="#multimedia">Multimedia</a></li>
-        <li><a href="#embedded">Embedded</a></li>
-        <li><a href="#scripting">Scripting</a></li>
-        <li><a href="#edits">Edits</a></li>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#forms">Forms</a></li>
-        <li><a href="#interactive">Interactive</a></li>
-        <li><a href="#web-components">Web Components</a></li>
-      </ul>
+        <details>
+          <summary><a href="#metadata">Metadata</a></summary>
+          <ul>
+            <li><a href="#head">head</a></li>
+            <li><a href="#title">title</a></li>
+            <li><a href="#style">style</a></li>
+            <li><a href="#link">link</a></li>
+            <li><a href="#base">base</a></li>
+            <li><a href="#meta">meta</a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#sectioning">Sectioning</a></summary>
+          <ul>
+            <li><a href="#body">body</a></li>
+            <li><a href="#header">header</a></li>
+            <li><a href="#nav">nav</a></li>
+            <li><a href="#main">main</a></li>
+            <li><a href="#aside">aside</a></li>
+            <li><a href="#article">article</a></li>
+            <li><a href="#section">section</a></li>
+            <li><a href="#h1-h6">h1-h6</a></li>
+            <li><a href="#footer">footer</a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#block-content">Block content</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#inline-content">Inline content</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#multimedia">Multimedia</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#embedded">Embedded</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#scripting">Scripting</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#edits">Edits</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#tables">Tables</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#forms">Forms</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#interactive">Interactive</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
+        <details>
+          <summary><a href="#web-components">Web Components</a></summary>
+          <ul>
+            <li><a href="# "> </a></li>
+          </ul>
+        </details>
       <h2>Using the Catalog</h2>
       <h3>Structure</h3>
         <p>Each element in the catalog has name, description, display, code, and attributes. These appear in a compact layout as follows:</p>
@@ -142,7 +213,7 @@
               <p><a href="#global-attributes">global attributes</a></p>
             </div>
           </article>
-          <article id="el-title">
+          <article id="title">
               <div class="name">
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">&lt;title&gt;</a></p>
               </div>
@@ -281,14 +352,14 @@
             visual structure.  I've depicted it visually below, so you can get a general sense for how <em>most</em> pages employ these elements.  However, there's no
             relationship between HTML <em>logical structure</em> and how it's visually presented:
           </p>
-          <div id="layout">
+          <div id="ex-layout">
             <p>body</p>
-            <div id="header">
+            <div id="ex-header">
               <p>header</p>
               <p style="text-align: center">nav</p>
             </div>
-            <div id="wrapper">
-              <div id="main">
+            <div id="ex-wrapper">
+              <div id="ex-main">
                 <p>main</p>
                 <h1>h1</h1>
                 <h2>h2</h2>
@@ -297,11 +368,11 @@
                 <h5>h5</h5>
                 <h6>h6</h6>
               </div>
-              <div id="aside">
+              <div id="ex-aside">
                 <p>aside</p>
               </div>
             </div>
-            <div id="footer">
+            <div id="ex-footer">
               <p>footer</p>
             </div>
           </div>
@@ -352,7 +423,7 @@
                 </ul>
               </div>
             </article>
-            <article id="el-header">
+            <article id="header">
               <div class="name">
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">&lt;header&gt;</a></p>
               </div>
@@ -373,7 +444,7 @@
                 <p><a href="#global-attributes">global attributes</a></p>
               </div>
             </article>
-            <article id="el-nav">
+            <article id="nav">
               <div class="name">
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</a></p>
               </div>
