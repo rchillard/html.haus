@@ -56,6 +56,10 @@ nav #menu-templates {
   nav {
     font-size: 0.9rem;
   }
+
+  textarea {
+    width: 90%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -68,6 +72,10 @@ nav #menu-templates {
 
   nav {
     font-size: 1rem;
+  }
+
+  textarea {
+    width: 90%;
   }
 }
 
@@ -82,6 +90,10 @@ nav #menu-templates {
   nav {
     font-size: 1.1rem;
   }
+
+  textarea {
+    width: 95%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -95,6 +107,10 @@ nav #menu-templates {
   nav {
     font-size: 1.2rem;
   }
+
+  textarea {
+    width: 100%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -107,6 +123,10 @@ nav #menu-templates {
 
   nav {
     font-size: 1.3rem;
+  }
+
+  textarea {
+    width: 100%;
   }
 }
 
@@ -158,7 +178,6 @@ mark {
 
 textarea {
   border: 1px solid var(--hausorange);
-  width: 100%;
 }
 
 u {
