@@ -26,6 +26,25 @@ nav {
   place-items: center;
 }
 
+nav #menu-title {
+  justify-self: start;
+  grid-column: 1;
+}
+
+nav #menu-learn {
+  grid-column: 2;
+}
+
+nav #menu-reference {
+  grid-column: 3;
+}
+
+nav #menu-templates {
+  grid-column: 4;
+}
+
+/* MEDIA QUERIES */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
@@ -137,23 +156,6 @@ mark {
   background-color: lightsalmon;
 }
 
-nav #menu-title {
-  justify-self: start;
-  grid-column: 1;
-}
-
-nav #menu-learn {
-  grid-column: 2;
-}
-
-nav #menu-reference {
-  grid-column: 3;
-}
-
-nav #menu-templates {
-  grid-column: 4;
-}
-
 textarea {
   border: 1px solid var(--hausorange);
   width: 100%;
@@ -163,7 +165,8 @@ u {
   text-decoration: var(--hausorange) wavy underline;
 }
 
-/* Classes */
+/* CLASSES */
+
 .attributes {
   grid-area: attributes;
 }
@@ -198,7 +201,7 @@ u {
   border: 2px solid black;
 }
 
-/* Individual Elements */
+/* ELEMENTS */
 
 #brand {
   color: var(--hausorange);
