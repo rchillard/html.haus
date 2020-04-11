@@ -115,6 +115,10 @@ u {
   grid-area: description;
 }
 
+.diagram {
+  width: 100%;
+}
+
 .display {
   grid-area: display;
 }
@@ -186,6 +190,10 @@ u {
   padding-right: 0.25rem;
   vertical-align: text-bottom;
   width: 32px;
+}
+
+#heart {
+  width: 15px;
 }
 
 /* MEDIA QUERIES */
