@@ -404,11 +404,14 @@
                   <li>charset: declares the page's character encoding (please just use UTF-8)</li>
                   <li>content: contains the value for the http-equiv or name attribute</li>
                   <li>http-equiv: defines directives, allowing values named after HTTP headers</li>
+                  <li>
                     <ul>
                       <li>content-security-policy: define a content policy for the current page, protecting against cross-site scripting</li>
                       <li>refresh: number of seconds until page should be reloaded/redirected, requires inclusion of '; url='</li>
                     </ul>
+                  </li>
                   <li>name: defines name of document-level metadata</li>
+                  <li>
                     <ul>
                       <li>application-name: name of web application running in page (only used for applications)</li>
                       <li>author</li>
@@ -422,6 +425,7 @@
                       <li>robots: defines behavior that web crawlers should follow</li>
                       <li>viewport: used by mobile devices to hint at the initial size of the viewport</li>
                     </ul>
+                  </li>
                 </ul>
               </div>
             </article>
@@ -1058,16 +1062,18 @@
                 <li>hreflang: the human language of the linked URL; allowed values are the same as the global lang</li>
                 <li>ping: space-separated list of URLs, which the browser will send POST requests with the body PING to, when the link is followed</li>
                 <li>referrerpolicy: how much of the referrer to send when following the link</li>
-                <ul>
-                  <li>no-referrer: does not send the referer header</li>
-                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
-                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
-                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
-                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
-                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
-                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>no-referrer: does not send the referer header</li>
+                    <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                    <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                    <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                    <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                    <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
+                    <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                    <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                  </ul>
+                </li>
                 <li>rel: relationship of the linked URL as space-separated link types</li>
                 <li>target: where to display the linked URL (tab, window, or iframe) with keywords: _self, _blank, _parent, _top</li>
                 <li>type: linked URL's format with a <abbr title="Media Type (e.g. text/css or audio/mp4)">MIME</abbr> type</li>
@@ -1549,13 +1555,15 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <div class="attributes">
               <ul>
                 <li>datetime: time and/or date of the element in a valid format, see examples below:</li>
-                <ul>
-                  <li>year: 2015</li>
-                  <li>month: 2015-10</li>
-                  <li>date: 2015-10-21</li>
-                  <li>time: 01:16</li>
-                  <li>local date+time: 2015-10-21 01:16</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>year: 2015</li>
+                    <li>month: 2015-10</li>
+                    <li>date: 2015-10-21</li>
+                    <li>time: 01:16</li>
+                    <li>local date+time: 2015-10-21 01:16</li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </article>
@@ -1696,7 +1704,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <div class="display">
               <map name="haus2">
                 <area shape="rect" coords="25,25,125,100" href="https://html.haus/" alt="Red house for HTML" />
-                <area shape="react" coords="0,100,150,150" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" alt="Green slope to MDN Documents" />
+                <area shape="rect" coords="0,100,150,150" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" alt="Green slope to MDN Documents" />
               </map>
               <img usemap="#haus2" src="https://html.haus/assets/red-house-150.jpg" alt="Red house on hill">
             </div>
@@ -1704,7 +1712,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 <textarea rows="9">
 <map name="haus2">
   <area shape="rect" coords="25,25,125,100" href="https://html.haus/" alt="Red house for HTML" />
-  <area shape="react" coords="0,100,150,150" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" alt="Green slope to MDN Documents" />
+  <area shape="rect" coords="0,100,150,150" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" alt="Green slope to MDN Documents" />
 </map>
 <img usemap="#haus2" src="https://html.haus/assets/red-house-150.jpg" alt="Red house on hill">
 </textarea>
@@ -1713,26 +1721,30 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <ul>
                 <li>alt: provides alternate text for the image in case it cannot load or for screen readers</li>
                 <li>coords: set of values specifying the coordinates of the hot spot or region of the map</li>
-                <ul>
-                  <li>circle: x,y,r, with the center expressed as x,y and then the radius as r</li>
-                  <li>poly: set of x,y pairs for every point in the polygon</li>
-                  <li>rect: two pairs of coordinates describing the left, top, right, bottom</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>circle: x,y,r, with the center expressed as x,y and then the radius as r</li>
+                    <li>poly: set of x,y pairs for every point in the polygon</li>
+                    <li>rect: two pairs of coordinates describing the left, top, right, bottom</li>
+                  </ul>
+                </li>
                 <li>download: prompts to save the linked URL instead of navigating to it</li>
                 <li>href: URL that the hyperlink points to, which can be sections of a page, pieces of media files, 'tel:' numbers, 'mailto:' addresses</li>
                 <li>hreflang: the human language of the linked URL; allowed values are the same as the global lang</li>
                 <li>ping: space-separated list of URLs, which the browser will send POST requests with the body PING to, when the link is followed</li>
                 <li>referrerpolicy: how much of the referrer to send when following the link</li>
-                <ul>
-                  <li>no-referrer: does not send the referer header</li>
-                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
-                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
-                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
-                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
-                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
-                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>no-referrer: does not send the referer header</li>
+                    <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                    <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                    <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                    <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                    <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
+                    <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                    <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                  </ul>
+                </li>
                 <li>rel: relationship of the linked URL as space-separated link types</li>
                 <li>shape: default uses the entire image, while circle, poly, and rect describe subsets with coordinates</li>
                 <li>target: where to display the linked URL (tab, window, or iframe) with keywords: _self, _blank, _parent, _top</li>
@@ -1782,7 +1794,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <p>Embed a media player that will play video into the document</p>
             </div>
             <div class="display">
-              <video controls width="100%">
+              <video class="diagram" controls>
                 <source src="" type="">
                 Your browser does not support the video element.
               </video>
@@ -1843,13 +1855,15 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <ul>
                 <li>default: only usable on one track element, indicates that this track should be enabled unless otherwise specified</li>
                 <li>kind: how the track is to be used</li>
-                <ul>
-                  <li>subtitles: translations of content or additional information such as date, time, or location of a scene</li>
-                  <li>captions: transcription of audio (possibly a translation as well), music cues, or sound effects</li>
-                  <li>descriptions: textual description of the video content</li>
-                  <li>chapters: chapter titles to be used for the purpose of navigation</li>
-                  <li>metadata: tracks used by scripts which are not visible to the user</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>subtitles: translations of content or additional information such as date, time, or location of a scene</li>
+                    <li>captions: transcription of audio (possibly a translation as well), music cues, or sound effects</li>
+                    <li>descriptions: textual description of the video content</li>
+                    <li>chapters: chapter titles to be used for the purpose of navigation</li>
+                    <li>metadata: tracks used by scripts which are not visible to the user</li>
+                  </ul>
+                </li>
                 <li>label: user readable title that is listed to the user</li>
                 <li>src: URL to the track (a .vtt file)</li>
                 <li>srclang: valid language of track text data, and if the kind is subtitles, then srclang must be defined</li>
@@ -1895,37 +1909,43 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <div class="attributes">
               <ul>
                <li>allow: specifies a feature policy for the iframe (e.g. allow="fullscreen")</li>
-                <ul>
-                  <li>fullscreen: allows iframe to call requestFullscreen() method</li>
-                  <li>payment: allows iframe to call the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API">payment request API</a></li>
-                </ul>
+               <li>
+                  <ul>
+                    <li>fullscreen: allows iframe to call requestFullscreen() method</li>
+                    <li>payment: allows iframe to call the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API">payment request API</a></li>
+                  </ul>
+                </li>
                 <li>height: height of the frame in CSS pixels (default is 150)</li>
                 <li>name: name for embedded browsing context</li>
                 <li>referrerpolicy: which referer to send when fetching the frame's resources</li>
-                <ul>
-                  <li>no-referrer: does not send the referer header</li>
-                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
-                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
-                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
-                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
-                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
-                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>no-referrer: does not send the referer header</li>
+                    <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                    <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                    <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                    <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                    <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
+                    <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                    <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                  </ul>
+                </li>
                 <li>sandbox: applies extra restrictions to the content in the frame; empty applies all restrictions, while space separated list removes restrictions individually</li>
-                <ul>
-                  <li>allow-forms: allows the iframe to submit forms</li>
-                  <li>allow-modals: allows the iframe to open modal windows</li>
-                  <li>allow-orientation-lock: allows the iframe to lock screen orientation</li>
-                  <li>allow-pointer-lock: allows the iframe to use the pointer lock API</li>
-                  <li>allow-popups: allows popups</li>
-                  <li>allow-popups-to-escape-sandbox: allows popups that do not inherit the sandbox rules</li>
-                  <li>allow-presentation: allows a presentaion session to start</li>
-                  <li>allow-same-origin: pass the same-origin policy</li>
-                  <li>allow-scripts: allow the iframe to run scripts but not create popup windows</li>
-                  <li>allow-top-navigation: allow the iframe to navigate the top level browsing context</li>
-                  <li>allow-top-navigation-by-user-activation: allow the iframe to navigate top if a user gesture initiates</li>
-                </ul>
+                <li>
+                  <ul>
+                    <li>allow-forms: allows the iframe to submit forms</li>
+                    <li>allow-modals: allows the iframe to open modal windows</li>
+                    <li>allow-orientation-lock: allows the iframe to lock screen orientation</li>
+                    <li>allow-pointer-lock: allows the iframe to use the pointer lock API</li>
+                    <li>allow-popups: allows popups</li>
+                    <li>allow-popups-to-escape-sandbox: allows popups that do not inherit the sandbox rules</li>
+                    <li>allow-presentation: allows a presentaion session to start</li>
+                    <li>allow-same-origin: pass the same-origin policy</li>
+                    <li>allow-scripts: allow the iframe to run scripts but not create popup windows</li>
+                    <li>allow-top-navigation: allow the iframe to navigate the top level browsing context</li>
+                    <li>allow-top-navigation-by-user-activation: allow the iframe to navigate top if a user gesture initiates</li>
+                  </ul>
+                </li>
                 <li>src: URL of document to embed</li>
                 <li>srcdoc: inline HTML to embed, overriding the src attrbutes</li>
                 <li>width: width of iframe in CSS pixels (default is 300)</li>
@@ -2062,22 +2082,26 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <li>nomodule: boolean indicating script should not be executed if browser supports ES2015 modules</li>
               <li>nonce: cryptographic number used once (nonce) to whitelist in-line scripts in a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src">script-src CSP</a></li>
               <li>referrerpolicy: indicates which referrer to send when fetching the script</li>
-              <ul>
-                <li>no-referrer: does not send the referer header</li>
-                <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
-                <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
-                <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
-                <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
-                <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
-                <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
-                <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
-              </ul>
+              <li>
+                <ul>
+                  <li>no-referrer: does not send the referer header</li>
+                  <li>no-referr-when-downgrade: referer header will not be sent to origins without TLS (HTTPS)</li>
+                  <li>origin: sent referer is limited to origin of refering page (scheme, host, port)</li>
+                  <li>origin-when-cross-origin: limited to scheme, host, and port, except path will be included for navigation on same origin</li>
+                  <li>same-origin: referrer sent for same origin, but cross-origin requests will contain no referrer information</li>
+                  <li>strict-origin: only send origin when security protocol remains the same (HTTPS to HTTPS)</li>
+                  <li>strict-origin-when-cross-origin: send full URL when performing a same-origin request, only send origin when protocol remains the same, and send no referer header to less secure destinations</li>
+                  <li>unsafe-url: referrer will incldue the origin and path, but not the fragment, password, or username</li>
+                </ul>
+              </li>
               <li>src: specifies the URI of an external script, which is to be used as an alternative to embedding a script</li>
               <li>type: type of script</li>
-              <ul>
-                <li>text/javascript: this is the safest MIME type for all browsers and for forward compatibility</li>
-                <li>module: treat code as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript module</a> (requires use of CORS)</li>
-              </ul>
+              <li>
+                <ul>
+                  <li>text/javascript: this is the safest MIME type for all browsers and for forward compatibility</li>
+                  <li>module: treat code as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript module</a> (requires use of CORS)</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </article>
@@ -2394,7 +2418,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           <div class="display">
             <table>
               <tr>
-                <th abrr="language or technology" scope="col">Lang</th>
+                <th abbr="language or technology" scope="col">Lang</th>
                 <th scope="col">Chars</th>
                 <th scope="col">Purpose</th>
               </tr>
@@ -2419,7 +2443,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 <textarea rows="23">
 <table>
   <tr>
-    <th abrr="language or technology" scope="col">Lang</th>
+    <th abbr="language or technology" scope="col">Lang</th>
     <th scope="col">Chars</th>
     <th scope="col">Purpose</th>
   </tr>
@@ -2447,7 +2471,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <li>colspan: accepts integer value that indicates how many columns the cell extends</li>
               <li>headers: list of space-separated strings corresponding to the ids of th elements (see below)</li>
               <li>rowspan: accepts integer value that indicates how many rows the cell extends</li>
-              <li>scope: defines the cells that the header defined in the th element relates to:
+              <li>scope: defines the cells that the header defined in the th element relates to:</li>
+              <li>
                 <ul>
                   <li>row: header relates to all cells of the row it belongs to</li>
                   <li>rowgroup: belongs to a rowgroup and relates to all of its cells</li>
@@ -2735,8 +2760,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <form action="" method="get">
               <label>Your name: 
                 <input type="text" name="name" id="name">
-                <input type="submit" value="Sign up">
               </label>
+              <input type="submit" value="Sign up">
             </form>
           </div>
           <div class="code">
@@ -2744,8 +2769,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 <form action="" method="get">
   <label>Your name: 
     <input type="text" id="sample-name-form">
-    <input type="submit" value="Sign up">
   </label>
+  <input type="submit" value="Sign up">
 </form>
 </textarea>
           </div>
@@ -2754,14 +2779,16 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <li>accept-charset: space-separated character encodings that the server accepts; browser will use them in order</li>
               <li>action: the URL (endpoint) that processes the form submission, can be overriden by a formaction attribute on a button or input type=submit or input type=image element</li>
               <li>autocomplete: indicates whether the form or an input element inside the form can be autocompleted by the browser, either 'off' or 'on' values</li>
-              <li>enctype: if the value of the method (see next) attribute is post, thne enctype is the MIME type of the form submission
+              <li>enctype: if the value of the method (see next) attribute is post, thne enctype is the MIME type of the form submission</li>
+              <li>
                 <ul>
                   <li>application/x-www-form-urlencoded: default value</li>
                   <li>multipart/form-data: used if the form contains an input type=file element</li>
                   <li>text/plain: used for debugging purposes</li>
                 </ul>
               </li>
-              <li>method: the HTTP method used to submit the form
+              <li>method: the HTTP method used to submit the form</li>
+              <li>
                 <ul>
                   <li>post: the POST method means the form data is sent as the request body</li>
                   <li>get: the GET method appends form data to the action URL with a ? separator, useful when form has <a href="https://developer.mozilla.org/en-US/docs/Glossary/Idempotent">no side-effects</a></li>
@@ -2769,7 +2796,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                 </ul>
               </li>
               <li>novalidate: form should not be validated when submitted</li>
-              <li>target: where to display the response after submitting the form
+              <li>target: where to display the response after submitting the form</li>
+              <li>
                 <ul>
                   <li>_self (default): loads into same browsing context as current</li>
                   <li>_blank: load into a new unnamed browsing context</li>
@@ -2952,11 +2980,9 @@ Houses are built with certain kinds of material like <b class="material">wood</b
             <br/>
             <label>reset <input type="reset"></label>
             <br/>
-            <label>image <input type="image" src="assets/red-heart.png" width="20"></label>
+            <label>image <input type="image" alt="red heart emoji" src="assets/red-heart.png" width="20"></label>
             <br/>
             <label>date <input type="date"></label>
-            <br/>
-            <label>datetime <input type="datetime"></label>
             <br/>
             <label>datetime-local <input type="datetime-local"></label>
             <br/>
@@ -3005,8 +3031,6 @@ Houses are built with certain kinds of material like <b class="material">wood</b
   <label>image <input type="image" src="assets/red-heart.png" width="20"></label>
   <br/>
   <label>date <input type="date"></label>
-  <br/>
-  <label>datetime <input type="datetime"></label>
   <br/>
   <label>datetime-local <input type="datetime-local"></label>
   <br/>
@@ -3230,7 +3254,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           </div>
           <div class="attributes">
             <ul>
-              <li>autocomplete: indicates whether the value of the textarea can be automatically completed
+              <li>autocomplete: indicates whether the value of the textarea can be automatically completed</li>
+              <li>
                 <ul>
                   <li>"on": the browser can automatically complete the textarea based on values previously used</li>
                   <li>"off": the user must explicitly enter a value into this field for every use (or the document provides its own auto-complete)</li>
@@ -3247,14 +3272,16 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <li>readonly: boolean indicating that user cannot modify value of textarea</li>
               <li>required: boolean indicating that user must fill in a value before form can be submitted</li>
               <li>rows: visible height of textarea</li>
-              <li>spellcheck: specifies whether textarea is subject to spell checking by the browser or operating system 
+              <li>spellcheck: specifies whether textarea is subject to spell checking by the browser or operating system</li>
+              <li>
                 <ul>
                   <li>"true": indicates that element input should have spelling and grammar checked</li>
                   <li>"false": indicates that element input should not be spell checked</li>
                   <li>"default": indicates that element input should follow parent element's own 'spellcheck' value</li>
                 </ul>
               </li>
-              <li>wrap: indicates how the textarea wraps text at the end of a line
+              <li>wrap: indicates how the textarea wraps text at the end of a line</li>
+              <li>
                 <ul>
                   <li>"hard": browser automatically inserts line breaks so that each line has no more width than control, requires cols</li>
                   <li>"soft": browser ensures that all line breaks in the value consist of a CR+LF pair, but does not insert additional breaks</li>
@@ -3307,11 +3334,11 @@ Houses are built with certain kinds of material like <b class="material">wood</b
           </div>
           <div class="display">
             <label for="progress-ex">Experience to next level:</label>
-            <progress id="experience" max="100" value="30">30%</progress>
+            <progress id="progress-ex" max="100" value="30">30%</progress>
           </div>
           <div class="code">
 <textarea rows="3">
-<label for="progress">Experience to next level:</label>
+<label for="exp">Experience to next level:</label>
 <progress id="exp" max="100" value="30">30%</progress>
 </textarea>
           </div>
@@ -3343,21 +3370,24 @@ Houses are built with certain kinds of material like <b class="material">wood</b
               <li>disabled: disabled: boolean determining whether button is usable or not</li>
               <li>form: the associated parent or owner of the button element, as identified by its id attribute</li>
               <li>formaction: the URL that processes the information submitted by the button, overriding action attribute of button's form</li>
-              <li>formenctype: specifies how to encode the form data that is submitted
+              <li>formenctype: specifies how to encode the form data that is submitted</li>
+              <li>
                 <ul>
                   <li>application/x-www-form-urlencoded: default value</li>
                   <li>multipart/form-data: used if the form contains an input type=file element</li>
                   <li>text/plain: used for debugging purposes</li>
                 </ul>
               </li>
-              <li>formmethod: specifies the HTTP method used to submit the form
+              <li>formmethod: specifies the HTTP method used to submit the form</li>
+              <li>
                 <ul>
                     <li>post: the POST method means the form data is sent as the request body</li>
                     <li>get: the GET method appends form data to the action URL with a ? separator, useful when form has <a href="https://developer.mozilla.org/en-US/docs/Glossary/Idempotent">no side-effects</a></li>
                   </ul>
               </li>
               <li>formnovalidate: boolean attribute specifies that form should not be validated when it is submitted</li>
-              <li>formtarget: where to display the response after submitting the form
+              <li>formtarget: where to display the response after submitting the form</li>
+              <li>
                 <ul>
                   <li>_self (default): loads into same browsing context as current</li>
                   <li>_blank: load into a new unnamed browsing context</li>
@@ -3366,7 +3396,8 @@ Houses are built with certain kinds of material like <b class="material">wood</b
                 </ul>
               </li>
               <li>name: name of the button</li>
-              <li>type: default behavior of the button
+              <li>type: default behavior of the button</li>
+              <li>
                 <ul>
                   <li>submit: submits form data to the server (default)</li>
                   <li>reset: resets all controls to their initial values (same as input type="reset")</li>
@@ -3675,7 +3706,7 @@ customElements.define(
         </article>
     </main>
     <footer>
-      Made with <img src="assets/red-heart.png" alt="Red Heart" width="15px"> by <a href="https://rchillard.com/">RCH</a>
+      Made with <img id="heart" src="assets/red-heart.png" alt="Red Heart"> by <a href="https://rchillard.com/">RCH</a>
     </footer>
   </body>
 </html>
