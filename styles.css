@@ -193,6 +193,7 @@ u {
 }
 
 #heart {
+  max-width: 15px;
   width: 15px;
 }
 
