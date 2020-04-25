@@ -123,6 +123,10 @@ u {
   grid-area: display;
 }
 
+.logo {
+  width: 2rem;
+}
+
 .name {
   font-size: 1.2em;
   grid-area: name;
