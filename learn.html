@@ -25,9 +25,9 @@
     <main>
       <h1>Learn HTML</h1>
       <p>
-        HTML stands for Hypertext Markup Language.  Technically, HTML is not a programming language.  It's called a markup language, because it's a way to <em>mark up</em>
-        regular text to specify structure and meaning.  This is similar to how you physically mark up an important passage in a book by highlighting it.  When you highlight
-        part of a book, you are marking that part as important.
+        HTML stands for Hypertext Markup Language.  It's called a markup language, because it's a way to <em>mark up</em>
+        regular text to specify structure and meaning.  This is similar to how you physically mark up an important passage
+        in a book by highlighting.  When you highlight part of a book, you are marking that part as important.
       </p>
       <img src="assets/highlighted-text-600.jpg"
       sizes="(max-width: 600px) 95vw,
@@ -48,12 +48,12 @@
       <h2>Elements</h2>
       <p>
         An element is a stand alone or discrete entity in HTML, which is usually denoted by two tags, a start or beginning tag and an ending tag.  These tags follow a certain
-        syntax and they encase content to form an element.  Here's an element with denoted parts:
+        syntax and they encase content to form an element.  Here's a diagram of an element:
       </p>
       <img class="diagram" src="assets/element-mark.svg" alt="diagram of basic html element <mark> with start tag and end tag" height="160">
       <p>
         In HTML, the &lt;mark&gt; tag is short for marked and browsers usually render it as highlighted text.  Similar to the real world, marking something means you are
-        referencing it or notating it for relevance or importance.  The tag above would appear like this:
+        referencing it or notating it for relevance or importance.  The tag above would appear like:
       </p>
       <p><mark>The haus is on fire!</mark></p>
       
@@ -97,15 +97,14 @@
         You already learned that elements start with one tag and end with another closing tag.  As you can see above there are a lot of elements, including one called
         body.  For now, all you need to focus on is that space between the body opening and closing tags.  That will be your playground.  As you go through parts of
         this tutorial, I will provide sample HTML for you.  Feel free to transpose it manually by typing it between these tags and make sure you take the time to make 
-        it your own.  Play around, customize your HTML, this should be fun.  This part is really important.  Here are some ideas on pages you could build as part of 
-        this tutorial:
+        it your own.  Play around, customize your HTML, make it fun.  This part is really important.  Here are some ideas on pages you could build:
       </p>
       <ul>
         <li>Synopsis of your favorite book</li>
         <li>Article dedicated to a band</li>
         <li>Personal biographical page</li>
       </ul>
-      <p>Choose a project, and as you learn HTML, utilize your new skills to build out a page of your own.  It will help the knowledge stick.</p>
+      <p>Choose a project, and as you learn HTML, utilize your new skills to build your own page.  It will help the knowledge stick.</p>
       <h2>Text Content</h2>
       <p>
         The &lt;mark&gt; tag above helps us describe text content.  Remember that websites started as pages or documents, and text today is just as much a fundamental part of
@@ -142,14 +141,16 @@
         <textarea rows="3"><p>I lied before because the p tag should really be the first building block in your world of new materials.  See how the p tag is creating a new visual block right here, in this very paragraph, which is separate and apart from the image above and the next paragraph below?  That's the purpose of this block level type of element.</p></textarea>  
       </label>
        <p>
-        All right, so you've learned how to start stacking bricks in the form of paragraphs, using the &lt;p&gt; tag, but what do the bricks hold on to?  How do you give
-        your house an underlying structure to hold up those brick walls?  You're going to need a wooden frame.
+        All right, so you've learned how to start stacking bricks in the form of paragraphs, using the &lt;p&gt; tag, but what holds bricks in place?  How do you give
+        your house an underlying structure?  You're going to need a wooden frame.  You need headings. 
       </p>
       <h3>Headings</h3>
       <p>
         Headings serve as your framework, your wood, the sturdy dividers that the rest of your HTML haus can be built inside of and around.  Headings create new blocks of text,
-        visually separate from surrounding elements, also making them block elements.  Can you guess what the 1st heading might be for?   Every page in HTML should have at
-        least one heading, called an &lt;h1&gt; that provides the title or main subject for that page.  After the h1, the rest of the headings flow down in a hierarchy, denoting the relative
+        visually separate from surrounding elements, also making them block elements.  Can you guess what the 1st heading might be for?
+      </p>
+      <p>
+        Every page in HTML should have at least one heading, called an &lt;h1&gt; that provides the title or main subject for that page.  After the h1, the rest of the headings flow down in a hierarchy, denoting the relative
         relationship between subordinate or nested content.  Headings allow you to see the same structure you'd experience in a table of contents.  Browsers will render headings
         by default as larger text, heavier (bolder) in appearance, and in a range starting from the largest, h1, and reducing down to the smallest, h6.  Here's what all the headings
         from 1-6 look like on this website:
@@ -164,7 +165,7 @@
       </div>
       <p>
         It's important to remember that these headings are hierarchical, so it doesn't make any sense to represent a related subordinate idea (&lt;h3&gt;) above a superior heading (&lt;h2&gt;)
-        that is higher in the hiearchy.  Here's an example to demonstrate what I mean: 
+        that is higher in the hiearchy.  Here's an example: 
       </p>
         <div class="container" style="border: 2px solid #FF4500; padding: 1rem">
           <h1>The Fall of the House of Usher</h1>
@@ -193,8 +194,8 @@
         </div>
       <p>The example above shows the way we categorize and compartmentalize information following a hierarchy.  The title of the story is the
           &lt;h1&gt;, the sections of the book are captured as &lt;h2&gt;, because they are subordinate to the h1 and they help separate the editor's background information from 
-          the actual story itself.  And then finally, even within the Background section, there's &lt;h3&gt; elements to denote subsections of the Background, Publication 
-          History and Critical Acclaim.  All of these headings help communicate how ideas are related to one another.  They serve as the wooden frame that defines the structure of your content.
+          the actual story itself.  And then finally, even within the Background section, there's &lt;h3&gt; elements to denote subsections of the Background: Publication 
+          History and Critical Acclaim.  All of these headings help communicate how ideas are related.  They serve as the wooden frame, defining the structure of your content.
       </p>
       <label>The HTML that serves as the framing with headings:
         <textarea rows="19">
@@ -250,12 +251,12 @@
         So far you've learned a handful of inline elements, which you can use to mark up your text with additional meaning:
       </p>
       <ul>
-        <li>&lt;mark&gt; stands for marked and is used to notate or reference importance in text and it typically displays as <mark>highlighted text</mark></li>
+        <li>&lt;mark&gt; stands for marked and is used to notate importance in text and it typically displays as <mark>highlighted text</mark></li>
         <li>&lt;em&gt; stands for emphasis and is used to add stress to a passage and typically displays as <em>italicized text</em></li>
         <li>&lt;strong&gt; is used to to indicate strong importance, seriousness, or urgency and usually displays as <strong>bold text</strong></li>
       </ul>
       <p>  
-        Of course to really use your paint and hang your lights, you're going to need to understand the rules around nesting elements.  
+        Of course to really use your paint and hang your lights, you need to understand the rules around nesting elements.  
       </p>
       <h3>Nesting</h3>
       <p>
@@ -272,7 +273,7 @@
       <p>
         When you nest an inline element like emphasis inside of another element like a paragraph, you have to make sure you close your emphasis tag before the paragraph tag.
         This simple rule will save you a lot of trouble and is worth remembering, as you'll be using elements together and nesting them often.  Speaking of The Velvet Voice
-        and soul music, it's important to also understand why you use tags like emphasis and how they change the meaning of a page beyond just the visual appearance in italics.
+        and soul music, it's important to also understand why you use tags like emphasis and how they change the meaning of a page beyond just the visual appearance.
       </p>
 
       <h2>Semantic HTML</h2>
@@ -332,7 +333,7 @@
       <img class="diagram" src="assets/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160">
       <p>And here's how the actual HTML looks:</p>
       <p style="color: red">She's a brick haus!</p>
-      <label>The raw HTML for your copying pleasure:
+      <label>The raw HTML used to display above:
         <textarea><p style="color: red">She's a brick haus!</p></textarea>
       </label>
       <p>
@@ -380,7 +381,7 @@
         </textarea>
       </label>
       <p>
-        Do you see how the link above doesn't have an https as part of it?  That's because it's a local reference to a file.  Your site isn't on the internet yet;
+        Do you see how the link above doesn't have an https:// in it?  That's because it's a local reference to a file.  Your site isn't on the internet yet;
         https is a protocol that the internet uses called Hypertext Transfer Protocol.  I bet you can guess what it does!
       </p>
       <label>Here's the about.html page:
@@ -399,7 +400,7 @@
   </body>
 </html>
         </textarea>
-      </label>
+      </label>https as
       <p>For the example above to work, it's important that you have saved both index.html and about.html in the same file folder!</p>
       <h2>Images</h2>
       <p>
@@ -412,7 +413,7 @@
       </label>
       <img src="assets/red-house-150.jpg" alt="Red house on side of green hill by Luke Stackpoole on Unsplash">
       <p>
-        The src="assets/red-house-150.jpg" is referencing a file in relation to where my current html page that references the image is located.  In this case, it's inside of a subfolder
+        The src="assets/red-house-150.jpg" is referencing a file in relation to where my current HTML page that references the image is located.  In this case, it's inside of a subfolder
         which is named "assets" and the image is named "red-house-150.jpg".  I was referencing an image on my computer, but you can also reference images on the internet by
         using their exact location.  If you want to try, you can use the following address on your own HTML page: "https://html.haus/assets/red-house-150.jpg" 
       </p>
@@ -423,7 +424,7 @@
       <img src="https://html.haus/assets/red-house-150.jpg" alt="Red house on side of green hill">
       <p>
         You may have noticed another attribute attached to each of these images.  Images have two required attributes: the src attribute and the alt attribute.
-        The alt attribute stands for alternate text and it should be a meaningful description of the image.
+        The alt attribute is for alternate text and it should be a meaningful description of the image.
       </p>
       <p>
         Remember all those different users and user agents?
@@ -431,17 +432,17 @@
       <p>
         Alt text is there for visually impaired users who rely on a screen reader to experience your webpage.  Even though they can't see the image, they still need to be able to experience your page as if they could.  Their
         screen reader will read the description you provide in your alternate text, so make sure you write a meaningful description there.  Also, screen readers already know that it's an
-        image, so there's no need to ever write "Photo of" or "Image of" in your alternate text.  This is duplicative and unnecessary.
+        image, so there's no need to ever write "Photo of" or "Image of" in your alternate text.  This is duplicative.
       </p>
       <h2>Self Closing Tags</h2>
       <p>
-        You probably noticed above that there's another peculiar thing about img tags.  They don't have an ending or closing tag!  There's no such thing as a closing &lt;/img&gt; tag, 
+        You probably noticed that there's another peculiar thing about img tags.  They don't have an ending or closing tag!  There's no such thing as a closing &lt;/img&gt; tag, 
         in fact it's bad HTML.  That's because certain elements don't need a closing tag, because they stand alone without having to encompass anything else.  In an image's case, there's
-        nothing for the image to wrap around, because the image itself is the element.  The extra ending tag wouldn't be useful for this element.  That's why it's a self closing tag.
+        nothing for the image to wrap around, because the image itself is the element.  The extra ending tag wouldn't be useful.  That's why it's a self closing tag.
       </p>
       <h2>Hanging the Roof</h2>
       <p>
-        It's time to revisit where we started, bring it all together, and put the roof on your HTML house.
+        It's time to revisit where we started, bring it all together, and put the roof on your HTML haus.
       </p>
       <p>
         At the beginning of this tutorial, I shared a template without explaining it. I wanted to get you into building HTML as fast as I could, so we skipped a 
@@ -490,7 +491,7 @@
       </p>
       <h2>Conclusion</h2>
       <p>
-        You've just learned a whole heap of HTML.  Actually, you've learned everything you'd need to recreate this tutorial yourself.  You can go out and build your own site now.
+        You've just learned a whole heap of HTML.  Actually, you've learned everything you need to recreate this tutorial yourself.  You can go out and build your own site now.
         Here's what you learned by completing this one page tutorial:
       </p>
       <ul>
