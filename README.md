@@ -1,6 +1,6 @@
 # HTML.Haus
 
-Website for teaching HTML to everyone. I conceived of this website after returning to web development from a long hiatus. I used this project to learn HTML5 alongside ReactJS, but while doing so, I noticed an old problem has resurfaced in the new world: HTML is often misunderstood and misused. For example, there's an ugly proliferation of div tags! Div tags have no semantic meaning, yet many sites seem to use them for everything, often in place of proper semantic tags. This website hopes to fix that by providing a learning resource to educate developers on HTML.
+Website for teaching HTML to everyone. I conceived of this website after returning to web development from a long hiatus. I used this project to learn HTML5 alongside ReactJS, but while doing so, I noticed an old problem has resurfaced in the new world: HTML is often misunderstood and misused. For example, there's an ugly proliferation of div tags! Div tags have no semantic meaning, yet many sites seem to use them for everything, often in place of proper semantic tags. This website hopes to fix problems like that by providing a learning resource on HTML.
 
 ![Large white rural house by Jesse Roberts on Unsplash](assets/haus-900.jpg "HTML.Haus")
 
@@ -13,7 +13,7 @@ However, this abstraction has also taken developers a step away from the raw int
 ## Sections
 
 - [Learn](https://html.haus/learn.html): single page tutorial that takes you from a neophyte to an intermediate understanding of HTML
-- [Reference](https://html.haus/reference.html): comprehensive reference of _all_ the HTML tags with their syntax, sample code, and a display example
+- [Reference](https://html.haus/reference.html): reference for broadly supported HTML elements with their syntax, sample code, and a display example
 - [Templates](https://html.haus/templates.html): higher level HTML templates, serving as scaffolding for everything from basic pages to advanced sites
 
 ## Resources

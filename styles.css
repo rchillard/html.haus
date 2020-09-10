@@ -192,8 +192,13 @@ u {
 
 #logo {
   padding-right: 0.25rem;
-  vertical-align: text-bottom;
+  vertical-align: -18%;
   width: 32px;
+}
+
+#menu-title a {
+  text-decoration: underline; 
+  text-decoration-color: green;
 }
 
 #heart {
