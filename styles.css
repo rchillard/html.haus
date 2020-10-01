@@ -9,6 +9,10 @@
   --hausorange: #db3700;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: grid;
   grid-template-columns: 10% 80% 10%;
