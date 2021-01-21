@@ -22,3 +22,7 @@ The following resources were consulted heavily when constructing this site. I hi
 
 - [Mozilla's Getting Started with HTML Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [WHATWG Community's Living HTML Standard](https://html.spec.whatwg.org/multipage/indices.html)
+  
+I recommend this additional reading:
+
+- [The Importance of HTML](https://jerryjones.dev/2020/04/20/the-importance-of-html/)
