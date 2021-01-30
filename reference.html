@@ -42,7 +42,14 @@
           </ul>
         </p>
       </details>
-
+      <h2>Search</h2>
+      <form onsubmit="goAnchor()">
+        <label for="elementSearch">By element</label>
+        <input list="elementList" placeholder="e.g. div">
+        <datalist id="elementList">
+          <option value="div"><a href="#div">div</a></option>
+        </datalist>
+      </form>
       <h2>Table of Contents</h2>
       <p>
         HTML is divided into different types of elements, each of which serves a purpose in structuring content for the user.  Some elements organize, some
@@ -3714,5 +3721,13 @@ customElements.define(
       <p style="display: inline-block">Made with <img id="heart" src="assets/red-heart.png" alt="Red Heart"> by <a href="https://rchillard.com/">RCH</a></p>
       <p style="float: right"><a href="https://github.com/rchillard/html.haus"><img class="logo" alt="GitHub Octocat Logo" src="assets/github.svg"></a></p>
     </footer>
+    <script>
+      var search = document.querySelector('form')
+      search.addEventListener('select', goAnchor, false);
+      function goAnchor(event) {
+        var targetAnchor = document.getElementById(event.target.value).offsetTop;
+        window.scrollTo(0, targetAnchor);
+      }
+    </script>
   </body>
 </html>
