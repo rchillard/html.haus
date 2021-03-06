@@ -55,10 +55,26 @@ img {
 }
 
 footer {
+	align-items: center;
+	display: flex;
 	grid-area: footer;
-	margin-bottom: 1rem;
-	margin-top: 1rem;
+	justify-content: space-between;
+	margin-bottom: 0;
+	margin-top: 2rem;
+	padding-bottom: 0;
 	text-align: center;
+	vertical-align: baseline;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer img {
+	bottom: -5px;
+	display: block;
+	box-sizing: border-box;
+	position: relative;
 }
 
 main {
@@ -82,7 +98,7 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-  padding-left: 1rem;
+	padding-left: 1rem;
 	position: relative;
 	text-align: left;
 }
@@ -146,7 +162,9 @@ u {
 }
 
 .logo {
-	width: 2rem;
+	padding-right: 0.25rem;
+	vertical-align: -18%;
+	width: 32px;
 }
 
 .name {
@@ -212,19 +230,13 @@ u {
 	width: 100%;
 }
 
-#logo {
-	padding-right: 0.25rem;
-	vertical-align: -18%;
-	width: 32px;
-}
-
 #menu-title {
-  text-decoration: underline;
-  text-decoration-color: green;
+	text-decoration: underline;
+	text-decoration-color: green;
 }
 
 #menu-title img {
-  display: inline;
+	display: inline;
 }
 
 #heart {
@@ -250,7 +262,7 @@ u {
 		width: 90%;
 	}
 
-	#logo {
+	.logo {
 		width: 20px;
 	}
 }
@@ -271,7 +283,7 @@ u {
 		width: 90%;
 	}
 
-	#logo {
+	.logo {
 		width: 24px;
 	}
 }
@@ -292,7 +304,7 @@ u {
 		width: 95%;
 	}
 
-	#logo {
+	.logo {
 		width: 28px;
 	}
 }
@@ -313,7 +325,7 @@ u {
 		width: 100%;
 	}
 
-	#logo {
+	.logo {
 		width: 28px;
 	}
 }
