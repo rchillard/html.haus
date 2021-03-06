@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="High level HTML templates that can be used as scaffolding for everything from basic webpages to advanced websites">
-    <title>HTML Haus | Use Templates</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <!-- <link rel="stylesheet" type="text/css" href="css/sane.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <base href="https://html.haus/"> -->
-  </head>
-  <body>
-    <header>
-      <nav>
-        <span id="menu-title">
-          <a href="index.html">
-              HTML<img id="logo" src="assets/house-with-tree.png" alt="House with tree icon">
-          </a>
-        </span>
-        <span id="menu-learn"><a href="learn.html">Learn</a></span>
-        <span id="menu-reference"><a href="reference.html">Reference</a></span>
-        <span id="menu-templates"><a href="templates.html">Templates</a></span>
-      </nav>
-    </header>
-    <main>
-      <h1>Use HTML Templates</h1>
-      <p>
-        A set of HTML templates that are free to use and help you get started.  Each of these templates builds on the next, so they follow a progression from
-        very basic starter page to fully fleshed out page with metadata and a skeleton of HTML elements.
-      </p>
-      <h2>Basics</h2>
-      <h3>Starter</h3>
-      <p>
-        The first template covers a basic HTML page, which you can use as a template for your index.html.  It demonstrates important metadata in the head,
-        including how you give your page a title and how to link to a CSS stylesheet:
-      </p>
-      <textarea rows="13">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description"
+    content="High level HTML templates that can be used as scaffolding for everything from basic webpages to advanced websites">
+  <title>HTML Haus | Use Templates</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- <link rel="stylesheet" type="text/css" href="css/sane.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <base href="https://html.haus/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">HTML<img id="logo" src="assets/house-with-tree.png"
+          alt="House with tree icon"></a>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <!-- <li><a href="api.html">API</a></li> -->
+            <li><a href="reference.html">Elements</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="tools.html">Tools</a>
+          <ul>
+            <!-- <li><a href="">Haus CLI</a></li> -->
+            <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Use HTML Templates</h1>
+    <p>
+      A set of HTML templates that are free to use and help you get started. Each of these templates builds on the next,
+      so they follow a progression from
+      very basic starter page to fully fleshed out page with metadata and a skeleton of HTML elements.
+    </p>
+    <h2>Basics</h2>
+    <h3>Starter</h3>
+    <p>
+      The first template covers a basic HTML page, which you can use as a template for your index.html. It demonstrates
+      important metadata in the head,
+      including how you give your page a title and how to link to a CSS stylesheet:
+    </p>
+    <textarea rows="13">
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,12 +68,14 @@
 </html>
       </textarea>
 
-      <h3>Layout</h3>
-      <p>
-        Building on our basic page, this layout template embraces the idea of using semantic HTML to communicate form and meaning through properly tagging primary sections:
-        header, main, and footer.  In general, every one of your pages should probably have all three of these sections.  Here's how it looks:
-      </p>
-      <textarea rows="21">
+    <h3>Layout</h3>
+    <p>
+      Building on our basic page, this layout template embraces the idea of using semantic HTML to communicate form and
+      meaning through properly tagging primary sections:
+      header, main, and footer. In general, every one of your pages should probably have all three of these sections.
+      Here's how it looks:
+    </p>
+    <textarea rows="21">
 <!DOCTYPE html>
 <html>
   <head>
@@ -78,12 +98,14 @@
 </html>
     </textarea>
 
-      <h3>Metadata</h3>
-      <p>
-        Building on the basic layout and page, the following template below also has necessary meta tags needed to pass basic SEO requirements of a Chrome lighthouse audit, 
-        as well as lang="en" set to English.  These additional meta tags tell browsers (and search engines) how to size their screen and give a description of the website.
-      </p>
-      <textarea rows="23">
+    <h3>Metadata</h3>
+    <p>
+      Building on the basic layout and page, the following template below also has necessary meta tags needed to pass
+      basic SEO requirements of a Chrome lighthouse audit,
+      as well as lang="en" set to English. These additional meta tags tell browsers (and search engines) how to size
+      their screen and give a description of the website.
+    </p>
+    <textarea rows="23">
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -108,13 +130,15 @@
 </html>
       </textarea>
 
-      <h3>Metadata with Open Graph</h3>
-      <p>
-        Enriching the original metadata template with additional meta tags to cover the Open Graph specification.  The Open Graph protocol is primarily 
-        used with social media platforms (like Facebook and Twitter) and tells these sites how to link to, display, and describe your webpage when someone
-        shares a link to it on a social platform.
-      </p>
-      <textarea rows="23">
+    <h3>Metadata with Open Graph</h3>
+    <p>
+      Enriching the original metadata template with additional meta tags to cover the Open Graph specification. The Open
+      Graph protocol is primarily
+      used with social media platforms (like Facebook and Twitter) and tells these sites how to link to, display, and
+      describe your webpage when someone
+      shares a link to it on a social platform.
+    </p>
+    <textarea rows="23">
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -143,12 +167,13 @@
   </body>
 </html>
       </textarea>
-      <h2>Utility</h2>
-      <h3>Redirect</h3>
-      <p>
-        If you ever need to create a redirect, then here's a template to do it in a bulletproof way, which will work regardless of a user's browser settings, even if they have JavaScript turned off.
-      </p>
-<textarea rows="17">
+    <h2>Utility</h2>
+    <h3>Redirect</h3>
+    <p>
+      If you ever need to create a redirect, then here's a template to do it in a bulletproof way, which will work
+      regardless of a user's browser settings, even if they have JavaScript turned off.
+    </p>
+    <textarea rows="17">
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -168,8 +193,10 @@
 </textarea>
     <h2>Other Sources</h2>
     <p>
-      There's an awesome project called <a href="https://html5boilerplate.com/">HTML5 Boilerplate</a>, which gives you a fully fledged boilerplate to
-      start from, including CSS that resets baselines, JS to detect browser features, and an excellent set of HTML defaults.
+      There's an awesome project called <a href="https://html5boilerplate.com/">HTML5 Boilerplate</a>, which gives you a
+      fully fledged boilerplate to
+      start from, including CSS that resets baselines, JS to detect browser features, and an excellent set of HTML
+      defaults.
     </p>
     <!-- TO DO 
     - Basic page skeleton
@@ -185,10 +212,13 @@
     <img src="assets/hana-barakat-T1uOZ2kEDsA-unsplash.jpg" alt="Wooden staircase and orante wooden frame in red brick building by Hana Barakat on Unsplash" width="90%">
     
     <img src="assets/ashkan-forouzani-qhcml9Xo_5k-unsplash.jpg" alt="Bright red door in front of red brick wall by Ashkan Forouzani on Unsplash" width="90%"> -->
-    </main>
-    <footer>
-      <p style="display: inline-block">Made with <img id="heart" src="assets/red-heart.png" alt="Red Heart"> by <a href="https://rchillard.com/">RCH</a></p>
-      <p style="float: right"><a href="https://github.com/rchillard/html.haus"><img class="logo" alt="GitHub Octocat Logo" src="assets/github.svg"></a></p>
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <p style="display: inline-block">Made with <img id="heart" src="assets/red-heart.png" alt="Red Heart"> by <a
+        href="https://rchillard.com/">RCH</a></p>
+    <p style="float: right"><a href="https://github.com/rchillard/html.haus"><img class="logo" alt="GitHub Octocat Logo"
+          src="assets/github.svg"></a></p>
+  </footer>
+</body>
+
 </html>

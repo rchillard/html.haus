@@ -17,14 +17,27 @@
 <body>
   <header>
     <nav>
-      <span id="menu-title">
-        <a href="index.html">
-          HTML<img id="logo" src="assets/house-with-tree.png" alt="House with tree icon">
-        </a>
-      </span>
-      <span id="menu-learn"><a href="learn.html">Learn</a></span>
-      <span id="menu-reference"><a href="reference.html">Reference</a></span>
-      <span id="menu-templates"><a href="templates.html">Templates</a></span>
+      <a id="menu-title" href="index.html">HTML<img id="logo" src="assets/house-with-tree.png"
+          alt="House with tree icon"></a>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <!-- <li><a href="api.html">API</a></li> -->
+            <li><a href="reference.html">Elements</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="tools.html">Tools</a>
+          <ul>
+            <!-- <li><a href="">Haus CLI</a></li> -->
+            <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -2153,7 +2166,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
         <script>
           let date = new Date()
           let displaydate = document.getElementById("dtarget")
-          displaydate.innerHTML = date  
+          displaydate.innerHTML = date
         </script>
       </div>
       <div class="code">
@@ -2162,7 +2175,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
 <script>
   let date = new Date()
   let displaydate = document.getElementById("datetimetarget")
-  displaydate.innerHTML = date  
+  displaydate.innerHTML = date
 </script>
 </textarea>
       </div>
@@ -3959,10 +3972,10 @@ customElements.define(
     var elementsJSON = [];
     var list = document.getElementById('elementList');
     var articles = document.querySelectorAll('article');
-    articles.forEach(function (article) { 
+    articles.forEach(function (article) {
       var divNodeList = article.querySelectorAll('div');
       console.log(divNodeList);
-      var elementID = article.id; 
+      var elementID = article.id;
       var tempElement = {
         "name": article.id,
         "type": "",
@@ -4008,7 +4021,7 @@ customElements.define(
       //   "attributes": elementAttribute,
       // }
       elementsJSON.push(tempElement);
-    }) 
+    })
     console.log(elementsJSON);
   </script>
 </body>

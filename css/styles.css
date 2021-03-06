@@ -223,6 +223,10 @@ u {
   text-decoration-color: green;
 }
 
+#menu-title img {
+  display: inline;
+}
+
 #heart {
 	max-width: 15px;
 	width: 15px;
