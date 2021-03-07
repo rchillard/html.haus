@@ -13,8 +13,10 @@ However, this abstraction has also taken developers a step away from the raw int
 ## Sections
 
 - [Learn](https://html.haus/learn.html): single page tutorial that takes you from a neophyte to an intermediate understanding of HTML
+- [Practice](https://html.haus/practice.html): with a memorization tool to help you remember all of the HTML tags available
 - [Reference](https://html.haus/reference.html): reference for broadly supported HTML elements with their syntax, sample code, and an example
-- [Templates](https://html.haus/templates.html): higher level HTML templates, serving as scaffolding for everything from basic pages to advanced sites
+- [Tools](https://html.haus/tools.html): to help you write better, faster, and stronger HTML by writing it correctly and validating it
+
 
 ## Resources
 
@@ -26,3 +28,6 @@ The following resources were consulted heavily when constructing this site. I hi
 I recommend this additional reading:
 
 - [The Importance of HTML](https://jerryjones.dev/2020/04/20/the-importance-of-html/)
+
+## Contributing
+I welcome contributions.  This is a learning resource.  We're better together.  If you're hesitant about your idea, then open an issue and let's talk about it.
