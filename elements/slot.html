@@ -1,0 +1,27 @@
+<template id="slot-ex">
+<style>
+h4 {
+color: #db3700;
+font-size: 1.2rem;
+}
+small {
+color: slategray;
+font-size: 0.8rem;
+}
+</style>
+<h4>
+<slot name="site-name">Website Name Here</slot>
+</h4>
+<p>
+<slot name="site-desc">Description of your site here!</slot>
+</p>
+<small>
+<slot name="site-legal">Your legal disclaimer here</slot>
+</small>
+</template>
+<my-slot-example></my-slot-example>
+<my-slot-example>
+<span slot="site-name">HTML.Haus</span>
+<span slot="site-desc">Website for teaching HTML to everyone.</span>
+<span slot="site-legal">Forever free to do whatever</span>
+</my-slot-example>

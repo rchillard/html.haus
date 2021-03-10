@@ -1,8 +1,1 @@
-{
-  "name": "head",
-  "type": "metadata",
-  "description": "Container for all metadata and required as a part of any HTML document",
-  "code": "<head>Elements that add metadata go here</head>",
-  "attributes": "global attributes",
-  "link": "https://html.haus/reference.html#head"
-}
+{"name":"head","description":"Container for all metadata and required as a part of any HTML document","code":"https://html.haus/elements/head.html","url":"https://html.haus/reference.html#head"}

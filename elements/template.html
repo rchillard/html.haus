@@ -1,0 +1,32 @@
+<template id="template-example">
+<style>
+.website-name {
+color: #db3700;
+font-size: 1.2rem;
+}
+.website-url {
+color: slategray;
+font-size: 0.8rem;
+}
+</style>
+<p>
+<span class="website-name"></span><br>
+<span class="website-desc"></span><br>
+<span class="website-url"></span>
+</p>
+</template>
+<div id="sites"></div>
+<script>
+const websitelist = document.getElementById('template-example')
+const websites = [
+{ name: 'HTML Haus', url: 'https://html.haus/', desc: 'Website for teaching HTML to everyone.' },
+{ name: 'CSS City', url: 'https://css.city/', desc: 'Website for illustrating the world of CSS possibilities.' }
+]
+websites.forEach(website => {
+const site = document.importNode(websitelist.content, true)
+site.querySelector('.website-name').textContent = website.name
+site.querySelector('.website-desc').textContent = website.desc
+site.querySelector('.website-url').textContent = website.url
+document.getElementById('sites').appendChild(site)
+})
+</script>

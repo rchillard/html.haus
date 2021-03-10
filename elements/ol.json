@@ -1,7 +1,1 @@
-{
-    "name": "ol", 
-    "description": "Ordered list that typically displays as sequential numbers", 
-    "display": "↵        <ol>↵          <li>Wake up</li>↵         …         <li>Learn code</li>↵        </ol>↵      ", 
-    "code": "↵        <textarea rows="6">&lt;ol&gt;↵  &lt;li&gt…omatoes&lt;/li&gt;↵&lt;/ol&gt;↵</textarea>↵      ", 
-    "attributes": "↵        <ul>↵          <li>reversed: specify whet…, numbers [1, default])</li>↵        </ul>↵      "
-}
+{"name":"ol","description":"Ordered list that typically displays as sequential numbers","code":"https://html.haus/elements/ol.html","url":"https://html.haus/reference.html#ol"}

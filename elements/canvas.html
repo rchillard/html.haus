@@ -1,0 +1,15 @@
+<canvas id="ex-canvas" width="150" height="150">
+Simple red rectangle with triangle on top, representing a house
+</canvas>
+<script>
+var canvas = document.getElementById('ex-canvas');
+const context = canvas.getContext('2d');
+context.fillStyle = "#db3700";
+context.fillRect(55, 50, 40, 30);
+context.fillStyle = 'black';
+context.beginPath();
+context.moveTo(50, 50);
+context.lineTo(75, 25);
+context.lineTo(100, 50);
+context.fill();
+</script>
