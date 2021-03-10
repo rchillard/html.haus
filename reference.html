@@ -3387,8 +3387,7 @@ Houses are built with certain kinds of material like <b class="material">wood</b
       </div>
       <div class="attributes">
         <ul>
-          <li>autocomplete: indicates whether the value of the textarea can be automatically completed</li>
-          <li>
+          <li>autocomplete: indicates whether the value of the textarea can be automatically completed
             <ul>
               <li>"on": the browser can automatically complete the textarea based on values previously used</li>
               <li>"off": the user must explicitly enter a value into this field for every use (or the document provides
@@ -3963,6 +3962,7 @@ customElements.define(
   </datalist>
   <script>
     var search = document.querySelector('form')
+    console.log(search.closest('h2'));
     search.addEventListener('select', goAnchor);
     search.addEventListener('submit', goAnchor);
 
@@ -3970,61 +3970,6 @@ customElements.define(
       var targetAnchor = document.getElementById(event.target.value).offsetTop;
       window.scrollTo(0, targetAnchor);
     }
-
-    var elementsJSON = [];
-    var list = document.getElementById('elementList');
-    var articles = document.querySelectorAll('article');
-    articles.forEach(function (article) {
-      var divNodeList = article.querySelectorAll('div');
-      console.log(divNodeList);
-      var elementID = article.id;
-      var tempElement = {
-        "name": article.id,
-        "type": "",
-        "description": divNodeList[1].innerText,
-        "code": divNodeList[2].innerHTML,
-        "attributes": divNodeList[4].innerHTML
-      };
-      console.log(tempElement);
-
-      // 
-      // console.log(elementID); 
-      // var elementDescription = article.getElementsByClassName("description");
-      // console.log(elementDescription[0].innerText);
-      // var elementCode = article.getElementsByClassName("display");
-      // console.log(elementCode);
-      // console.log(elementCode.innerHTML);
-      // try {
-      //   var mdnURL = article.querySelector("a");
-      //   var mdnURI = mdnURL.href
-      //   // console.log(mdnURL);
-      //   console.log(mdnURI);
-      // } catch (error) {
-      //   console.log("no a element found")
-      // }
-      // // 
-      // var elementAttributes = article.getElementsByClassName("attributes");
-      // console.log(elementAttributes)
-      // var elementAttribute;
-      // // Need to figure out how to search NodeList for type of 'a'
-      // if (elementAttributes.querySelector('a')) {
-      //   elementAttribute = ['global attributes'];
-      // } else {
-      //   elementAttributes = elementAttributes.querySelectorAll('li')
-      //   elementAttribute = [];
-      //   elementAttributes.forEach(function (attribute) {
-      //     elementAttribute.push(attribute.innerText);
-      //   })
-      // }
-      // var tempElement = {
-      //   "element": elementID,
-      //   "description": elementDescription,
-      //   "url": mdnURI,
-      //   "attributes": elementAttribute,
-      // }
-      elementsJSON.push(tempElement);
-    })
-    console.log(elementsJSON);
   </script>
 </body>
 
