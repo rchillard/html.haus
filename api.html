@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description"
+    content="High level HTML templates that can be used as scaffolding for everything from basic webpages to advanced websites">
+  <title>HTML Haus | Use Templates</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- <link rel="stylesheet" type="text/css" href="css/sane.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <base href="https://html.haus/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">HTML<img class="logo" src="assets/house-with-tree.png"
+          alt="House with tree icon"></a>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="api.html">API</a></li>
+            <li><a href="reference.html">Elements</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="tools.html">Tools</a>
+          <ul>
+            <!-- <li><a href="">Haus CLI</a></li> -->
+            <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>API</h1>
+    <p>
+      Using the primary API, you can place a request as such:
+    </p>
+    <pre>
+      <code>
+        curl https://html.haus/elements/abbr.json
+      </code>
+    </pre>
+
+    <p>You will receive a result that looks like this:</p>
+    <pre>
+      <code>
+        {
+          "name": "abbr",
+          "description": "Abbreviation element represents an acronym",
+          "code": "https://html.haus/elements/abbr.html",
+          "url": "https://html.haus/reference.html#abbr"
+      }
+      </code>
+    </pre>
+    <p>You can use references to code to also request the sample HTML:</p>
+    <pre>
+      <code>curl https://html.haus/elements/abbr.html</code>
+    </pre>
+    <h2>JavaScript</h2>
+    <p>Ultimately, this means you can use JavaScript fetch functions to query the API using this formula</p>
+    <pre>
+      <code>
+        https://html.haus/elements/${element-name}.json
+        https://html.haus/elements/${element-name}.html
+      </code>
+    </pre>
+    <p>Here's two useful examples from Chris Ferdinandi:</p>
+
+    <h3>JSON</h3>
+    <pre>
+      <code>
+        fetch('https://html.haus/elements/${element-name}.json').then(function (response) {
+          // The API call was successful!
+          return response.json();
+        }).then(function (html) {
+          // This is the JSON from our response
+          console.log(html);
+        }).catch(function (err) {
+          // There was an error
+          console.warn('Something went wrong.', err);
+        });
+      </code>
+    </pre>
+    <h3>HTML</h3>
+    <pre>
+      <code>
+        fetch('https://html.haus/elements/${element-name}.html').then(function (response) {
+          // The API call was successful!
+          return response.text();
+        }).then(function (html) {
+          // This is the HTML from our response as a text string
+          console.log(html);
+        }).catch(function (err) {
+          // There was an error
+          console.warn('Something went wrong.', err);
+        });
+      </code>
+    </pre>
+  </main>
+  <footer>
+    <a href="learn.html">Learn</a>
+    <a href="practice.html">Practice</a>
+    <a href="reference.html">Reference</a>
+    <a href="tools.html">Tools</a>
+    <a href="about.html">About</a>
+    <a href="index.html"><img alt="House with tree icon" src="assets/house-with-tree.png"></a>
+  </footer>
+</body>
+
+</html>
