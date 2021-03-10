@@ -162,8 +162,6 @@ u {
 }
 
 .logo {
-	padding-right: 0.25rem;
-	vertical-align: -18%;
 	width: 32px;
 }
 
@@ -237,6 +235,8 @@ u {
 
 #menu-title img {
 	display: inline;
+	padding-right: 0.25rem;
+	vertical-align: -18%;
 }
 
 #heart {
@@ -254,8 +254,8 @@ u {
 		/* 570 px */
 	}
 
-	nav {
-		font-size: 0.9rem;
+	nav, footer {
+		font-size: 0.8rem;
 	}
 
 	textarea {
@@ -275,8 +275,8 @@ u {
 		/* 540 px */
 	}
 
-	nav {
-		font-size: 1rem;
+	nav, footer {
+		font-size: 0.9rem;
 	}
 
 	textarea {
@@ -296,8 +296,8 @@ u {
 		/* 576px */
 	}
 
-	nav {
-		font-size: 1.1rem;
+	nav, footer {
+		font-size: 1rem;
 	}
 
 	textarea {
@@ -317,8 +317,8 @@ u {
 		/* 595.2 px */
 	}
 
-	nav {
-		font-size: 1.2rem;
+	nav, footer {
+		font-size: 1.1rem;
 	}
 
 	textarea {
@@ -338,8 +338,8 @@ u {
 		/* 600 px */
 	}
 
-	nav {
-		font-size: 1.3rem;
+	nav, footer {
+		font-size: 1.2rem;
 	}
 
 	textarea {
