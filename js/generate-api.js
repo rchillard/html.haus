@@ -40,5 +40,5 @@ JSDOM.fromFile("../reference.html", { contentType: "text/html" }).then(dom => {
         elements.push(tempElement.name);
     })
 
-    console.log(elements);
+    console.log(elements.sort());
 });
