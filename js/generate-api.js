@@ -15,7 +15,7 @@ JSDOM.fromFile("../reference.html", { contentType: "text/html" }).then(dom => {
             "name": article.id,
             // "type": "",
             "description": divNodeList[1].textContent.replace(/(\r\n|\n|\r)/gm, "").trim(),
-            "code": `https://html.haus/elements/${article.id}.html`,
+            "code": `https://html.haus/api/elements/${article.id}.html`,
             // TBD - need to solve nested list problem and fix reference.html
             // "attributes": attributeObject,
             "url": `https://html.haus/reference.html#${article.id}`
