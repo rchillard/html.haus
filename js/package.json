@@ -1,0 +1,26 @@
+{
+  "name": "generate-api",
+  "version": "1.0.0",
+  "description": "Local script to generate a file system based API from html.haus reference data",
+  "main": "generate-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchillard/html.haus.git"
+  },
+  "keywords": [
+    "html",
+    "teaching-website"
+  ],
+  "author": "RCH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchillard/html.haus/issues"
+  },
+  "homepage": "https://github.com/rchillard/html.haus#readme",
+  "dependencies": {
+    "jsdom": "^16.5.1"
+  }
+}

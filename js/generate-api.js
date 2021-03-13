@@ -4,9 +4,10 @@ const fs = require('fs');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-JSDOM.fromFile("reference.html", { contentType: "text/html" }).then(dom => {
+JSDOM.fromFile("../reference.html", { contentType: "text/html" }).then(dom => {
     var articles = dom.window.document.querySelectorAll('article');
-    
+    var elements = [];
+
     articles.forEach(function (article) {
         
         var divNodeList = article.querySelectorAll('div');
@@ -21,7 +22,7 @@ JSDOM.fromFile("reference.html", { contentType: "text/html" }).then(dom => {
         };
 
         // Generate JSON portion of API
-        fs.writeFile(`${article.id}.json`, JSON.stringify(tempElement), function (err) {
+        fs.writeFile(`../api/elements/${article.id}.json`, JSON.stringify(tempElement), function (err) {
             if (err) return console.log(err);
             console.log(`Successfully created: ${article.id}.json`);
         });
@@ -29,10 +30,15 @@ JSDOM.fromFile("reference.html", { contentType: "text/html" }).then(dom => {
         // Generate HTML portion of API
         var codeBlock = article.querySelector('.display');
         if (codeBlock) {
-            fs.writeFile(`${article.id}.html`, codeBlock.innerHTML.replace(/^\s+/mg, ""), function (err) {
+            fs.writeFile(`../api/elements/${article.id}.html`, codeBlock.innerHTML.replace(/^\s+/mg, ""), function (err) {
                 if (err) return console.log(err);
                 console.log(`Successfully created: ${article.id}.html`);
             });
         }
+
+        // Spit out array of all elements
+        elements.push(tempElement.name);
     })
+
+    console.log(elements);
 });
