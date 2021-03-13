@@ -11,7 +11,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="css/sane.css"> -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- <base href="https://html.haus/reference.html"> -->
-  <script src="slot.js" defer></script>
+  <script src="js/slot.js" defer></script>
 </head>
 
 <body>
@@ -3813,7 +3813,7 @@ customElements.define(
 );
 
   <!-- Placed in the <head> element -->
-<script src="slot.js" defer></script>
+<script src="js/slot.js" defer></script>
 
 <!-- Found in your main <body> -->
 <template id="slot-example">
@@ -3962,7 +3962,6 @@ customElements.define(
   </datalist>
   <script>
     var search = document.querySelector('form')
-    console.log(search.closest('h2'));
     search.addEventListener('select', goAnchor);
     search.addEventListener('submit', goAnchor);
 
