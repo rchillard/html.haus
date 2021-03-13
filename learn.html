@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="Tutorial to teach the basics of HTML to beginners">
+  <meta name="Description" content="Tutorial to learn the basics of HTML">
   <title>HTML Haus | Learn HTML</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <!-- <link rel="stylesheet" type="text/css" href="css/sane.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/sane.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- <base href="https://html.haus/"> -->
 </head>
@@ -254,8 +254,9 @@
       History and Critical Acclaim. All of these headings help communicate how ideas are related. They serve as the
       wooden frame, defining the structure of your content.
     </p>
-    <label>The HTML that serves as the framing with headings:
-      <textarea rows="19">
+    <p>
+      <label>The HTML that serves as the framing with headings:
+        <textarea rows="19">
 <h1>The Fall of the House of Usher</h1>
 <h2>Background</h2>
 <h3>Publication History</h3>
@@ -271,8 +272,8 @@
   DURING the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was--but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit...
 </p>
         </textarea>
-    </label>
-
+      </label>
+    </p>
     <img src="img/wooden-frame-600.jpg" sizes="(max-width: 600px) 95vw,
              (min-width: 600px) 90vw, 
              (min-width: 768px) 75vw, 
@@ -296,12 +297,14 @@
       might. That's because they're inline elements.
       Inline elements only effect text in the same line and do not alter the visual flow of the page or document.
     </p>
-    <img class="diagram" src="img/inline-block-combined.svg"
-      alt="diagram of p block element and strong inline element" height="160">
+    <img class="diagram" src="img/inline-block-combined.svg" alt="diagram of p block element and strong inline element"
+      height="160">
     <p>The book is an <strong>American Gothic masterwork</strong></p>
-    <label>The HTML used to display the text above:
-      <textarea><p>The book is an <strong>American Gothic masterwork</strong></p></textarea>
-    </label>
+    <p>
+      <label>The HTML used to display the text above:
+        <textarea><p>The book is an <strong>American Gothic masterwork</strong></p></textarea>
+      </label>
+    </p>
     <p>
       You might notice that in our diagram the &lt;p&gt; tag is on different lines, while in the HTML above, the
       &lt;p&gt; tags are on the same line. That's because
@@ -422,13 +425,14 @@
       Here's a visual example showing an attribute called style which you can use to change how your element is
       displayed.
     </p>
-    <img class="diagram" src="img/attribute.svg" alt="diagram of html style attribute for paragraph tag"
-      height="160">
+    <img class="diagram" src="img/attribute.svg" alt="diagram of html style attribute for paragraph tag" height="160">
     <p>And here's how the actual HTML looks:</p>
     <p style="color: red">She's a brick haus!</p>
-    <label>The raw HTML used to display above:
-      <textarea><p style="color: red">She's a brick haus!</p></textarea>
-    </label>
+    <p>
+      <label>The raw HTML used to display above:
+        <textarea><p style="color: red">She's a brick haus!</p></textarea>
+      </label>
+    </p>
     <p>
       Color is a style property that defines a text element's font color. Red is a standard color defined in browsers.
       Combining the two on a &lt;p&gt; tag, we get a red paragraph.
@@ -452,9 +456,11 @@
       hypertext reference because it's referring to another
       piece of HTML.
     </p>
-    <label>The link above to The Commodores song looks like this in HTML:
-      <textarea><a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">Brick House</a></textarea>
-    </label>
+    <p>
+      <label>The link above to The Commodores song looks like this in HTML:
+        <textarea><a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">Brick House</a></textarea>
+      </label>
+    </p>
     <p>
       As you can see, the href attribute has a value of "https://www.youtube.com/watch?v=rrBx6mAWYPU" which is the
       address to another website. It is applied inside of the opening &lt;a&gt; tag, and
@@ -468,8 +474,9 @@
       have to be on the internet. Your reference will
       follow the structure of your computer's file folders. Sometimes it's easier to see this with an example.
     </p>
-    <label>Here's the index.html page with a link to a new page:
-      <textarea rows="12">
+    <p>
+      <label>Here's the index.html page with a link to a new page:
+        <textarea rows="12">
 <!DOCTYPE html>
 <html>
   <head>
@@ -482,14 +489,16 @@
   </body>
 </html>
         </textarea>
-    </label>
+      </label>
+    </p>
     <p>
       Do you see how the link above doesn't have an https:// in it? That's because it's a local reference to a file.
       Your site isn't on the internet yet;
       https is a protocol that the internet uses called Hypertext Transfer Protocol. I bet you can guess what it does!
     </p>
-    <label>Here's the about.html page:
-      <textarea rows="14">
+    <p>
+      <label>Here's the about.html page:
+        <textarea rows="14">
 <!DOCTYPE html>
 <html>
   <head>
@@ -504,7 +513,8 @@
   </body>
 </html>
         </textarea>
-    </label>
+      </label>
+    </p>
     <p>For the example above to work, it's important that you have saved both index.html and about.html in the same file
       folder!</p>
     <h2>Images</h2>
@@ -514,10 +524,12 @@
       browser displays it for you to see. Instead of using the href attribute though, the img element uses the src or
       source attribute.
     </p>
-    <label>
-      You can see an example here:
-      <textarea><img src="img/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
-    </label>
+    <p>
+      <label>
+        You can see an example here:
+        <textarea><img src="img/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
+      </label>
+    </p>
     <img src="img/red-house-150.jpg" alt="Red house on side of green hill by Luke Stackpoole on Unsplash">
     <p>
       The src="img/red-house-150.jpg" is referencing a file in relation to where my current HTML page that references
@@ -527,10 +539,12 @@
       using their exact location. If you want to try, you can use the following address on your own HTML page:
       "https://html.haus/img/red-house-150.jpg"
     </p>
-    <label>
-      Here's the HTML for you to try:
-      <textarea><img src="https://html.haus/img/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
-    </label>
+    <p>
+      <label>
+        Here's the HTML for you to try:
+        <textarea><img src="https://html.haus/img/red-house-150.jpg" alt="Red house on side of green hill"></textarea>
+      </label>
+    </p>
     <img src="https://html.haus/img/red-house-150.jpg" alt="Red house on side of green hill">
     <p>
       You may have noticed another attribute attached to each of these images. Images have two required attributes: the
@@ -565,9 +579,10 @@
       HTML as fast as I could, so we skipped a
       few basic parts. Before you finish, it's important to understand them.
     </p>
-    <label>
-      Our starter template from the beginning:
-      <textarea rows="10">
+    <p>
+      <label>
+        Our starter template from the beginning:
+        <textarea rows="10">
 <!DOCTYPE html>
 <html>
   <head>
@@ -578,7 +593,8 @@
   </body>
 </html>
           </textarea>
-    </label>
+      </label>
+    </p>
     <p>
       All HTML documents are wrapped in a parent &lt;html&gt; tag. Inside of the HTML element, there are two essential
       components:
@@ -638,9 +654,10 @@
       own study to learn HTML5 and fulfill the teach part of my cycle. Take the concepts you've learned today and tell
       your own story by building a webpage. The internet needs you. We need you.
     </p>
-    <label>
-      Here's a template to get you started covering all the elements we learned together today:
-      <textarea rows="13">
+    <p>
+      <label>
+        Here's a template to get you started covering all the elements we learned together today:
+        <textarea rows="13">
 <!DOCTYPE html>
 <html>
   <head>
@@ -654,7 +671,8 @@
   </body>
 </html>
         </textarea>
-    </label>
+      </label>
+    </p>
     <p>You can copy and paste this into a text editor and save the file as index.html. Loading that file in a browser
       shows your page!</p>
     <h2>Next Steps</h2>

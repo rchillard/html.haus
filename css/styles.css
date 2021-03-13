@@ -81,6 +81,10 @@ main {
 	grid-area: main;
 }
 
+main > * {
+	margin-top: 1rem;
+}
+
 mark {
 	background-color: lightsalmon;
 }
@@ -162,8 +166,8 @@ u {
 }
 
 .emoji {
+	display: inline;
 	max-width: 15px;
-	width: 15px;
 }
 
 .logo {
@@ -258,7 +262,8 @@ u {
 		/* 570 px */
 	}
 
-	nav, footer {
+	nav,
+	footer {
 		font-size: 0.8rem;
 	}
 
@@ -279,7 +284,8 @@ u {
 		/* 540 px */
 	}
 
-	nav, footer {
+	nav,
+	footer {
 		font-size: 0.9rem;
 	}
 
@@ -300,7 +306,8 @@ u {
 		/* 576px */
 	}
 
-	nav, footer {
+	nav,
+	footer {
 		font-size: 1rem;
 	}
 
@@ -321,7 +328,8 @@ u {
 		/* 595.2 px */
 	}
 
-	nav, footer {
+	nav,
+	footer {
 		font-size: 1.1rem;
 	}
 
@@ -342,7 +350,8 @@ u {
 		/* 600 px */
 	}
 
-	nav, footer {
+	nav,
+	footer {
 		font-size: 1.2rem;
 	}
 
