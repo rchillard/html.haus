@@ -161,6 +161,11 @@ u {
 	grid-area: display;
 }
 
+.emoji {
+	max-width: 15px;
+	width: 15px;
+}
+
 .logo {
 	width: 32px;
 }
@@ -237,11 +242,6 @@ u {
 	display: inline;
 	padding-right: 0.25rem;
 	vertical-align: -18%;
-}
-
-#heart {
-	max-width: 15px;
-	width: 15px;
 }
 
 /* MEDIA QUERIES */
