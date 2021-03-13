@@ -167,7 +167,7 @@ u {
 
 .emoji {
 	display: inline;
-	max-width: 15px;
+	max-width: 1rem;
 }
 
 .logo {
