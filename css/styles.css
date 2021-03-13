@@ -55,7 +55,7 @@ img {
 }
 
 footer {
-	align-items: center;
+	align-items: flex-end;
 	display: flex;
 	grid-area: footer;
 	justify-content: space-between;
@@ -173,6 +173,10 @@ u {
 .name {
 	font-size: 1.2em;
 	grid-area: name;
+}
+
+.orange {
+	color: var(--hausorange);
 }
 
 .reference {
