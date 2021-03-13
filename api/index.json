@@ -1,0 +1,24 @@
+{
+    "elements": [
+    "head",      "title",    "style",
+    "link",       "base",    "meta",      "body",     "header",
+    "nav",        "main",    "aside",     "article",  "section",
+    "h1-h6",      "footer",  "p",         "hr",       "div",
+    "ol",         "li",      "ul",        "figure",   "figcaption",
+    "blockquote", "pre",     "dl",        "dt",       "dd",
+    "a",          "abbr",    "b",         "br",       "cite",
+    "code",       "data",    "dfn",       "em",       "i",
+    "kbd",        "mark",    "q",         "s",        "samp",
+    "small",      "span",    "strong",    "sub",      "sup",
+    "time",       "u",       "var",       "wbr",      "img",
+    "map",        "area",    "audio",     "video",    "track",
+    "embed",      "iframe",  "object",    "param",    "picture",
+    "source",     "script",  "noscript",  "canvas",   "del",
+    "ins",        "table",   "caption",   "tr",       "td",
+    "th",         "col",     "colgroup",  "thead",    "tbody",
+    "tfoot",      "form",    "fieldset",  "legend",   "label",
+    "input",      "select",  "option",    "optgroup", "datalist",
+    "textarea",   "meter",   "progress",  "button",   "output",
+    "details",    "summary", "el-dialog", "template", "slot"
+    ]
+}
