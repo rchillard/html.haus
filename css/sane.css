@@ -1,4 +1,3 @@
-
 /* sane.css is a combination of different approaches:
  * - main.css 2.1.0       | MIT License | github.com/h5bp/main.css
  * - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
@@ -47,7 +46,6 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-	/* 1 */
 	font-size: 2em;
 	margin: 0.67em 0;
 }
@@ -61,7 +59,6 @@ figure,
 blockquote,
 dl,
 dd {
-	/* 2 */
 	margin: 0;
 }
 
