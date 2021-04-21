@@ -34,7 +34,6 @@ body {
 	grid-template-rows: auto;
 	grid-template-areas: ". header ." ". main ." ". footer .";
 	font-family: var(--font-stack);
-	margin: 0;
 }
 
 header {
