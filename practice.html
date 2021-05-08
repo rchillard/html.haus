@@ -10,6 +10,7 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/sane.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/practice.css">
   <!-- <base href="https://html.haus/"> -->
 </head>
 
@@ -41,7 +42,24 @@
   </header>
   <main>
     <h1>Practice</h1>
-    <p>Coming soon</p>
+    <p>
+      This tool is a work in progress.  It's essentially digital flash cards for each HTML element, and it uses a learning technique called
+      <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> to build your knowledge of all the HTML elements.  As
+      you learn elements, it will test you more frequently on those you rate difficult to remember.  Give it a try!
+    </p>
+    <div class="scene">
+      <div class="card">
+        <div class="card__face card__face--front" id="questionBox">Loading...</div>
+        <div class="card__face card__face--back">
+          <span id="answerBox"></span>
+          <div class="difficulty">
+            <label id="easy"><input type="radio" />Easy</label>
+            <label id="medium"><input type="radio" />Medium</label>
+            <label id="hard"><input type="radio" />Hard</label>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <a href="learn.html">Learn</a>
@@ -51,6 +69,7 @@
     <a href="about.html">About</a>
     <a href="index.html"><img alt="House with tree icon" src="img/house-with-tree.png"></a>
   </footer>
+  <script src="js/practice.js"></script>
 </body>
 
 </html>
