@@ -77,9 +77,10 @@ async function renderNextQuestion() {
 
 // Use event delegation to capture click events properly
 var clickHandler = function (event) {
-    event.preventDefault();
+    
 
     if (event.target.closest('.difficulty')) {
+        event.preventDefault();
         card.classList.remove('is-flipped');
 
         var difficulty;
