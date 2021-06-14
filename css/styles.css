@@ -106,28 +106,13 @@ nav ul li {
 	text-align: left;
 }
 
-nav ul li a {
+nav ul li a:hover {
+	color: green;
 	text-decoration: none;
 }
 
-nav ul li:hover ul {
-	display: block;
-}
-
-nav ul li ul {
-	display: none;
-	height: auto;
-	left: -2px;
-	padding: .5rem 1rem .5rem 0;
-	position: absolute;
-	top: 1.5rem;
-	white-space: nowrap;
-	width: auto;
-}
-
-nav ul li ul li,
-nav ul li ul li a {
-	display: block;
+nav ul li a {
+	text-decoration: none;
 }
 
 textarea {
