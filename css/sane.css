@@ -1,7 +1,9 @@
+/* sane.css v0.1 | MIT License | github.com/rchillard/sane.css */
+
 /* sane.css is a combination of different approaches:
  * - main.css 2.1.0       | MIT License | github.com/h5bp/main.css
  * - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
- * - reset.css            | MIT License | github.com/hankchizljaw/modern-css-reset 
+ * - reset.css            | MIT License | github.com/andy-piccalilli/modern-css-reset
  * with tweaks to adjust sane defaults and remove unneeded rules.
  */
 
@@ -15,6 +17,7 @@
 	color: #222;
 	font-size: 1em; /* 1 */
 	line-height: 1.4; /* 2 */
+	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%; /* 3 */
 }
 
