@@ -176,6 +176,12 @@ u {
 	border: 2px solid black;
 }
 
+.table-of-contents {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1;
+}
+
 /* ELEMENTS */
 
 #brand {
