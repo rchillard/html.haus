@@ -252,11 +252,6 @@ u {
 		/* 570 px */
 	}
 
-	nav,
-	footer {
-		font-size: 0.8rem;
-	}
-
 	textarea {
 		width: 90%;
 	}
@@ -272,11 +267,6 @@ u {
 		grid-template-columns: 5% 90% 5%;
 		/* width: 90vw; */
 		/* 540 px */
-	}
-
-	nav,
-	footer {
-		font-size: 0.9rem;
 	}
 
 	textarea {
@@ -296,9 +286,8 @@ u {
 		/* 576px */
 	}
 
-	nav,
-	footer {
-		font-size: 1rem;
+	html {
+		font-size: 110%;
 	}
 
 	textarea {
@@ -318,9 +307,8 @@ u {
 		/* 595.2 px */
 	}
 
-	nav,
-	footer {
-		font-size: 1.1rem;
+	html {
+		font-size: 120%;
 	}
 
 	textarea {
@@ -340,9 +328,8 @@ u {
 		/* 600 px */
 	}
 
-	nav,
-	footer {
-		font-size: 1.2rem;
+	html {
+		font-size: 130%;
 	}
 
 	textarea {
