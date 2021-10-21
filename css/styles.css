@@ -11,6 +11,7 @@
 	--font-stack: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 
 	accent-color: var(--hausorange);
+	color-scheme: light dark;
 }
 
 :focus-visible { outline-color: var(--hausorange); }
@@ -259,6 +260,13 @@ u {
 }
 
 /* MEDIA QUERIES */
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	body {
+	  background-color: #000000;
+	  color: #ffffff;
+	}
+  }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
