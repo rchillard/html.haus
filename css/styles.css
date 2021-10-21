@@ -9,6 +9,8 @@
 	--hausorange: #db3700;
 
 	--font-stack: "Noto Sans", "Noto Sans CJK KR", sans-serif;
+
+	/* accent-color: var(--hausorange); */
 }
 
 a {
