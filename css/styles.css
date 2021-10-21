@@ -10,7 +10,20 @@
 
 	--font-stack: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 
-	/* accent-color: var(--hausorange); */
+	accent-color: var(--hausorange);
+}
+
+:focus-visible { outline-color: var(--hausorange); }
+::selection { background-color: var(--hausorange); }
+::marker { color: var(--hausorange); }
+
+:is(
+  ::-webkit-calendar-picker-indicator,
+  ::-webkit-clear-button,
+  ::-webkit-inner-spin-button, 
+  ::-webkit-outer-spin-button
+) {
+  color: var(--hausorange);
 }
 
 a {
@@ -49,6 +62,7 @@ hr {
 
 html {
 	scroll-behavior: smooth;
+	scrollbar-color: var(--hausorange) Canvas;
 }
 
 img {
