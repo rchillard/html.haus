@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <meta name="Description" content="Instructions for using our API to see HTML elements and code samples">
   <title>HTML Haus | API</title>
   <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
@@ -32,63 +33,54 @@
     </p>
     <pre>
       <code>
-        curl https://html.haus/api/elements/abbr.json
+  curl https://html.haus/api/elements/abbr.json
       </code>
     </pre>
 
     <p>You will receive a result that looks like this:</p>
     <pre>
       <code>
-        {
-          "name": "abbr",
-          "description": "Abbreviation element represents an acronym",
-          "code": "https://html.haus/api/elements/abbr.html",
-          "url": "https://html.haus/reference.html#abbr"
-      }
+  {
+    "name": "abbr",
+    "description": "Abbreviation element represents an acronym",
+    "code": "https://html.haus/api/elements/abbr.html",
+    "url": "https://html.haus/reference.html#abbr"
+  }
       </code>
     </pre>
     <p>You can use references to code to also request the sample HTML:</p>
     <pre>
-      <code>curl https://html.haus/api/elements/abbr.html</code>
+      <code>
+  curl https://html.haus/api/elements/abbr.html
+      </code>
+    </pre>
+    <p>A comprehensive list of all elements supported is available here:</p>
+    <pre>
+      <code>
+  curl https://html.haus/api/index.json
+      </code>
     </pre>
     <h2>JavaScript</h2>
-    <p>Ultimately, this means you can use JavaScript fetch functions to query the API using this formula</p>
+    <p>Ultimately, this means you can use JavaScript fetch functions to query the API using this formula:</p>
     <pre>
       <code>
-        https://html.haus/api/elements/${element-name}.json
-        https://html.haus/api/elements/${element-name}.html
+  https://html.haus/api/elements/${element-name}.json
+  https://html.haus/api/elements/${element-name}.html
       </code>
     </pre>
-    <p>Here's two useful examples from Chris Ferdinandi:</p>
-
-    <h3>JSON</h3>
+    <p>Here's an example using the standard fetch() function:</p>
     <pre>
       <code>
-        fetch('https://html.haus/api/elements/${element-name}.json').then(function (response) {
-          // The API call was successful!
-          return response.json();
-        }).then(function (html) {
-          // This is the JSON from our response
-          console.log(html);
-        }).catch(function (err) {
-          // There was an error
-          console.warn('Something went wrong.', err);
-        });
-      </code>
-    </pre>
-    <h3>HTML</h3>
-    <pre>
-      <code>
-        fetch('https://html.haus/api/elements/${element-name}.html').then(function (response) {
-          // The API call was successful!
-          return response.text();
-        }).then(function (html) {
-          // This is the HTML from our response as a text string
-          console.log(html);
-        }).catch(function (err) {
-          // There was an error
-          console.warn('Something went wrong.', err);
-        });
+  fetch('https://html.haus/api/elements/${element-name}.json').then(function (response) {
+    // The API call was successful!
+    return response.json();
+  }).then(function (html) {
+    // This is the JSON from our response
+    console.log(html);
+  }).catch(function (err) {
+    // There was an error
+    console.warn('Something went wrong.', err);
+  });
       </code>
     </pre>
   </main>

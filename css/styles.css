@@ -9,6 +9,22 @@
 	--hausorange: #db3700;
 
 	--font-stack: "Noto Sans", "Noto Sans CJK KR", sans-serif;
+
+	accent-color: var(--hausorange);
+	color-scheme: light dark;
+}
+
+:focus-visible { outline-color: var(--hausorange); }
+::selection { background-color: var(--hausorange); }
+::marker { color: var(--hausorange); }
+
+:is(
+  ::-webkit-calendar-picker-indicator,
+  ::-webkit-clear-button,
+  ::-webkit-inner-spin-button, 
+  ::-webkit-outer-spin-button
+) {
+  color: var(--hausorange);
 }
 
 a {
@@ -47,6 +63,7 @@ hr {
 
 html {
 	scroll-behavior: smooth;
+	scrollbar-color: var(--hausorange) Canvas;
 }
 
 img {
@@ -176,6 +193,12 @@ u {
 	border: 2px solid black;
 }
 
+.table-of-contents {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1;
+}
+
 /* ELEMENTS */
 
 #brand {
@@ -237,6 +260,13 @@ u {
 }
 
 /* MEDIA QUERIES */
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	body {
+	  background-color: #000000;
+	  color: #ffffff;
+	}
+  }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -244,11 +274,6 @@ u {
 		grid-template-columns: 3% 94% 3%;
 		/* width: 95vw; */
 		/* 570 px */
-	}
-
-	nav,
-	footer {
-		font-size: 0.8rem;
 	}
 
 	textarea {
@@ -268,11 +293,6 @@ u {
 		/* 540 px */
 	}
 
-	nav,
-	footer {
-		font-size: 0.9rem;
-	}
-
 	textarea {
 		width: 90%;
 	}
@@ -290,9 +310,8 @@ u {
 		/* 576px */
 	}
 
-	nav,
-	footer {
-		font-size: 1rem;
+	html {
+		font-size: 110%;
 	}
 
 	textarea {
@@ -312,9 +331,8 @@ u {
 		/* 595.2 px */
 	}
 
-	nav,
-	footer {
-		font-size: 1.1rem;
+	html {
+		font-size: 120%;
 	}
 
 	textarea {
@@ -334,9 +352,8 @@ u {
 		/* 600 px */
 	}
 
-	nav,
-	footer {
-		font-size: 1.2rem;
+	html {
+		font-size: 130%;
 	}
 
 	textarea {
