@@ -260,14 +260,6 @@ u {
 }
 
 /* MEDIA QUERIES */
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-	body {
-	  background-color: #000000;
-	  color: #ffffff;
-	}
-  }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	body {
