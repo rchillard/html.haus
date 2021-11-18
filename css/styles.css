@@ -11,7 +11,7 @@
 	--font-stack: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 
 	accent-color: var(--hausorange);
-	color-scheme: light dark;
+	color-scheme: light;
 }
 
 :focus-visible { outline-color: var(--hausorange); }
