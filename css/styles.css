@@ -43,6 +43,11 @@ article {
 	padding: 0 .5rem 0 .5rem;
 }
 
+article h2 {
+	font-size: 1em;
+	margin: 0;
+}
+
 body {
 	border-bottom: solid 1rem green;
 	display: grid;
@@ -214,7 +219,7 @@ u {
 #ex-layout {
 	border: 1px solid lightgray;
 	padding: 1rem;
-	margin: 0 auto;
+	margin: 1rem auto;
 	width: 95%;
 }
 
