@@ -52,6 +52,10 @@ body {
 	font-family: var(--font-stack);
 }
 
+details > * {
+	margin-top: 1rem;
+}
+
 header {
 	grid-area: header;
 	margin-top: 1rem;
