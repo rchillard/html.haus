@@ -134,6 +134,7 @@ nav ul li a {
 
 textarea {
 	border: 1px solid var(--hausorange);
+	width: 95%;
 }
 
 u {
@@ -268,10 +269,6 @@ u {
 		/* 570 px */
 	}
 
-	textarea {
-		width: 90%;
-	}
-
 	.logo {
 		width: 20px;
 	}
@@ -283,10 +280,6 @@ u {
 		grid-template-columns: 5% 90% 5%;
 		/* width: 90vw; */
 		/* 540 px */
-	}
-
-	textarea {
-		width: 90%;
 	}
 
 	.logo {
@@ -303,11 +296,7 @@ u {
 	}
 
 	html {
-		font-size: 110%;
-	}
-
-	textarea {
-		width: 95%;
+		font-size: 105%;
 	}
 
 	.logo {
@@ -324,11 +313,7 @@ u {
 	}
 
 	html {
-		font-size: 120%;
-	}
-
-	textarea {
-		width: 100%;
+		font-size: 110%;
 	}
 
 	.logo {
@@ -345,10 +330,6 @@ u {
 	}
 
 	html {
-		font-size: 130%;
-	}
-
-	textarea {
-		width: 100%;
+		font-size: 120%;
 	}
 }
