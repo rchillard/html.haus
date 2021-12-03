@@ -10,7 +10,6 @@
 
 	--font-stack: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 
-	accent-color: var(--hausorange);
 	color-scheme: light;
 }
 
@@ -73,10 +72,6 @@ hr {
 html {
 	scroll-behavior: smooth;
 	scrollbar-color: var(--hausorange) Canvas;
-}
-
-img {
-	max-width: 100%;
 }
 
 footer {
