@@ -320,6 +320,10 @@ u {
 		font-size: 110%;
 	}
 
+	textarea {
+		font-size: 100%;
+	}
+
 	.logo {
 		width: 28px;
 	}
