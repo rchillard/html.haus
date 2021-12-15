@@ -31,7 +31,7 @@ a {
 }
 
 article {
-	border-left: 1px solid red;
+	border-left: 1px solid var(--hausorange);
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 3;
@@ -44,6 +44,7 @@ article {
 
 article h2 {
 	font-size: 1em;
+	font-weight: initial;
 	margin: 0;
 }
 
@@ -318,10 +319,6 @@ u {
 
 	html {
 		font-size: 110%;
-	}
-
-	textarea {
-		font-size: 100%;
 	}
 
 	.logo {
