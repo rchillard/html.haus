@@ -266,6 +266,21 @@ u {
 }
 
 /* MEDIA QUERIES */
+/* Extra, extra small devices (compact phones, 380px and smaller) */
+@media only screen and (max-width: 380px) {
+	body {
+		grid-template-columns: 3% 94% 3%;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	.logo {
+		width: 20px;
+	}
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	body {
@@ -278,22 +293,6 @@ u {
 		width: 20px;
 	}
 }
-
-/* Exrta small devices (portrait tablets and large phones, 380px and smaller) */
-@media only screen and (max-width: 380px) {
-	body {
-		grid-template-columns: 3% 94% 3%;
-	}
-
-	nav {
-		flex-direction: column;
-	}
-
-	.logo {
-		width: 24px;
-	}
-}
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
