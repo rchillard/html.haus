@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/sane.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- <base href="https://html.haus/"> -->
+  <script src="js/download.js" defer></script>
 </head>
 
 <body>
@@ -95,7 +96,7 @@
     <p>
       <label>
         Open a text editor and copy and paste the contents below into a blank file:
-        <textarea rows="10">
+        <textarea id="html" rows="10">
 <!DOCTYPE html>
 <html>
   <head>
@@ -109,6 +110,7 @@
       </label>
     </p>
     <p>Save the file as index.html and open it in your browser of choice. You should see your sample page!</p>
+    <p>Would you rather just download it directly?  <a href="learn-template.html" download="learn-template.html" id="download-template">Click here to save the template HTML as a file</a>.</p>
     <p>
       You already learned that elements start with one tag and end with another closing tag. As you can see above there
       are a lot of elements, including one called
