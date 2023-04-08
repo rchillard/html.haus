@@ -57,7 +57,7 @@
     <h2>Search</h2>
     <form>
       <label>By element
-        <input list="elementList" placeholder="e.g. div" />
+        <input id="searchInput" list="elementList" placeholder="e.g. div" />
         <!-- See bottom of page for elementList -->
       </label>
       <input type="submit" value="Search">
@@ -3965,8 +3965,11 @@ customElements.define(
     search.addEventListener('select', goAnchor);
     search.addEventListener('submit', goAnchor);
 
-    function goAnchor(event) {
-      var targetAnchor = document.getElementById(event.target.value).offsetTop;
+    var input = document.getElementById('searchInput');
+
+    function goAnchor(e) {
+      e.preventDefault();
+      var targetAnchor = document.getElementById(input.value).offsetTop;
       window.scrollTo(0, targetAnchor);
     }
   </script>
