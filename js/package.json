@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/rchillard/html.haus#readme",
   "dependencies": {
-    "jsdom": "^16.5.1"
+    "jsdom": "^16.7.0"
   }
 }
